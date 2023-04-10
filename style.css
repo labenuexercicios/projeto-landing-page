@@ -31,7 +31,7 @@ h4 {
 
 }
 
-section {
+div {
     width: 100%;
     margin-top: 40px;
     margin-left: 60px;
@@ -51,7 +51,7 @@ h2 {
 
 }
 
-#div {
+#section {
     display: flex;
     flex-direction: row;
 }
@@ -94,7 +94,9 @@ aside {
 }
 
 form {
-    border: 5px dashed rgb(76, 219, 255);
+    background-color: lightcyan;
+    color: black;
+    border: 5px dashed rgb(10, 61, 75);
     height: 500px;
     width: 500px;
     text-align: left;
