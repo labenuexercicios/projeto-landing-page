@@ -1,0 +1,141 @@
+body {
+    height: 160vh;
+    background-color: #011024;
+    color: #ffffff;
+    font-family: "Times New Roman";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    height: 8vh;
+    padding: 1px;
+    border-bottom: 2px solid rgb(76, 219, 255);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.logo {
+    width: 20%;
+
+}
+
+h4 {
+    width: 20%;
+
+}
+
+div {
+    width: 100%;
+    margin-top: 40px;
+    margin-left: 60px;
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+P {
+    text-align: justify;
+}
+
+h2 {
+    color: #10c0df;
+    text-shadow: 0 0 0.2em #10c0df, 0 0 0.2em #10c0df;
+    font-size: larger;
+
+}
+
+#section {
+    display: flex;
+    flex-direction: row;
+}
+.texto {
+    width: 35%;
+}
+
+.imagem {
+    width: 40%;
+   
+}
+
+aside {
+    margin-left: 70px;
+}
+
+
+.botão-1 {
+    background-color: #c2ccd4;
+    color: #10c0df;
+    border: 5px 5px;
+    width: 300px;
+    height: 40px;
+    font-size: large;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.4s ease;
+
+}
+
+.botão-1:active {
+    /* VERFICAR PARA TROCAR DE COR NA HORA DE CLICAR */
+    background-color: #10c0df;
+    color: #c2ccd4;
+}
+
+.botão-1:hover {
+    background-color: #10c0df;
+    color: #c2ccd4;
+}
+
+form {
+    background-color: lightcyan;
+    color: black;
+    border: 5px dashed rgb(10, 61, 75);
+    height: 500px;
+    width: 500px;
+    text-align: left;
+    padding: 25px;
+    font-size: 25px;
+    /* overflow: scroll; */
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    font-size: 20px;
+    text-align: left;
+    border: 1px solid black;
+    padding: 3px;
+    margin-bottom: 20px;
+}
+
+.botão-2 {
+    background-color: #10c0df;
+    color: #c2ccd4;
+    font-size: 20px;
+    padding: 6px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    /* text-align: center; NÃO CENTRALIZA */
+}
+
+.botão-2:hover {
+    background-color: #c2ccd4;
+    color: #10c0df;
+}
+
+
+footer {
+    width: 100%;
+    height: 5vh;
+    background-color: black;
+    position: static;
+    bottom: 0;
+}
