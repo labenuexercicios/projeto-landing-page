@@ -1,0 +1,14 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: #887062;
+    height: 80px;
+    padding: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family:Zen Kaku Gótico Novo;
+}
