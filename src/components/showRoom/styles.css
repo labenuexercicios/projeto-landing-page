@@ -1,22 +1,26 @@
-.container_show_room {
+:root {
+  --color-white: #fff;
+}
+
+.container-show-room {
   margin-top: 8rem;
   box-shadow: 10rem 4rem 6rem rgba(0, 0, 0, 0.2);
 }
 
-.card_img {
+.card-img {
   width: 350px;
   height: 250px;
   overflow: hidden;
   margin: 25px;
 }
 
-.small_img {
+.small-img {
   height: 100%;
   cursor: pointer;
   transition: all linear 0.4s;
 }
 
-.small_img:hover {
+.small-img:hover {
   filter: grayscale(100%);
   transform: scale(1.1);
 }
@@ -27,7 +31,7 @@
   flex-wrap: wrap;
 }
 
-#modal_img {
+#modal-img {
   width: 45vw;
   transform: scale(0);
   transition: all linear 0.3s;
@@ -35,11 +39,11 @@
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.modal_active #modal_img {
+.modal-active #modal-img {
   transform: scale(1);
 }
 
-.modal_show {
+.modal-show {
   height: auto;
   background-color: rgba(0, 0, 0, 0.7);
   position: relative;
@@ -49,7 +53,7 @@
   transition: visibility 0.8s linear, opacity 0.5s linear;
 }
 
-.modal_content {
+.modal-content {
   left: 30%;
   margin-top: 3rem;
   position: absolute;
@@ -58,17 +62,17 @@
   align-items: center;
 }
 
-#btn_close {
+#btn-close {
   right: 0.5rem;
   top: 0.5rem;
   font-size: 1.5rem;
   position: absolute;
   transition: all ease-out 0.4s;
-  color: #fff;
+  color: var(--color-white);
   cursor: pointer;
 }
 
-.modal_active {
+.modal-active {
   visibility: visible;
   opacity: 1;
 }

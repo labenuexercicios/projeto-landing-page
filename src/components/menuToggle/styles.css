@@ -1,4 +1,11 @@
 /* CÓDIGO MENU HAMBURGUER */
+
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+  --color-grey: #444;
+  --color-grey-light: #666;
+}
 @media (max-width: 690px) {
   .nav_bar {
     display: none;
@@ -7,7 +14,7 @@
   .one,
   .two,
   .three {
-    background: #ffffff;
+    background: var(--color-white);
     height: 5px;
     width: 100%;
     margin: 6px auto;
@@ -27,7 +34,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: #000;
+    background: var(--color-black);
     z-index: 10;
     display: flex;
     justify-content: center;
