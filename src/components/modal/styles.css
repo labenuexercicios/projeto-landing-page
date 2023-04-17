@@ -1,5 +1,13 @@
 /* MODAL */
 
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+  --color-grey: #444;
+  --color-grey-light: #666;
+  --color-classic-green: #4caf50;
+}
+
 .modal {
   position: fixed;
   top: 50%;
@@ -25,14 +33,14 @@
   transition: all 0.5s;
 }
 
-.modal__header {
+.modal-header {
   align-items: center;
   font-size: 3.25rem;
   margin-bottom: 2rem;
   line-height: 1.5;
 }
 
-.modal__form {
+.modal-form {
   margin: 0 1rem;
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -40,15 +48,15 @@
   gap: 2rem;
 }
 
-.modal__form label {
+.modal-form label {
   font-size: 1.7rem;
   font-weight: 500;
 }
 
-.modal__form input {
+.modal-form input {
   font-size: 1.7rem;
   padding: 0.3rem 0.5rem;
-  border: 1px solid #ddd;
+  border: 1px solid var(--color-grey-light);
   border-radius: 0.5rem;
 }
 
@@ -56,25 +64,10 @@ input::placeholder {
   opacity: 0.2;
 }
 
-/* .btn {
-  display: inline-block;
-
-  background-color: #5ec576;
-  font-size: 1.6rem;
-  font-family: inherit;
-  font-weight: 500;
-  border: none;
-  padding: 0.5rem 2rem;
-  border-radius: 4rem;
-  cursor: pointer;
-  transition: all 0.3s;
-  color: #000;
-} */
-
 .button {
-  background-color: #4caf50; /* Green */
+  background-color: var(--color-classic-green); /* Green */
   border: none;
-  color: white;
+  color: var(--color-white);
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -91,13 +84,13 @@ input::placeholder {
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
-.modal__form .button {
+.modal-form .button {
   grid-column: 1 / span 2;
   justify-self: center;
   margin-top: 1rem;
 }
 
-.btn--close-modal {
+.btn-close-modal {
   font-family: inherit;
   color: inherit;
   position: absolute;

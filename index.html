@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="./src/components/showRoom/styles.css">
   <link rel="stylesheet" href="./src/components/menuToggle/styles.css">
   <title>Projeto Landing Page</title>
-  <script src="./src/components/menuToggle/index.js"></script>
+  <script defer src="./src/components/menuToggle/index.js"></script>
 </head>
 
 <body>
@@ -57,6 +57,7 @@
           espaços
           inteligentes e elegantes que se adaptem ao seu estilo de vida."
         </p>
+        <button class="btn-1 btn-2">FAZER ORÇAMENTO</button>
       </article>
     </section>
     <aside class="conteudo">
@@ -65,11 +66,12 @@
     </aside>
     <section>
       <article id="sobre" class="text-article">
-        <h5 class="text-products">Camas</h5>
+        <h5 class="text-products">Camas e Colchão</h5>
         <p>
           "Durma como um rei todas as noites com nossas camas confortáveis e elegantes. Transforme seu quarto em um
           refúgio de sonhos com nossos produtos de qualidade."
         </p>
+        <button class="btn-1 btn-2">FAZER ORÇAMENTO</button>
       </article>
       <figure>
         <img class="picture" src="./assets/cama.jpg" alt="">
@@ -91,6 +93,7 @@
           e
           sofisticação ao seu dia a dia."
         </p>
+        <button class="btn-1 btn-2">FAZER ORÇAMENTO</button>
       </article>
     </section>
     <aside id="produtos" class="conteudo">
@@ -99,39 +102,58 @@
       </p>
     </aside>
 
-    <div class="modal_show">
-      <div class="modal_content">
-        <img id="modal_img" src="" alt="">
-        <i id="btn_close" class="fa fa-times-circle" aria-hidden="true">
+    <div class="modal-show">
+      <div class="modal-content">
+        <img id="modal-img" src="" alt="">
+        <i id="btn-close" class="fa fa-times-circle" aria-hidden="true">
         </i>
       </div>
     </div>
 
-    <div class="container_show_room">
+    <div class="container-show-room">
       <div class="row">
-        <div class="card_img">
-          <img src="./assets/movel-2.jpg" class="small_img" alt="">
+        <div class="card-img">
+          <img src="./assets/movel-2.jpg" class="small-img" alt="">
         </div>
-        <div class="card_img">
-          <img src="./assets/movel-3.jpg" class="small_img" alt="">
+        <div class="card-img">
+          <img src="./assets/movel-3.jpg" class="small-img" alt="">
         </div>
-        <div class="card_img">
-          <img src="./assets/movel-4.jpg" class="small_img" alt="">
+        <div class="card-img">
+          <img src="./assets/movel-4.jpg" class="small-img" alt="">
         </div>
       </div>
       <div class="row">
-        <div class="card_img">
-          <img src="./assets/movel-05.jpg" class="small_img" alt="">
+        <div class="card-img">
+          <img src="./assets/movel-05.jpg" class="small-img" alt="">
         </div>
-        <div class="card_img">
-          <img src="./assets/movel06.jpg" class="small_img" alt="">
+        <div class="card-img">
+          <img src="./assets/movel06.jpg" class="small-img" alt="">
         </div>
-        <div class="card_img">
-          <img src="./assets/movel07.jpg" class="small_img" alt="">
+        <div class="card-img">
+          <img src="./assets/movel07.jpg" class="small-img" alt="">
         </div>
       </div>
     </div>
   </main>
+
+  <div class="modal hidden">
+    <button class="btn-close-modal">&times;</button>
+    <h2 class="modal-header">
+      Faça o seu cadastro <br />
+    </h2>
+    <form class="modal-form">
+      <label>Nome</label>
+      <input placeholder="Digite seu nome" type="text" />
+      <label>Telefone</label>
+      <input placeholder="Digite seu telefone" type="number" />
+      <label>E-mail</label>
+      <input placeholder="Digite seu e-mail" type="email" />
+      <label>Senha</label>
+      <input placeholder="Digite sua senha" type="number" />
+      <button class="button button2">Login</button>
+    </form>
+  </div>
+
   <footer id="contatos" class="rodape">
     <nav class="redes-sociais">
       <ul>
@@ -150,6 +172,7 @@
       </ul>
     </nav>
   </footer>
+  <!-- <div class="overlay hidden"></div> -->
 
 </body>
 
