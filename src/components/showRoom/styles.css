@@ -1,0 +1,74 @@
+.container_show_room {
+  margin-top: 8rem;
+  box-shadow: 10rem 4rem 6rem rgba(0, 0, 0, 0.2);
+}
+
+.card_img {
+  width: 350px;
+  height: 250px;
+  overflow: hidden;
+  margin: 25px;
+}
+
+.small_img {
+  height: 100%;
+  cursor: pointer;
+  transition: all linear 0.4s;
+}
+
+.small_img:hover {
+  filter: grayscale(100%);
+  transform: scale(1.1);
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#modal_img {
+  width: 45vw;
+  transform: scale(0);
+  transition: all linear 0.3s;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal_active #modal_img {
+  transform: scale(1);
+}
+
+.modal_show {
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: relative;
+  visibility: hidden;
+  z-index: 1;
+  opacity: 0;
+  transition: visibility 0.8s linear, opacity 0.5s linear;
+}
+
+.modal_content {
+  left: 30%;
+  margin-top: 3rem;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn_close {
+  right: 0.5rem;
+  top: 0.5rem;
+  font-size: 1.5rem;
+  position: absolute;
+  transition: all ease-out 0.4s;
+  color: #fff;
+  cursor: pointer;
+}
+
+.modal_active {
+  visibility: visible;
+  opacity: 1;
+}

@@ -5,8 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./src/components/modal/styles.css">
+  <link rel="stylesheet" href="./src/components/showRoom/styles.css">
+  <link rel="stylesheet" href="./src/components/menuToggle/styles.css">
   <title>Projeto Landing Page</title>
+  <script src="./src/components/menuToggle/index.js"></script>
 </head>
 
 <body>
@@ -24,29 +29,29 @@
         <nav class="nav_bar">
           <ul>
             <li>
-              <a>Sobre-nós</a>
+              <a href="#sobre">Sobre-nós</a>
             </li>
             <li>
-              <a>Produtos</a>
+              <a href="#produtos">Produtos</a>
             </li>
             <li>
-              <a>Contato</a>
+              <a href="#contatos">Contato</a>
             </li>
             <li>
-              <a>Cadastro</a>
+              <a class="btn--show-modal" href="#">Cadastro</a>
             </li>
           </ul>
         </nav>
       </section>
     </section>
   </header>
-  <main>
+  <main class="main">
     <section>
       <figure>
-        <img>
+        <img class="picture" src="./assets/movel-2.jpg" alt="">
       </figure>
-      <article>
-        <h5></h5>
+      <article class="text-article">
+        <h5 class="text-products">Móveis Planejados</h5>
         <p>
           "Transforme sua casa em um lar único e personalizado com nossos móveis planejados de alta qualidade. Crie
           espaços
@@ -54,33 +59,33 @@
         </p>
       </article>
     </section>
-    <aside>
+    <aside class="conteudo">
       <p>Transforme sua casa em um refúgio de conforto e estilo com nossos móveis e artigos de cama, mesa e banho
       </p>
     </aside>
     <section>
-      <article>
-        <h5>Camas</h5>
+      <article id="sobre" class="text-article">
+        <h5 class="text-products">Camas</h5>
         <p>
           "Durma como um rei todas as noites com nossas camas confortáveis e elegantes. Transforme seu quarto em um
           refúgio de sonhos com nossos produtos de qualidade."
         </p>
       </article>
       <figure>
-        <img>
+        <img class="picture" src="./assets/cama.jpg" alt="">
       </figure>
     </section>
-    <aside>
+    <aside class="conteudo">
       <p>"Nossos produtos são feitos com materiais de alta qualidade, para proporcionar durabilidade e
         sofisticação.
         Transforme seu lar em um refúgio de conforto e beleza com nossas opções."</p>
     </aside>
     <section>
       <figure>
-        <img>
+        <img class="picture" src="./assets/toalhas.jpg" alt="">
       </figure>
-      <article>
-        <h5></h5>
+      <article class="text-article">
+        <h5 class="text-products">Mesa e Banho</h5>
         <p>
           "Renove sua experiência de bem-estar em casa com os melhores artigos de mesa e banho, proporcionando conforto
           e
@@ -88,26 +93,59 @@
         </p>
       </article>
     </section>
-    <aside>
+    <aside id="produtos" class="conteudo">
       <p>"Venha nos visitar e deixe-se encantar. Descubra o que há de melhor em móveis e artigos para casa em nosso
         showroom."
       </p>
     </aside>
+
+    <div class="modal_show">
+      <div class="modal_content">
+        <img id="modal_img" src="" alt="">
+        <i id="btn_close" class="fa fa-times-circle" aria-hidden="true">
+        </i>
+      </div>
+    </div>
+
+    <div class="container_show_room">
+      <div class="row">
+        <div class="card_img">
+          <img src="./assets/movel-2.jpg" class="small_img" alt="">
+        </div>
+        <div class="card_img">
+          <img src="./assets/movel-3.jpg" class="small_img" alt="">
+        </div>
+        <div class="card_img">
+          <img src="./assets/movel-4.jpg" class="small_img" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="card_img">
+          <img src="./assets/movel-05.jpg" class="small_img" alt="">
+        </div>
+        <div class="card_img">
+          <img src="./assets/movel06.jpg" class="small_img" alt="">
+        </div>
+        <div class="card_img">
+          <img src="./assets/movel07.jpg" class="small_img" alt="">
+        </div>
+      </div>
+    </div>
   </main>
-  <footer>
-    <nav>
+  <footer id="contatos" class="rodape">
+    <nav class="redes-sociais">
       <ul>
-        <a>
-          <li><i></i></li>
+        <a href="https://pt-br.facebook.com/" target="_blank">
+          <li><i class="fa fa-facebook fa-lg"></i></li>
         </a>
-        <a>
-          <li><i></i></li>
+        <a href="https://twitter.com/" target="_blank">
+          <li><i class="fa fa-twitter fa-lg"></i></li>
         </a>
-        <a>
-          <li><i></i></li>
+        <a href="https://www.instagram.com/" target="_blank">
+          <li><i class="fa fa-instagram fa-lg"></i></li>
         </a>
-        <a>
-          <li><i></i></li>
+        <a href="https://www.linkedin.com/feed/" target="_blank">
+          <li><i class="fa fa-linkedin fa-lg"></i></li>
         </a>
       </ul>
     </nav>
