@@ -222,8 +222,7 @@ header .nav-container {
 }
 .rodape .redes-sociais a {
   list-style: none;
-  margin-left: 3rem;
-  margin-top: 4rem;
+  margin-top: -1.7rem;
   cursor: pointer;
   color: var(--color-white);
 }
@@ -234,8 +233,52 @@ header .nav-container {
 
 .rodape .redes-sociais a i {
   transition: 0.6s;
+  padding: 20px 55px;
+}
+
+.color-01 {
+  background-color: #c43c4c;
+}
+
+.color-02 {
+  background-color: #75232d;
+}
+
+.color-03 {
+  background-color: #dd9ca4;
+}
+
+.color-04 {
+  background-color: #651e27;
 }
 
 .rodape .redes-sociais a i:hover {
   transform: scale(1.3);
+}
+
+.container-links ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-top: 5rem;
+}
+
+.container-links li {
+  margin-left: 3rem;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.container-links li i {
+  font-size: 1.2rem;
+}
+
+.container-links li i {
+  margin-right: 0.5rem;
+}
+
+.container-links .company {
+  font-size: 1rem;
+  font-weight: 500;
 }
