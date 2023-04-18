@@ -7,11 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./src/components/menuToggle/styles.css">
   <link rel="stylesheet" href="./src/components/modal/styles.css">
   <link rel="stylesheet" href="./src/components/showRoom/styles.css">
-  <link rel="stylesheet" href="./src/components/menuToggle/styles.css">
   <title>Projeto Landing Page</title>
   <script defer src="./src/components/menuToggle/index.js"></script>
+  <script defer src="./src/components/modal/index.js"></script>
+  <script defer src="./src/components/showRoom/index.js"></script>
 </head>
 
 <body>
@@ -38,7 +40,7 @@
               <a href="#contatos">Contato</a>
             </li>
             <li>
-              <a class="btn--show-modal" href="#">Cadastro</a>
+              <a class="btn-show-modal" href="#">Cadastro</a>
             </li>
           </ul>
         </nav>
@@ -57,7 +59,7 @@
           espaços
           inteligentes e elegantes que se adaptem ao seu estilo de vida."
         </p>
-        <button class="btn-1 btn-2">FAZER ORÇAMENTO</button>
+        <button class="btn-1 btn-2 btn-show-modal">FAZER ORÇAMENTO</button>
       </article>
     </section>
     <aside class="conteudo">
@@ -102,7 +104,7 @@
       </p>
     </aside>
 
-    <div class="modal-show">
+    <div class="modal-show hidden">
       <div class="modal-content">
         <img id="modal-img" src="" alt="">
         <i id="btn-close" class="fa fa-times-circle" aria-hidden="true">
@@ -172,7 +174,7 @@
       </ul>
     </nav>
   </footer>
-  <!-- <div class="overlay hidden"></div> -->
+  <div class="overlay hidden"></div>
 
 </body>
 

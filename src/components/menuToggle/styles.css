@@ -6,6 +6,7 @@
   --color-grey: #444;
   --color-grey-light: #666;
 }
+
 @media (max-width: 690px) {
   .nav_bar {
     display: none;
