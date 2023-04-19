@@ -7,11 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./src/components/menuToggle/styles.css">
   <link rel="stylesheet" href="./src/components/modal/styles.css">
   <link rel="stylesheet" href="./src/components/showRoom/styles.css">
-  <link rel="stylesheet" href="./src/components/menuToggle/styles.css">
   <title>Projeto Landing Page</title>
   <script defer src="./src/components/menuToggle/index.js"></script>
+  <script defer src="./src/components/modal/index.js"></script>
+  <script defer src="./src/components/showRoom/index.js"></script>
 </head>
 
 <body>
@@ -38,7 +40,7 @@
               <a href="#contatos">Contato</a>
             </li>
             <li>
-              <a class="btn--show-modal" href="#">Cadastro</a>
+              <a class="btn-show-modal" href="#">Cadastro</a>
             </li>
           </ul>
         </nav>
@@ -57,7 +59,7 @@
           espaços
           inteligentes e elegantes que se adaptem ao seu estilo de vida."
         </p>
-        <button class="btn-1 btn-2">FAZER ORÇAMENTO</button>
+        <button class="btn-1 btn-2 btn-show-modal">FAZER ORÇAMENTO</button>
       </article>
     </section>
     <aside class="conteudo">
@@ -71,7 +73,7 @@
           "Durma como um rei todas as noites com nossas camas confortáveis e elegantes. Transforme seu quarto em um
           refúgio de sonhos com nossos produtos de qualidade."
         </p>
-        <button class="btn-1 btn-2">FAZER ORÇAMENTO</button>
+        <button class="btn-1 btn-2 btn-show-modal">FAZER ORÇAMENTO</button>
       </article>
       <figure>
         <img class="picture" src="./assets/cama.jpg" alt="">
@@ -93,7 +95,7 @@
           e
           sofisticação ao seu dia a dia."
         </p>
-        <button class="btn-1 btn-2">FAZER ORÇAMENTO</button>
+        <button class="btn-1 btn-2 btn-show-modal">FAZER ORÇAMENTO</button>
       </article>
     </section>
     <aside id="produtos" class="conteudo">
@@ -101,8 +103,7 @@
         showroom."
       </p>
     </aside>
-
-    <div class="modal-show">
+    <div class="modal-show hidden">
       <div class="modal-content">
         <img id="modal-img" src="" alt="">
         <i id="btn-close" class="fa fa-times-circle" aria-hidden="true">
@@ -158,21 +159,31 @@
     <nav class="redes-sociais">
       <ul>
         <a href="https://pt-br.facebook.com/" target="_blank">
-          <li><i class="fa fa-facebook fa-lg"></i></li>
+          <li class="color-01"><i class="fa fa-facebook fa-lg"></i></li>
         </a>
         <a href="https://twitter.com/" target="_blank">
-          <li><i class="fa fa-twitter fa-lg"></i></li>
+          <li class="color-02"><i class="fa fa-twitter fa-lg"></i></li>
         </a>
         <a href="https://www.instagram.com/" target="_blank">
-          <li><i class="fa fa-instagram fa-lg"></i></li>
+          <li class="color-03"><i class="fa fa-instagram fa-lg"></i></li>
         </a>
         <a href="https://www.linkedin.com/feed/" target="_blank">
-          <li><i class="fa fa-linkedin fa-lg"></i></li>
+          <li class="color-04"><i class="fa fa-linkedin fa-lg"></i></li>
         </a>
       </ul>
     </nav>
+    <div class="container-links">
+      <ul>
+        <li><i class="fa fa-phone fa-lg"></i> SAC:0800.000.000</i></li>
+        <li><i class="fa fa-map fa-lg"></i>Estamanos em Canoas-RS</li>
+        <li><i class="fa fa-globe fa-lg"></i>Log4.com.www</li>
+        <li class="company">Log4
+          <br><span>ENTREGAR SEM PARAR</span>
+        </li>
+      </ul>
+    </div>
   </footer>
-  <!-- <div class="overlay hidden"></div> -->
+  <div class="overlay hidden"></div>
 
 </body>
 
