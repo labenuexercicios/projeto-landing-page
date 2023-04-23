@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#logo{
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+    width: 10vh;
+}
+
+main{
+    font-family: Arial, Helvetica, sans-serif
+}
+#teste{
+    color: #DAE5E8;
+    color: #FFFFFF;
+    color: #9C8773;
+    color: #E8E1DA;
+    color: #83969C;
+}
