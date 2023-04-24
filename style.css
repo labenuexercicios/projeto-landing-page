@@ -3,6 +3,19 @@
     margin: 0;
 }
 
+body {
+    background-color: #18212C
+}
+
+h1, p {
+    font-family: 'Pathway Extreme';
+    color: white;
+}
+
+h1 {
+    font-size: 30px;
+}
+
 header {
     top: 0;
     display: flex;
@@ -13,9 +26,71 @@ header {
     position: sticky;
 }
 
-body {
-    background-color: #18212C;
 
+main {
+    display: block;
+
+}
+
+
+/*PRINCIPAL*/
+
+
+.principal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+
+}
+
+.img-principal {
+    width: 100%;
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+}
+
+.titulo-principal {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+}
+
+
+/*SEGURO DE VIDA*/
+
+.seguro-vida {
+    display: flex;
+}
+
+.img-vida {
+    width: 50%;
+}
+
+/*SEGURO DE CARRO*/
+
+.seguro-carro {
+    display: flex;
+}
+
+.img-carro {
+    width: 50%;
+}
+
+/*FORMULÁRIO*/
+
+.formulario {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  
 }
 
 footer {
