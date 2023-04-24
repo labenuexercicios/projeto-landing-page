@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    top: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #3B4F66;
+    width: 100%;
+    height: 170px;
+    position: sticky;
+}
+
+body {
+    background-color: #18212C;
+
+}
+
+footer {
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+    height: 60px;
+}
