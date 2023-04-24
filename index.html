@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@100&display=swap" rel="stylesheet">
     <title>4SAFE</title>
 </head>
 
@@ -16,21 +19,23 @@
 
     <main>
         <div class="principal">
-            <img src="principal.png">
-            <h1>Proteção simples para o seu dia a dia.</h1>
-            <p>Cansado de processos cheios de burocracia? Aqui na 4SAFE SEGUROS garantimos sua satisfação em poucos passos, onde a tecnologia é a chave para fornecer soluções de seguros inovadoras e eficientes para nossos clientes. Faça ja seu orçamento!</p>
-            <button>Saiba mais</button>
+            <img class="img-principal" src="principal.png">
+            <h1 class="titulo-principal">Proteção simples para o seu dia a dia.</h1>
+            <p class="p-principal">Cansado de processos cheios de burocracia? Aqui na 4SAFE SEGUROS garantimos sua satisfação em poucos passos, onde a tecnologia é a chave para fornecer soluções de seguros inovadoras e eficientes para nossos clientes. Faça ja seu orçamento!</p>
         </div>
+
         <div class="seguro-vida">
-            <img src="vida.png">
+            <img class="img-vida" src="vida.png">
             <h1>SEGURO DE VIDA</h1>
             <p>Com nosso processo de inscrição rápido e fácil, você pode obter cobertura em minutos, sem necessidade de exames médicos ou questionários longos.</p>
         </div>
+
         <div class="seguro-carro">
-            <img src="carro.png">
+            <img class="img-carro" src="carro.png">
             <h1>SEGURO DE CARRO</h1>
             <p>Personalize sua cobertura de acordo com suas necessidades e orçamento, escolhendo entre diferentes níveis de cobertura e adicionando coberturas extras, como assistência 24 horas, carro reserva e vidros.</p>
         </div>
+
         <div class="formulario">
             <form action="#">
                 <label for="nome">Nome</label>
@@ -40,11 +45,10 @@
                 <input type="email" name="email" id="e-mail">
 
                 <label for="celular">Celular</label>
-                <input type="number" name="celular" id="celular">
+                <input type="tel" name="celular" id="celular">
                 <button type="submit">Enviar</button>
             </form>
         </div>
-
     </main>
 
     <footer>
