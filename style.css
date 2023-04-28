@@ -1,0 +1,286 @@
+ /* css DEFAULTS and RESETS */
+
+:root {
+  /* --primary-color: #132235;
+  --secondary-color: #004953;
+  --tertiary-color: #007A6E;
+  --accent-color: #2c7873;
+  --complementary-color: #4cb5ae; */
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --tertiary-color: #2980b9;
+  --accent-color: #1abc9c;
+  --complementary-color: #16a085;
+  --bg-color: #ecf0f1;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.container {
+  padding-top: 60px;
+}
+h1 {
+  color: var(--primary-color);
+  font-size: 32px;
+  text-align: center;
+  padding: 40px 0;
+}
+
+h3 {
+  color: var(--secondary-color);
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: var(--tertiary-color);
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+button {
+  background: var(--accent-color);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 20px 0;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--complementary-color);
+}
+
+
+ /* HEADER */
+
+header {
+  background: var(--primary-color);
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  position: relative;
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 0 20px;
+  line-height: 40px;
+}
+
+nav a:hover {
+  /* background: var(--secondary-color); */
+}
+
+nav img {
+  width: 50px;
+  height: 50px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  background: var(--secondary-color);
+  min-width: 300px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+.dropdown-menu a {
+  padding: 12px 20px;
+}
+
+.dropdown-menu a:hover {
+  background: var(--tertiary-color);
+  border-radius: 8px;
+  transition: all 0.4s
+}
+
+.show {
+  display: block;
+}
+
+
+.presentation {
+  text-align: center;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 40px auto;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  background: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 20px 5px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+.feature-item img {
+  max-width: 100%;
+  margin-bottom: 20px;
+  border-radius: 12px;
+}
+
+.feature-item h3 {
+  color: var(--accent-color);
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.feature-item p {
+  color: var(--tertiary-color);
+}
+
+.feature-image, 
+.feature-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.advantages {
+  margin: 40px auto;
+  max-width: 1100px;
+  text-align: center;
+}
+
+.advantage-item {
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.advantage-item h3 {
+  font-size: 24px;
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+}
+
+.advantage-item p {
+  font-size: 16px;
+  color: var(--tertiary-color);
+  margin-bottom: 20px;
+}
+
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  .feature-item {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .feature-item img {
+    max-width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .features {
+    flex-direction: column;
+  }
+
+  .feature-item {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+section:first-child {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .dropdown {
+    display: flex;
+  }
+
+  .dropdown .dropdown-toggle {
+    display: none;
+  }
+
+  .dropdown-menu {
+    display: flex;
+    position: static;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .dropdown-menu a {
+    padding: 0 20px;
+  }
+
+  .feature-item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  .feature-image,
+  .feature-text {
+    flex: 1;
+  }
+
+  .feature-text {
+    padding-left: 30px;
+  }
+
+
+  .feature-item {
+    flex-direction: row;
+    width: calc(100% - 40px);
+  }
+  
+}
+
+@media screen and (min-width: 992px) {
+  .feature-item {
+    flex-direction: row;
+    width: calc(100% - 40px);
+  }
+}
