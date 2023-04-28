@@ -176,12 +176,39 @@ nav img {
   color: var(--tertiary-color);
 }
 
-.feature-image, 
+.feature-image,
 .feature-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.image-slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
+  border: 1px solid red;
+}
+
+.slide {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: caontain;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.slide:first-child {
+  opacity: 1;
+  z-index: 1;
 }
 
 .advantages {
