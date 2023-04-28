@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const dropdownMenu = document.querySelector('.dropdown-menu');
   const closeDropdown = document.querySelector('.close-dropdown');
   const sliders = document.querySelectorAll(".image-slider");
+  const errorImage = document.getElementById('error-image');
 
   sliders.forEach((slider) => {
     let currentSlide = 0;
@@ -38,4 +39,9 @@ document.addEventListener('DOMContentLoaded', function () {
       dropdownMenu.classList.remove('show');
     }
   });
+  if (errorImage) {
+    errorImage.addEventListener('click', function () {
+      window.location.href = 'index.html';
+    });
+  }
 });
