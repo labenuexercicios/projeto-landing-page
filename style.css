@@ -1,157 +1,140 @@
 *{
     margin: 0;
-    padding: 0;
+    padding: 0;    
 }
-.logo{
-    width: 160px;
-    height: 160px;
-    padding: 0 0%;
+html{
+    font-size: 62.5%;
+        
+    box-sizing: border-box;
 }
-h1{
-    font-size: 70px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0 8%;
-}
-.fotos{
-    width: 350px;
-    height: 250px;
-}
-header{    
-    background: url("./imagens/bg.jpg");
-    color: white;
-    width: 100%;
-    display: grid;   
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 25px;
-    border: solid 2px black;    
-    justify-content: space-evenly;
-    align-items: center;
-
-}
-nav {
-    position: absolute;/*esta a frente, outros podem ficar atras*/
-    right: 0;
-}
-
-nav li{    
-    padding-right: 15px;
-    display: inline-block;
-    margin: 0 0 0 15px;        
-}
-nav a{
-    font-size: 20px;
-    color: white;
-    text-decoration: none;
-}
-nav a:hover{
-    font-size: 30px;
-    color: orange;
-}
-.lateral{
-    position: fixed;
-    right: 20px;
+.frete{
+    background-color: rgb(207, 250, 22);
     display: flex;
-    width: 220px;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-}
-
-.produto1{
-    background: rgb(213, 204, 199);
-    width: 70%;
-    height: 250px;
-    display: grid;
-    grid-template: 1fr/1fr 1fr;
-}
-.produto2{
-    background: rgb(18, 116, 167);
-    width: 70%;
-    height: 250px;
-    display: grid;
-    grid-template: 1fr/1fr 1fr;
-}
-.produto3{
-    background: rgb(138, 200, 233);
-    width: 70%;
-    height: 250px;
-    display: grid;
-    grid-template: 1fr/1fr 1fr;
-}
-.produto4{
-    background: rgb(249, 162, 25);
-    width: 70%;
-    height: 250px;
-    display: grid;
-    grid-template: 1fr/1fr 1fr;
-}
-.texto{
-    padding: 30px;
-    text-align: center;
-    width: 150px;
-    justify-self: center;
-}
-.texto h2{
-    font-weight: 600;
-    padding: 5px;
-}
-.produto1 button{
-    background: rgb(185, 164, 153);
-    color: white;
-    margin-top: 5px;
-    padding: auto;
-    border-radius: 5px;
-}
-.produto2 button{
-    background: rgb(1, 87, 134);
-    color: white;
-    margin-top: 5px;
-    padding: auto;
-    border-radius: 5px;
-}
-.produto3 button{
-    background: rgb(107, 154, 208);
-    color: white;
-    margin-top: 5px;
-    padding: auto;
-    border-radius: 5px;
-}
-.produto4 button{
-    background: rgb(213, 135, 8);
-    color: white;
-    margin-top: 5px;
-    padding: auto;
-    border-radius: 5px;
-}
-
-.botao:active{
-    background: rgb(245, 29, 29);
-}
-.valor{
-    font-size: 25;
-    padding: 5px;
-    font-weight: 600;
-}
-
-aside form {
-    align-content: space-around;
-}
-
-
-
-footer{
-    color: white;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    border: solid 2px blue;
-    background: url("./imagens/bg.jpg");
-    height: 105px;
-    padding: 5px;
-}
-.logo-rodape{
+    font-size: 1.6rem;
+    padding: 1px;
     
+}
+.logo{
+    width: 150px;
+    height: 150px;
+}
+
+.cabecalho{
+    background-color: rgb(218, 229, 232);    
+    display: grid;
+    grid-template-columns: 20rem 45rem 1fr;    
+}
+.menu{
+    text-decoration: none;
+    margin-top: 18%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.6rem;
+    gap: 2.2rem;
+
+}
+
+.botoes{
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 2;
+}
+.totalPedidos{
+    font-size: 2rem;
+    text-align: end;
+    justify-content: end;
+}
+.icones{    
+    
+    padding: 4rem;    
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    gap: 3rem;
+}
+.icones:last-child{
+    
+    align-content: flex-end;
+}
+#botaoPedidos{
     width: 80px;
-    height: 80px;
-    padding: 0 0%;
+    height: 20px;
+    border: solid 2px black;
+    border-radius: 8px;
+}
+.botoes2{    
+    display: flex;
+    margin-right: 2rem;
+    margin-bottom: .5rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    display: grid;
+    justify-content: end;
+    grid-template-columns: repeat(3,100px);
+    align-items: end;    
+}
+
+.corpo{
+    
+    background-color: black;
+    color: white;
+    font-size: 1.6rem;
+    display: grid;
+    row-gap: 20px;
+}
+article{
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+
+#precos1, #precos2 , #precos3, #precos4{
+    font-size: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+    padding: .7rem;
+    border-radius: 5px;
+    font-weight: 700;
+}
+.produto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    font-weight: 600;
+}
+
+.logos{
+    display: grid;    
+    grid-auto-rows: minmax(50px, auto);
+    
+}
+.item1{
+    grid-row: 1/2;
+}
+.item2{
+    grid-row: 2/3;
+}
+.copyright{
+    justify-content: stretch;
+}
+.icone-cartao{
+    width: 30px;
+    height: 30px;
+}
+footer{
+    min-height: 150px;
+    font-size: 1.6rem;
+    background-color: rgb(218, 229, 232);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
 }

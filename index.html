@@ -6,119 +6,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    
 </head>
 <body>
-
-    <header>
-        <section>
-            <img class="logo" src="./imagens/4comfort.png" alt="logo">
-        </section>
-
-        <section>
-            <h1 class="titulo">4Comfort</h1>
-        </section>
-
-        <section>
-            <nav >
-                <ul>
-                    <li><a href=""> Cadastro</a></li>
-                    <li><a href=""> Carrinho</a></li>
-                    <li><a href=""> Sobre Nós</a></li>
-                </ul>
-            </nav>
-        </section>
-        
-    </header>
-    <main>
-        <section class="lateral">
-            <aside>
-                <h2 class="pedido"> Pegue já o seu </h2>
-                <form action="" method="post"><br>
-                    <label for="nome">Seu nome: </label>
-                    <input type="text" name="nome" required>
-                    <label for="endereco">Endereço:</label>
-                    <input type="text" name="endereco" required>
-                    <label for="telefone">Telefone</label>
-                    <input type="text" name="telefone" required>
-                </form>
-                <label>
-                    Qual a forma que deseja pagar: 
-                </label>
-                <select name="pagamento">
-                    <option value="">--Selecione--</option>
-                    <optgroup label="A vista">
-                        <option>Pix</option>
-                        <option>Boleto</option>                        
-                    </optgroup>
-                    <optgroup label="Parcelamento">
-                    <!-- selected serve para pré-selecionar 
-                        <option selected>PHP</option> -->
-                        <option>1 x</option>
-                        <option>2 x</option>
-                        <option>3 x</option>
-                        <option>4 x</option>
-                        <option>5 x</option>
-                        <option>5 x</option>
-                    </optgroup>
-                </select><br><br>
-                <button class="confimar">Enviar pedido</button>
-            </aside>
-
-        </section>
-        <section class="container">
-            <article class="produto1">
-                <div>
-                    <img src="./imagens/amarrando-tenis.jpg" alt="tenis nike"  class="fotos">
+    <div principal>
+        <header class="store-header">
+            <div class="frete">                
+                <a href="#Cep">Frete Grátis <img src="./imagens/localizacao.png" alt="icone de localizacao"> Informe seu CEP</a>
+            </div>
+            <div class="cabecalho">
+                <div> 
+                    <img src="./imagens/4comfort.png"  alt="logo da loja" class="logo">
                 </div>
-                <div class="texto">
-                    <h2>Tenis Nike</h2>
-                    <p class="descricao">O Tênis Nike é confortável e durável, perfeito para corridas diárias.</p>
-                    <button class="botao"><p class="valor">valor R$ 299,99</p></button>
+                <nav>
+                    <ul class="menu">
+                    <li><a href="#">Feminino</a></li>
+                    <li><a href="#">Masculino</a></li>
+                    <li><a href="#">Infantil</a></li>
+                    <li><a href="#">Esportes</a></li>
+                    <li><a href="#">Lançamentos</a></li>
+                    </ul>
+                </nav>
+                <div class="botoes">
+                    <div class="icones">
+                        <a href="#"><img src="./imagens/sino-de-notificacao.png" alt="icone sino"></a>
+                        <a id="carrinho" href="#"><img src="./imagens/entrega-de-logistica.png" alt="icone veiculo de entrega"></a>
+                        <div class="totalPedidos">
+                            <label for="total">Total Pedido</label>
+                            <button id="botaoPedidos" value="0">000</button>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="botoes2">
+                        <button class="ajuda">Ajuda</button>
+                        <button class="lojas">Lojas</button>
+                        <button class="minha-conta">Minha Conta</button>
+                    </div>                    
+                </div>  
+            </div>            
+        </header>
+
+        <main class="corpo">
+            <article>
+                <div>
+                    <img src="./imagens/correndo.jpg" alt="foto pessoas correndo">
+                </div>
+                <div class="produto">
+                    <h3>Tennis A</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ipsum dolorum in eius voluptatem cum, minima alias minus quod perspiciatis maiores earum veniam et quos corporis omnis sunt quis. Explicabo?</p>
+                    <button onclick="somar1(250)" id="precos1" value="">R$ 250,00 </button>
+                </div>               
+            </article>
+
+            <article>
+                <div>
+                    <img src="./imagens/tenis-deserto.jpg" alt="foto pessoa correndo">
+                </div>
+                <div class="produto">
+                    <h3>Tennis B</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit consectetur nihil doloribus perferendis incidunt esse corporis voluptate reiciendis porro at, repellendus natus vitae suscipit aspernatur tempora quasi nemo blanditiis laudantium.
+                    </p>
+                    <button onclick="somar1(450.00)" id="precos2" value="450">R$ 450,90</button>
+                </div>
+            </article>
+
+            <article>
+                <div class="produto">
+                    <img src="./imagens/tenis-por-do-dol.jpg" alt="foto pessoa correndo por do sol">
+                </div>
+                <div class="produto">
+                    <h3>Tennis C</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae dolorum dolore repellat, illo, neque mollitia impedit ullam adipisci, maiores reprehenderit dolor saepe harum numquam sed inventore quos! Illo, officiis debitis?</p>
+                    <button onclick="somar1(350)" id="precos3" value="350">350,00</button>
                     
                 </div>
             </article>
 
-            <article class="produto2">
-                <div class="texto">
-                    <h2>Tenis Adidas</h2>
-                    <p class="descricao">O Tênis Adidas possui uma tecnologia avançada para maior amortecimento e tração.</p>
-                    <button class="botao"><p class="valor">valor R$ 599,99</p></button>
-                </div>
+            <article>
                 <div>
-                    <img src="./imagens/correndo.jpg"  class="fotos" alt="tenis Adidas">
+                    <img src="./imagens/amarrando-tenis.jpg" alt="">
                 </div>
-                
-            </article>
-
-            <article class="produto3">
-                <div>
-                    <img src="./imagens/tenis-deserto.jpg"  class="fotos" alt="tenis Puma">
-                </div>
-                <div class="texto">
-                    <h2>Tênis Puma</h2>
-                    <p class="descricao">O Tênis Puma é ideal para treinos de alta intensidade, oferecendo suporte e estabilidade.</p>
-                    <button class="botao"><p class="valor">valor R$ 259,99</p></button>
+                <div class="produto">
+                    <h3>Tennis D</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum beatae nihil saepe iusto, aspernatur perferendis omnis amet aliquam autem, incidunt laborum vero dolor eum nobis est architecto eveniet illo quod?</p>
+                    <button onclick="somar1(150)" id="precos4" value="150">R$ 150,00 </button>
                 </div>
             </article>
             
-            <article class="produto4">
-                <div class="texto">
-                    <h2>Tênis Asics</h2>
-                    <p class="descricao">O Tênis Asics oferece um encaixe perfeito para os pés, além de ser respirável e resistente.</p>
-                    <button class="botao"><p class="valor">valor R$ 309,99</p></button>
-                </div>
-                <div class="fotos">
-                    <img src="./imagens/tenis-por-do-dol.jpg"  class="fotos" alt="tenis Asics">
-                </div>
-                
+        </main>
+
+        <footer>
+            <article>
+                <img class="logo" src="./imagens/4comfort.png" alt="logo">
             </article>
-        </section>
-        
-    </main>
-    <footer>
-        <img class="logo-rodape" src="./imagens/4comfort.png" alt="logo">
-        <p class="copyright">&copy;Copyright 4Comfort - 2023</p>
-    </footer>
+            <article  >
+                <div class="logos">
+                    <h3 class="item1">Formas de pagamento</h3>
+                    <div class="item2">
+                        <img class="icone-cartao" src="./imagens/visa.png" alt="logo visa">
+                        <img class="icone-cartao" src="./imagens/logo-mastercard-256.png" alt="logo logo-mastercard">
+                        <img class="icone-cartao" src="./imagens/logo-hipercard-256.png" alt="logo logo-hipercard">
+                        <img class="icone-cartao" src="./imagens/logo-cartao-elo-256.png" alt="logo-cartao-elo">
+                        <img class="icone-cartao" src="./imagens/logo-american-express-256.png" alt="">
+                        <img class="icone-cartao" src="./imagens/codigo_barras.png" alt="logo codigo de barras">
+                    </div>
+                    <p class="copyright">&copy;Copyright 4Comfort - 2023</p>                    
+                </div>
+            </article>
+            <article>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13816.988646240312!2d-51.24055503095452!3d-30.029766271493102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519790e4d043eab%3A0x769a0820bae18fd4!2sHistorical%20Centre%2C%20Porto%20Alegre%20-%20RS!5e0!3m2!1sen!2sbr!4v1682512822383!5m2!1sen!2sbr" width="400" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </article>
+        </footer>
+    </div>
     
 </body>
 </html>
