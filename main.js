@@ -1,10 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const dropdown = document.querySelector('.dropdown');
   const dropdownToggle = document.querySelector('.dropdown-toggle');
   const dropdownMenu = document.querySelector('.dropdown-menu');
   const closeDropdown = document.querySelector('.close-dropdown');
   const sliders = document.querySelectorAll(".image-slider");
-  const errorImage = document.getElementById('error-image');
+  const contactForm = document.querySelector('.contact');
 
   sliders.forEach((slider) => {
     let currentSlide = 0;
@@ -20,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 3000);
   });
 
+  // aqui verifica se os elementos existem na pagina e adicione um evento de clique para abrir e fechar o dropdown
   if (dropdownToggle && dropdownMenu) {
     dropdownToggle.addEventListener('click', function (event) {
       event.stopPropagation();
@@ -39,9 +39,35 @@ document.addEventListener('DOMContentLoaded', function () {
       dropdownMenu.classList.remove('show');
     }
   });
-  if (errorImage) {
-    errorImage.addEventListener('click', function () {
-      window.location.href = 'index.html';
+  
+  if (contactForm) {
+    contactForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const nameInput = document.getElementById("name");
+      const emailInput = document.getElementById("email");
+
+      const name = nameInput.value.trim();
+      const email = emailInput.value.trim();
+
+      if (name === "" || email === "") {
+        alert("Por favor, preencha todos os campos.");
+        return;
+      }
+
+      if (!validateEmail(email)) {
+        alert("Por favor, insira um endereço de e-mail válido.");
+        return;
+      }
+
+      // Aqui, você pode enviar o formulário ou processar as informações conforme necessário
+      console.log("Formulário enviado:", { name, email });
+      contactForm.reset();
     });
   }
 });
+
+function validateEmail(email) {
+  const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(String(email).toLowerCase());
+}
