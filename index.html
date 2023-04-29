@@ -18,8 +18,8 @@
             <ul class="dropdown-menu">
               <li><a href="404.html">Moradia Compartilhada</a></li>
               <li><a href="404.html">Kitnets</a></li>
-              <li><a href="#">Sobre nós</a></li>
-              <li><a href="#">Contato</a></li>
+              <li><a href="#about-us">Sobre nós</a></li>
+              <li><a href="#contact-section">Contato</a></li>
             </ul>
           </li>
         </ul>
@@ -75,7 +75,7 @@
       
     </section>
     
-    <form class="contact">
+    <form id="contact-section" class="contact">
       <h3>Preencha seu nome e e-mail que entraremos em contato com você!</h3>
       
       <div class="inputBox">
@@ -86,10 +86,14 @@
         <input type="email" id="email" name="email" required>
         <span>Email</span>
       </div>
+      <div class="inputBox">
+        <textarea id="message" name="message" required></textarea>
+        <span>Mensagem</span>
+      </div>
       <button type="submit">Enviar</button>
       
     </form>    
-    <section class="advantages">
+    <section id="about-us" class="advantages">
       <div class="advantages-title">
         <h1>Por que escolher a F4 Life?</h1>
       </div>

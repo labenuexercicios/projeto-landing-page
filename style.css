@@ -296,6 +296,37 @@ nav img {
   border-color: var(--accent-color);
 }
 
+.inputBox textarea {
+  width: 100%;
+  padding: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: var(--primary-color);
+  border-radius: 8px;
+  outline: none;
+  color: #fff;
+  font-size: 1em;
+  transition: 0.5s;
+  resize: none;
+  height: 100px; 
+}
+
+.inputBox textarea:valid ~ span,
+.inputBox textarea:focus ~ span {
+  color: var(--accent-color);
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.65em;
+  padding: 0 10px;
+  background: var(--primary-color);
+  border-left: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+  letter-spacing: 0.2em;
+}
+
+.inputBox textarea:valid,
+.inputBox textarea:focus {
+  border-color: var(--accent-color);
+}
+
 /* FOOTER */
 
 footer {
