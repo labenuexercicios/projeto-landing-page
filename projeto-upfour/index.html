@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UpFour</title>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="./CSS/style.css" />
+
+    <!-- Icones Redes sociais-->
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- JS -->
+
+    <script src="app.js"></script>
+
+  </head>
+
+  <body>
+
+    <header class="container-cabeçalho">
+
+      <aside>
+
+        <div class="icone-menu" onclick="abrirMenu()">
+
+          <span><ion-icon name="menu-outline"></ion-icon></span>
+
+        </div> <!--icone Menu-->
+        
+        <div id="barra-menu">
+
+          <ul class="links">
+
+            <li><a href="#">Quem somos</a></li>
+            <li><a href="#">Nossos Serviços</a></li>
+            <li><a href="#">Contato</a></li>
+            
+          </ul>
+
+          <div class="C-icone">
+
+            <span class="icone"><a href="https://www.instagram.com" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></span>
+            <span class="icone"><a href="https://www.facebook.com"><ion-icon name="logo-facebook"></ion-icon></a></span>
+            <span class="icone"><a href="https://www.whatsapp.com"><ion-icon name="logo-whatsapp"></ion-icon></a></span>
+
+          </div> <!--c-icone-->
+
+        </div> <!--barra-menu-->
+
+      </aside>
+
+      <div class="logo">
+
+        <img src="./Imagens e ícones/upFour.png" alt="logo">
+
+      </div> <!--logo-->
+
+      <ul>
+        <li><a href="#">Quem somos</a></li>
+        <li><a href="#">Nossos Serviços</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+
+    </header> <!--container-cabeçalho-->
+
+    <main>
+
+      <div class="meio">
+
+        <div class="esquerda">
+
+          <div class="titulo">
+
+            <h1>Faz teu nome bença,</h1>
+            <h1> crédito pessoal é na <em>UpFour!</em></h1>
+
+          </div> <!--Titulo-->
+
+          <p>Tá precisando de ajuda para mudar de vida e virar o jogo? 
+            <br>Conta com a gente, temos as melhores opções de crédito para você!</p>
+
+           <div class="cta">
+
+              <button id="button_1">Conheça</button>
+
+           </div> <!--cta-->
+
+        </div> <!--Esquerda-->
+
+        <div class="direita">
+          
+          <img src="./Imagens e ícones/img-credito-online.jpeg" alt="">
+        
+        </div> <!--Direita-->
+
+      </div> <!--Meio-->
+
+    </main>
+
+    <footer>
+
+      <div id="footer_content">
+
+        <div id="footer_contacts">
+
+          <p>É tudo sobre os seus sonhos.</p>
+
+          <div id="footer_social_media">
+
+            <a href="https://www.instagram.com" class="footer_link" id="instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://www.facebook.com" class="footer_link" id="facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="https://www.whatsapp.com" class="footer_link" id="whatsapp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+          </div> <!--footer_social_media-->
+
+        </div> <!--footer_contacts-->
+
+        <ul class="footer-list">
+
+          <li>
+            <h3>Ouvidoria</h3>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">0800 420 1509</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">ouvidoria@upfour.com.br</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Atendimento das 8h às 17h (dias úteis)</a>
+          </li>
+
+        </ul> <!--Footer-list-->
+
+        <ul class="footer-list">
+
+          <li>
+            <h3>Atendimento</h3>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">0800 420 1711</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">meajuda@upfour.com.br</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Fale também pelo nosso whatsapp</a>
+          </li>
+
+        </ul> <!--Footer-list-->
+
+        <div id="footer_subscribe">
+
+          <h3>Inscreva-se</h3>
+
+          <p>
+            Escolha seu melhor e-mail para receber notificações sobre novas soluções
+          </p>
+
+          <div id="input_group">
+
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+            <button id="button_2">
+              <i class="fa-regular fa-envelope" onclick="enviar()"></i>
+            </button>
+
+          </div> <!--input_group-->
+
+        </div> <!--footer_subscribe-->
+
+      </div> <!--Footer_content-->
+
+      <div id="footer_copyright">
+
+        &#169
+        2023 all rights reserved
+
+      </div> <!--footer_copyright-->
+  
+  </footer>
+
+  </body>
+</html>
+
+
+
+
+
+<!-- <div class="C-icone">
+
+  <span class="icone"><ion-icon name="logo-instagram"></ion-icon></span>
+  <span class="icone"><ion-icon name="logo-facebook"></ion-icon></span>
+  <span class="icone"><ion-icon name="logo-whatsapp"></ion-icon></span>
+
+</div> c-icon -->
+
+
+
+<!-- 
+<div class="container-geral">
+  <header>
+    <div class="container-header">
+      <img
+        id="imagem-logo"
+        src="./Imagens e ícones//upFour.png"
+        alt="imagem da logo UpFour"
+      />
+
+      <nav class="menu-lista">
+        <a href="#">Home</a>
+        <a href="#">Nossos Serviços</a>
+        <a href="#">Quem Somos</a>
+        <a href="#">Contatos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="conteudo-main">
+    main
+    <section class="section1">
+      <h1 class="titulo-section1">
+        Tá precisando de ajuda, para mudar de vida e virar o jogo? Pode contar com a gente!Temos as melhores opções de crédito para você! 
+        Faz teu nome, <strong>bença!</strong> Crédito online, rápido e sem
+        burocracia
+      </h1>
+
+      <img
+        src="./Imagens e ícones/img-credito-online.jpeg"
+        alt="imagem credito financiamento"
+        id="imagem-section1"
+      />
+    </section>
+
+    <section class="section2-credito-pessoal">
+      <img
+        src="./Imagens e ícones/imagem-credito.jpeg"
+        alt="imagem de financiamento casa"
+        id="imagem-section2"
+      />
+
+      <h1>
+        Negocie diretamente as condições de contrato, com crédito
+        personalizado e taxas acessíveis
+      </h1>
+    </section>
+
+    <section class="section3-controle-operacaofinanceira">
+
+      <h1>
+        Nosso sistema simplifica e acelera os processos de financiamento, como também ajudamos a economizar seu tempo e esforços investidos nas atividades manuais do departamento financeiro e promove informações em tempo real, que ajudam nas análises e tomadas de decisões estratégicas.
+      </h1>
+    </section>
+
+    <section class="section4-quemsomos">
+
+      <h1>
+          UpFour
+      </h1>
+      <p>Somos a empresa número 1 em fornecimento de crédito para moradores da periferia começarem seu próprio negócio. Tudo em um único ambiente, seguro, transparente e intuitivo</p>
+
+    </section>
+
+    <form action=""></form>
+  </main>
+
+  <footer>Footer</footer>
+</div>
+
+
+
+
+
+
+ <div class="container-form">
+
+        <div class="form-image">
+
+          <img src="./Imagens e ícones/imagem-credito.jpeg" alt="">
+
+        </div> form-image
+        
+        <div class="form">
+
+          <form action="#">
+
+            <div class="form-header">
+
+              <div class="title">
+
+                <h1>Cadastre-se</h1>
+
+              </div>
+
+              <div class="input-group">
+
+                <div class="input-box">
+
+                  <label for="firstname">Primeiro nome</label>
+                  <input type="text" id="firstname" name="firstname" placeholder="Digite seu primeiro nome" required>
+
+                </div> input do primeiro nome
+
+                <div class="input-box">
+
+                  <label for="lastname">Sobrenome</label>
+                  <input type="text" id="lastname" name="lastname" placeholder="Digite sobrenome" required>
+
+                </div> <input do segundo nome
+
+                <div class="input-box">
+
+                  <label for="email">E-mail</label>
+                  <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+                </div> <!-input do e-mail
+
+                <div class="input-box">
+
+                  <label for="number">Celular</label>
+                  <input type="tel" id="number" name="number" placeholder="(xx) xxxxx xxxx" required>
+
+                </div> <!-input do celular
+
+                <div class="input-box">
+
+                  <label for="password">Senha</label>
+                  <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+
+                </div> <!-input da senha
+
+                <div class="input-box">
+
+                  <label for="password">Confirme sua senha</label>
+                  <input type="password" id="password" name="confirmpassword" placeholder="Digite sua senha" required>
+
+                </div> <!-input pra confiar senha
+
+
+              </div> <!-div que engloba os inputs do form
+
+              <div class="gender-inputs">
+
+                <div class="gender-title">
+
+                  <h6>Gênero</h6>
+
+                </div>
+
+                <div class="gender-group">
+
+                  <div class="gender-input">
+
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Masculino</label>
+
+                  </div>
+
+                  <div class="gender-input">
+
+                    <input type="radio" id="others" name="gender">
+                    <label for="others">Outros</label>
+
+                  </div>
+
+                  <div class="gender-input">
+
+                    <input type="radio" id="none" name="gender">
+                    <label for="none">Prefiro não dizer</label>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div> <!-form-header
+
+            <div class="continue-button">
+
+              <button><a href="#">Continuar</a></button>
+
+            </div>
+
+          </form>  <!-tag-form
+
+        </div> <!-form
+
+      </div>  <!-container-form--> 
