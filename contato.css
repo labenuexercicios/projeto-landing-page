@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#fundo{
+    color: white;
+    background: black;
+}
+.frete{
+    width: 100vw;    
+    background-color: rgb(207, 250, 22);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;    
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+}
+.fundo{
+    background-color: rgb(218, 229, 232);    
+    width: 100vw;
+    grid-template-columns: repeat(3,1fr);    
+}
+
+.caixa{
+    position: relative;/*se move em relacao a outra referencia, no caso minha div*/
+    width: 940px;/*largura da caixa*/
+    margin: 0 auto;/*significa que ocupara todo tamanho definido para caixa*/ 
+}
+
+nav {
+    position: absolute;/*esta a frente, outros podem ficar atras*/
+    top: 70px;
+    right: 0;
+    
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 0 0 15px;
+        
+}
+
+nav a {
+    
+    text-transform: uppercase;/*transforma o texto em maiusculo*/
+    color: #ffffff;
+    font-weight: bold;/*fonte incorpada*/
+    font-size: 22px;/*tamanho da fonte*/
+    text-decoration: none;/*tipos de decoraçao do texto, aqui tirei a decoraçao*/
+
+}
+
+nav a:hover{/* faz marcar quando passa o mouse por cima, vai marcar com a cor ai de baixo, e com o 
+    text decoration sublinhado*/
+    color: #c78c19;
+    text-decoration: underline;
+}
+fieldset{
+    padding: 10px;
+}
+
+
+
+
+.produtos li:hover{/*aqui quando o mouse tocar somente a cor da borda ira mudar, border-color*/
+    border-color: #c78c19;
+    
+}
+
+
+
+
+footer{
+    color: black;
+    min-height: 150px;
+    font-size: 1.6rem;
+    background-color: rgb(218, 229, 232);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+}
+
+
+.copyright{
+    justify-content: stretch;
+}
+.icone-cartao{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    display: block;
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    background: orangered;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s background;
+    cursor: pointer;
+}
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.2) rotate(35deg)    
+}
+table{
+    margin: 20px 0 40px;
+}
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+td, th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}

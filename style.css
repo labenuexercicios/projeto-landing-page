@@ -1,21 +1,25 @@
 *{
     margin: 0;
-    padding: 0;    
+    padding: 0;
+    box-sizing: border-box;    
 }
 html{
     font-size: 62.5%;
-        
-    box-sizing: border-box;
+}
+#principal{
+    display: grid;
+}
+header{
+    display: grid;    
 }
 .frete{
+    width: 100%;    
     background-color: rgb(207, 250, 22);
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-size: 1.6rem;
-    padding: 1px;
-    
+    font-size: 1.6rem;    
 }
 .logo{
     width: 150px;
@@ -25,8 +29,10 @@ html{
 .cabecalho{
     background-color: rgb(218, 229, 232);    
     display: grid;
-    grid-template-columns: 20rem 45rem 1fr;    
+    grid-template-columns: repeat(3,1fr);    
 }
+
+
 .menu{
     text-decoration: none;
     margin-top: 18%;

@@ -46,16 +46,5 @@ const somar1 = (preco)=>{
     const totalPedidos = document.getElementById('botaoPedidos') 
     totalPedidos.innerHTML= totPedidosEl.toFixed(2)
 };
-// const somar2 = ()=>{    
-//     totPedidosEl += valor2
-//     console.log(totPedidosEl)        
-// };
-// const somar3 = ()=>{
-//     totPedidosEl += valor3
-//     console.log(totPedidosEl)
-// };
-// const somar4 = () =>{
-//     totPedidosEl += valor4
-//     console.log(totPedidosEl)
-// };
-// console.log("fim")
+
+
