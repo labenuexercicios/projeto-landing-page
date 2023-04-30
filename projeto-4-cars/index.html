@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>4 Cars | Aluguel de carros</title>
+</head>
+<body>
+    <main>
+        <header>
+            <div id="container-logo">
+                <img id="logo" src="./assets/4cars.png" alt="4Cars-Logo">
+                <nav class="menu-main">
+                    <p class="menu-item">Planos</p>
+                    <p class="menu-item">Benefícios</p>
+                    <p class="menu-item">Blog</p>
+                    <p class="menu-item">Quem somos</p>
+                </nav>
+                <button class="header-button">
+                    Contato
+                </button>
+                <button class="header-button">
+                    Entrar
+                </button>
+            </div>
+        </header>
+        <div class="social-media">
+          <a href="https://www.facebook.com/" target="_blank"><img src="./assets/face.jpg" alt="Facebook"></a>
+          <a href="https://www.instagram.com/" target="_blank"><img src="./assets/insta.jpg" alt="Instagram"></a>
+          <a href="https://twitter.com/" target="_blank"><img src="./assets/twiter.jpg" alt="Twitter"></a>
+          <a href="https://www.tiktok.com/" target="_blank"><img src="./assets/tiktok.jpg" alt="TikTok"></a>
+          <a href="https://www.youtube.com/" target="_blank"><img src="./assets/youtube.jpg" alt="Youtube"></a>
+          <a href="https://www.linkedin.com/" target="_blank"><img src="./assets/linkedin.jpg" alt="Linkedin"></a>
+        </div>
+        
+        <div class="container">
+            <section id="first-section">
+                <div class="text-column">
+                    <h1>Alugue um carro e começe a trabalhar!</h1>
+                    <p>Somos uma solução completa para alugar o seu carro com as menores taxas do mercado, sem juros e sem entrada, para que você começe a gerar renda o mais rápido possível</p>
+                    <button>Quero alugar um carro agora!</button>
+                </div>
+                <div class="image-column">
+                    <img src="./assets/pexels-antoni-shkraba-7144214.jpg">
+                </div>
+            </section>
+            <section id="section-two">
+                <h2>Alugue em apenas 4 pasos</h2>
+                <div class="box-road">
+                    <figure>
+                        <img src="./assets/1.png" alt="Escolha">
+                        <h3>Escolha</h3>
+                        <figcaption>Escolha entre nossas duas linhas (Popular ou Premium) o carro que melhor se adapta às suas necessidades e orçamento.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./assets/2.png" alt="Reserve">
+                        <h3>Reserve</h3>
+                        <figcaption>Reserve online ou através de nosso aplicativo. Basta selecionar as datas e horários de retirada e devolução e confirmar sua reserva.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./assets/3.png" alt="Retire">
+                        <h3>Retire</h3>
+                        <figcaption>Retire o veículo em alguma das nossas agencias. Você também pode optar pelo serviço de entrega em sua casa ou local de trabalho.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./assets/4.png" alt="Devolva">
+                        <h3>Devolva</h3>
+                        <figcaption>Devolva o veículo em nossa loja ou, se preferir, podemos buscá-lo. Temos um período de tolerancia antes de incurrir em taxas.</figcaption>
+                    </figure>
+                </div>
+                <button>
+                    Falar com um consultor
+                </button>
+            </section>
+            <section id="box-cars-models">
+                <h2>O carro que combina com você</h2>
+                <div class=" columns">
+                    <div class="column">
+                        <h3>Linha Popular</h3>
+                        <img src="./assets/Mobi.png" alt="Linha popular" onclick="changeCar(1, 'basic')">
+                        <button class="see-more-button">Ver mais</button>
+                        </div>
+                    <div class="column">
+                        <h3>Linha Premium</h3>
+                        <img src="./assets/Toyota Corola 2.0 Altis.png" alt="Linha premium" onclick="changeCar(1, 'premium')">
+                        <button class="see-more-button">Ver mais</button>
+                    </div>
+                </div>
+            </section>
+            <section id="section-four">
+                <img class="img-column" src="./assets/section-four-car.png" alt="Uma forma facilitada de gerar ingressos">
+                <div class="txt-column">
+                    <h2>Uma forma facilitada de gerar ingressos</h2>
+                    <p>Alugue um carro sem preocupações com revisão, impostos e seguro inclusos na mensalidade. Comece a trabalhar como motorista de aplicativo sem entradas ou taxas escondidas e sem muitos recursos. Devolva o veículo no final do contrato, sem burocracias. Escolha seu carro e dirija sem preocupações!</p>
+                </div>
+            </section>
+            <section id="section-five">
+                <div class="column left-column">
+                    <div id="why-choose">
+                        <h3>Alugue com a gente e aproveite as nossas principais vantagens</h3>
+                        <button>
+                            Fale com um consultor
+                        </button>
+                    </div>
+                </div>
+                <div class="column right-column">
+                    <div class="cards-benefits">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="./assets/noun-save-money-5551097.png" alt="Economia">
+                            </div>
+                            <div class="card-texts">
+                                <h4>Economia</h4>
+                                <p>Nos garantimos que nossos preços são os menores preços do mercado.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="./assets/noun-easy-mode-3330171.png" alt="Facilidade">
+                            </div>
+                            <div class="card-texts">
+                                <h4>Facilidade</h4>
+                                <p>Facilitamos o processo de aluguel e não submetemos o cliente a avaliação de crédito.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="./assets/noun-easy-payment-4786407.png" alt="Rapidez">
+                            </div>
+                            <div class="card-texts">
+                                <h4>Rapidez</h4>
+                                <p>A contratação é 100% online e pode pagar com cartão de crédito, pix e boleto bancário.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>                                 
+            <section id="section-form">
+                <h2>Faça parte da grande rede 4Cars!</h2>
+                <form>
+                  <div class="input-group">
+                    <input type="text" id="email" name="email" placeholder="Email">
+                    <input type="password" id="senha" name="senha" placeholder="Senha">
+                  </div>
+                  <div class="forgot-password">
+                    <a href="recuperar-senha.html">Esqueci minha senha</a>
+                  </div>
+                  <button>Entrar</button>
+                  <h3>Ou inicie sessão com:</h3>
+                  <div class="social-login">
+                    <div class="google">
+                      <img src="./assets/Google__G__Logo.svg.png" alt="Google">
+                    </div>
+                    <div class="facebook">
+                      <img src="./assets/face.jpg" alt="Facebook">
+                    </div>
+                  </div>
+                  <div class="signup">
+                    <h4>Ainda não é membro? <a href="cadastro.html">Cadastre-se agora</a></h4>
+                  </div>
+                </form>
+              </section>              
+        </div>
+        <footer>
+            <nav>
+                <p>Rede de agencias</p>
+                <p>Mapa do site</p>
+                <p>Termos  de uso</p>
+                <p>Contrato de aluguel</p>
+                <p>Contato</p>
+            </nav>
+            <p class="footer-text">Desenvolvido por: Martín Pérez Tovar</p>
+            <p class="footer-text">Todos os direitos reservados - 2023</p>
+        </footer>
+    </main>
+</body>
+</html>

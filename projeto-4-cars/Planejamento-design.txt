@@ -1,0 +1,6 @@
+1. Todos os botões terão cor rosa
+2. O site terá a fonte Calibri o alguma equivalente
+3. Os títulos serão 2 vezes maiores que os parágrafos
+4. Só uma seção terá o fundo rosa
+5. Parágrafos terão letra preta
+6. O rodapé terá a cor rosa como fundo
