@@ -15,20 +15,20 @@
     </section>
     
     <section id="principal" >
-        <header class="store-header">            
-            <div class="cabecalho">
-                <div> 
-                    <img src="./imagens/4comfort.png"  alt="logo da loja" class="logo">
-                </div>
-                <nav>
-                    <ul class="menu">
+        <header class="cabecalho">            
+            <div class="cab1"> 
+                <img src="./imagens/4comfort.png"  alt="logo da loja" class="logo">
+            </div>
+            <nav class="cab2">
+                <ul class="menu">
                     <li><a href="#">Feminino</a></li>
                     <li><a href="#">Masculino</a></li>
                     <li><a href="#">Infantil</a></li>
                     <li><a href="#">Esportes</a></li>
                     <li><a href="#">Lançamentos</a></li>
-                    </ul>
-                </nav>
+                </ul>
+            </nav>
+            <div class="cab3">
                 <div class="botoes">
                     <div class="icones">
                         <a href="#"><img src="./imagens/sino-de-notificacao.png" alt="icone sino"></a>
@@ -37,8 +37,6 @@
                             <label for="total">Total Pedido</label>
                             <button id="botaoPedidos" value="0">000</button>
                         </div>
-                        
-                        
                     </div>
                     <div class="botoes2">
                         <button id="contato"><a href="contato.html">Contato</a> </button>
@@ -46,13 +44,13 @@
                         <button class="minha-conta">Minha Conta</button>
                     </div>                    
                 </div>  
-            </div>            
+            </div>
         </header>
 
         <main class="corpo">
             <article>
                 <div>
-                    <img src="./imagens/correndo.jpg" alt="foto pessoas correndo">
+                    <img class="fotoProduto" src="./imagens/correndo.jpg" alt="foto pessoas correndo">
                 </div>
                 <div class="produto">
                     <h3>Tennis A</h3>
@@ -63,7 +61,7 @@
 
             <article>
                 <div>
-                    <img src="./imagens/tenis-deserto.jpg" alt="foto pessoa correndo">
+                    <img class="fotoProduto" src="./imagens/tenis-deserto.jpg" alt="foto pessoa correndo">
                 </div>
                 <div class="produto">
                     <h3>Tennis B</h3>
@@ -74,8 +72,8 @@
             </article>
 
             <article>
-                <div class="produto">
-                    <img src="./imagens/tenis-por-do-dol.jpg" alt="foto pessoa correndo por do sol">
+                <div>
+                    <img class="fotoProduto" src="./imagens/tenis-por-do-dol.jpg" alt="foto pessoa correndo por do sol">
                 </div>
                 <div class="produto">
                     <h3>Tennis C</h3>
@@ -87,7 +85,7 @@
 
             <article>
                 <div>
-                    <img src="./imagens/amarrando-tenis.jpg" alt="">
+                    <img class="fotoProduto" src="./imagens/amarrando-tenis.jpg" alt="">
                 </div>
                 <div class="produto">
                     <h3>Tennis D</h3>
@@ -95,14 +93,20 @@
                     <button onclick="somar1(150)" id="precos4" value="150">R$ 150,00 </button>
                 </div>
             </article>
+            <div class="redesocial">
+                <h>Siga-nos em nossas rede sociais </h>
+                <p><a class="iconesredes" href="https://www.instagram.com/"><img src="./imagens/instagram.png" alt="logo instagran"></a>
+                    <a class="iconesredes" href="https://www.linkedin.com/"><img src="./imagens/linkedin.png" alt="logo linkedin"></a>
+                    </p> 
+            </div>
             
         </main>
 
         <footer>
-            <article>
+            <div class="logoFooter">
                 <img class="logo" src="./imagens/4comfort.png" alt="logo">
-            </article>
-            <article  >
+            </div>
+            <div class="logoCartoes">
                 <div class="logos">
                     <h3 class="item1">Formas de pagamento</h3>
                     <div class="item2">
@@ -113,12 +117,13 @@
                         <img class="icone-cartao" src="./imagens/logo-american-express-256.png" alt="">
                         <img class="icone-cartao" src="./imagens/codigo_barras.png" alt="logo codigo de barras">
                     </div>
-                    <p class="copyright">&copy;Copyright 4Comfort - 2023</p>                    
+                    <p class="copyright">&copy;Copyright 4Comfort - 2023</p>
                 </div>
-            </article>
-            <article>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13816.988646240312!2d-51.24055503095452!3d-30.029766271493102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519790e4d043eab%3A0x769a0820bae18fd4!2sHistorical%20Centre%2C%20Porto%20Alegre%20-%20RS!5e0!3m2!1sen!2sbr!4v1682512822383!5m2!1sen!2sbr" width="400" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </article>
+            </div>
+            <div class="maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13816.988646240312!2d-51.24055503095452!3d-30.029766271493102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519790e4d043eab%3A0x769a0820bae18fd4!2sHistorical%20Centre%2C%20Porto%20Alegre%20-%20RS!5e0!3m2!1sen!2sbr!4v1682512822383!5m2!1sen!2sbr" width="320" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
         </footer>
     </section>
     
