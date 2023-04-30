@@ -37,11 +37,13 @@ ul {
   align-items: center;
 }
 ul li {
-  margin-left: 1.25rem;
+  margin-left: 3vw;
+  width: 100px;
+  height: 50px;
   list-style-type: none;
-  border: 1px solid #fff;
-  padding: 0.5vw;
-  border-radius: 12px;
+  border: 2px solid #fff;
+  padding: 0vw;
+  border-radius: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -74,20 +76,23 @@ main .conteudoPrincipal {
 
 main .conteudoPrincipal h1 {
   font-family: "Roboto", sans-serif;
+  margin-top: 0;
+  margin-bottom: 5%;
   font-weight: 700;
-  font-size: 2.5vw;
+  font-size: 2, 5vw;
+  padding: 10px 10px;
 }
 
 main .conteudoPrincipal button {
-  width: 15vw;
+  width: 11vw;
   padding: 0.5vw 0;
   background-color: #03151a;
-  color: #5acec7;
-  border: 1px solid #6db3b3;
-  box-shadow: 4px 6px 8px #5acec7;
-  border-radius: 24px;
-  margin-top: 38px;
-  margin-bottom: 30%;
+  color: #e4eeee;
+  border: 1px solid #5acec7;
+  box-shadow: 6px 5px 6px 6px #5acec7;
+  border-radius: 20px;
+  margin-top: 2%;
+  margin-bottom: 5%;
   font-weight: 800;
   font-size: 1.5vw;
   line-height: 2.5vh;
@@ -194,7 +199,7 @@ section .elementoFormulario .formulario button {
   font-size: 1.5vw;
   line-height: 4.5vh;
   cursor: pointer;
-  margin: 10% 0 0 20%;
+  margin: 5% 10% 10% 20%;
 }
 section .elementoFormulario .formulario input {
   background-color: transparent;
@@ -236,9 +241,9 @@ footer {
 }
 
 footer h4 {
-  font-weight: 2vh;
+  font-weight: 3vh;
   font-family: "roboto", sans-serif;
-  font-size: 9px;
+  font-size: 15px;
   padding: 2%;
   text-shadow: 2px 2px 3px #07191b;
 }
@@ -252,7 +257,7 @@ footer .image {
 .imageminst,
 .imagemtik,
 .imagemfacebook {
-  height: 25px;
-  width: 25px;
-  margin: 3px;
+  height: 38px;
+  width: 38px;
+  margin: 2px;
 }
