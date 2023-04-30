@@ -37,13 +37,13 @@ ul {
   align-items: center;
 }
 ul li {
-  margin-left: 3vw;
-  width: 100px;
-  height: 50px;
+  margin-left: 1vw;
+  width: 7vw;
+  height: 3vw;
   list-style-type: none;
-  border: 2px solid #fff;
-  padding: 0vw;
-  border-radius: 15px;
+  border: 1px solid #fff;
+  padding: 0;
+  border-radius: 15vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,47 +55,47 @@ ul li a {
   color: #fff;
   font-weight: 900px;
   font-size: 1vw;
-  text-shadow: 0px 2px 8px #6db3b3;
+  text-shadow: 0px 2px 7px #6db3b3;
 }
 
 main {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  margin: 50px 50px 0px 0px;
+  margin: 20px 60px 0px 0px;
 }
 /* Main do conteudo principal*/
 main .conteudoPrincipal {
-  height: 70%;
-  margin-left: 13vw;
+  height: 25vw;
+  margin-left: 30vw;
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 }
 
 main .conteudoPrincipal h1 {
   font-family: "Roboto", sans-serif;
-  margin-top: 0;
-  margin-bottom: 5%;
+  margin-bottom: 1%;
+  margin-right: 30%;
   font-weight: 700;
-  font-size: 2, 5vw;
+  font-size: 2vw;
   padding: 10px 10px;
 }
 
 main .conteudoPrincipal button {
-  width: 11vw;
+  width: 8vw;
   padding: 0.5vw 0;
   background-color: #03151a;
   color: #e4eeee;
   border: 1px solid #5acec7;
-  box-shadow: 6px 5px 6px 6px #5acec7;
+  box-shadow: 5px 7px 8px #5acec7;
   border-radius: 20px;
-  margin-top: 2%;
-  margin-bottom: 5%;
+  margin-bottom: 15%;
+  margin-right: 40%;
   font-weight: 800;
-  font-size: 1.5vw;
-  line-height: 2.5vh;
+  font-size: 1vw;
+  line-height: 1.5vh;
   cursor: pointer;
 }
 main .conteudoPrincipal button:active {
@@ -107,8 +107,7 @@ main .conteudoPrincipal button:hover {
 }
 
 main img {
-  width: 50%;
-  height: auto;
+  max-width: 50%;
 }
 /*criando as seções*/
 
@@ -133,8 +132,8 @@ section .conteudoDaSecoes p {
   font-family: "roboto", sans-serif;
   font-weight: 500px;
   text-align: justify;
-  margin-top: 2%;
-  margin-bottom: 2%;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
   padding: 0px 40px;
   font-size: 1.5vw;
 }
@@ -142,7 +141,7 @@ section .conteudoDaSecoes h4 {
   font-family: "roboto", sans-serif;
   font-style: italic;
   font-weight: 700;
-  font-size: 2.5vw;
+  font-size: 1.5vw;
 }
 
 section .images1,
@@ -176,30 +175,34 @@ section .elementoFormulario {
 section .elementoFormulario .formulario h5 {
   font-family: "roboto", sans-serif;
   font-weight: 400;
-  font-size: 15px;
-  margin-bottom: 15%;
+  font-size: 1.5vw;
+  margin-bottom: 2vw;
+  margin-top: 3vw;
 }
 
 section .elementoFormulario .formulario form {
   display: flex;
   width: 100%;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
+
   gap: 1.5vw;
 }
 section .elementoFormulario .formulario button {
-  width: 10vw;
+  width: 5vw;
+  height: 3vw;
   background-color: #03151a;
   color: #5acec7;
   border: 1px solid #6db3b3;
-  box-shadow: 4px 6px 8px #5acec7;
-  border-radius: 34px;
+  box-shadow: 3px 3px 8px #5acec7;
+  border-radius: 35px;
   font-weight: 500;
-  font-size: 1.5vw;
-  line-height: 4.5vh;
+  font-size: 1vw;
+  line-height: 5.5vh;
   cursor: pointer;
-  margin: 5% 10% 10% 20%;
+  margin: 10% 5% 10% 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 section .elementoFormulario .formulario input {
   background-color: transparent;
@@ -210,8 +213,10 @@ section .elementoFormulario .formulario input {
   font-size: 1vw;
 }
 section .conteudoDaSecoes .elementoFormulario img {
-  width: 57%;
-  margin-left: 3vh;
+  width: 32vw;
+  margin-left: 10vw;
+  margin-bottom: 5vw;
+  margin-top: 3vw;
 }
 
 section .conteudoDaSecoes .elementoFormulario label {
@@ -243,21 +248,24 @@ footer {
 footer h4 {
   font-weight: 3vh;
   font-family: "roboto", sans-serif;
-  font-size: 15px;
-  padding: 2%;
+  font-size: 0.7vw;
   text-shadow: 2px 2px 3px #07191b;
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 footer .image {
   display: flex;
-  justify-content: space-between;
-  align-items: space-between;
-  margin-top: 0.5%;
+  justify-content: flex-end;
+  align-items: display flex-end;
+  padding: 1% 0 1%;
 }
 
 .imageminst,
 .imagemtik,
 .imagemfacebook {
-  height: 38px;
-  width: 38px;
-  margin: 2px;
+  width: 20px;
+  height: 20px;
+  padding: 2%;
 }
