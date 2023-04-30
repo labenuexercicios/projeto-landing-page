@@ -180,7 +180,7 @@ textarea:valid~label {
 input,
 textarea {
 
-    width: 100%;
+    width: 90%;
     padding: 30px;
     border: 0;
     font-size: 1em;
@@ -202,7 +202,7 @@ textarea:focus~span {
 }
 
 textarea {
-    width: 100%;
+    width: 90%;
     min-height: 10em;
 }
 
