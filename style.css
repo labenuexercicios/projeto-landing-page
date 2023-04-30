@@ -1,0 +1,255 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Posicionar pagina */
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+/* Posição centralizada do site da pagina */
+.posicao {
+  background-color: #dde3eb;
+  width: 100%;
+  max-width: 80vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1vw;
+}
+/* Criando cabeçalho */
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #152636;
+  padding: 0 16px;
+}
+header img {
+  max-width: 25%;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+}
+ul li {
+  margin-left: 1.25rem;
+  list-style-type: none;
+  border: 1px solid #fff;
+  padding: 0.5vw;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul li a {
+  font-family: arial;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 900px;
+  font-size: 1vw;
+  text-shadow: 0px 2px 8px #6db3b3;
+}
+
+main {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 50px 50px 0px 0px;
+}
+/* Main do conteudo principal*/
+main .conteudoPrincipal {
+  height: 70%;
+  margin-left: 10vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .conteudoPrincipal h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 2.5vw;
+}
+
+main .conteudoPrincipal button {
+  width: 15vw;
+  padding: 0.5vw 0;
+  background-color: #03151a;
+  color: #5acec7;
+  border: 1px solid #6db3b3;
+  box-shadow: 4px 6px 8px #5acec7;
+  border-radius: 24px;
+  margin-top: 48px;
+  font-weight: 800;
+  font-size: 1.5vw;
+  line-height: 2.5vh;
+  cursor: pointer;
+}
+main .conteudoPrincipal button:active {
+  transform: scale(95%);
+}
+main .conteudoPrincipal button:hover {
+  background-color: #04222b;
+  color: #26ddd0;
+}
+
+main img {
+  width: 50%;
+  height: auto;
+}
+/*criando as seções*/
+
+section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+section .conteudoDaSecoes {
+  background-color: #142434;
+  width: 100%;
+  margin: 10px 0px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2vh 0;
+}
+section .conteudoDaSecoes p {
+  font-family: "roboto", sans-serif;
+  font-weight: 500px;
+  margin-top: 2%;
+  padding: 0px 64px;
+  font-size: 2vw;
+}
+section .conteudoDaSecoes h4 {
+  font-family: "roboto", sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 2.5vw;
+}
+
+section .images1,
+section .images2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
+  justify-content: center;
+  margin: 1.5vw 0 1.5vw;
+}
+
+section .images1 img {
+  width: 25%;
+}
+
+section .images2 img {
+  width: 25%;
+}
+
+section .images2 img:last-child {
+  width: 53%;
+}
+
+section .elementoFormulario {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 2.5vw 0 7.5vw;
+}
+
+section .elementoFormulario .formulario h5 {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  margin-bottom: 15%;
+}
+
+section .elementoFormulario .formulario form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 1.5vw;
+}
+section .elementoFormulario .formulario button {
+  width: 10vw;
+  background-color: #03151a;
+  color: #5acec7;
+  border: 1px solid #6db3b3;
+  box-shadow: 4px 6px 8px #5acec7;
+  border-radius: 34px;
+  font-weight: 500;
+  font-size: 1.5vw;
+  line-height: 4.5vh;
+  cursor: pointer;
+  margin: 10% 0 0 20%;
+}
+section .elementoFormulario .formulario input {
+  background-color: transparent;
+  color: #fff;
+  outline-style: none;
+  border: none;
+  border-bottom: 1px solid #ffffff80;
+  font-size: 1vw;
+}
+section .conteudoDaSecoes .elementoFormulario img {
+  width: 57%;
+  margin-left: 3vh;
+}
+
+section .conteudoDaSecoes .elementoFormulario label {
+  font-family: "roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1vw;
+}
+section .conteudoDaSecoes .elementoFormulario input::placeholder {
+  font-family: "roboto", sans-serif;
+  font-size: 1vw;
+}
+
+section .conteudoDaSecoes .elementoFormulario textarea {
+  font-family: "roboto", sans-serif;
+  font-size: 2vw;
+}
+
+footer {
+  bottom: 0;
+  width: 78vw;
+  background-color: #dde3eb;
+  border-style: solid;
+  border-color: #142434;
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+}
+
+footer h4 {
+  font-weight: 2vh;
+  font-family: "roboto", sans-serif;
+  font-size: 7px;
+  padding: 2%;
+  text-shadow: 2px 2px 3px #07191b;
+}
+footer .image {
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+  margin-top: 0.5%;
+}
+
+.imageminst,
+.imagemtik,
+.imagemfacebook {
+  height: 20px;
+  width: 20px;
+  margin: 3px;
+}
