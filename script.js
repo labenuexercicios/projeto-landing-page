@@ -29,3 +29,5 @@ function abrirPlay() {
 function abrirStore() {
     window.open("https://www.apple.com/br/app-store/", "_blank");
 }
+
+pqp como que sobe? 
