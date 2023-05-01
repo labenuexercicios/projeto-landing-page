@@ -31,10 +31,7 @@ Na Main, como ultimo conteudo antes do footer/rodapé.
 10. Haverá botões no site?
 Havera apenas o botão para enviar as informações do formulario de contato.
 
-11. Onde estará localizado a logomarca?
-No cabeçalho e no rodapé, em ambos os casos colado a margem esquerda da tela. 
-O logo do cabelho fica também colado a parte mais alta da pagina, por sua vez
-o logo do rodapé fica colado a parte mais baixa da pagina.
+
 
 12. Qual a localização dos ícones de redes sociais?
 Ficarão localizados no rodapé logo após o logo e antes dos icone das lojas de aplicativos.
