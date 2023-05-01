@@ -78,11 +78,12 @@ nav ul {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  padding-left: 30px;
 }
 
 nav ul a {
   color: white;
-  margin: 5px 25px;
+  margin: 5px 15px;
   text-transform: uppercase;
   /*todos os textos ficarao em maiusculo*/
   font-size: 14px;
