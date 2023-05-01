@@ -8,9 +8,9 @@ function enviar() {
   } else if (email.value == "") {
     alert("Você necessita colocar seu e-mail");
   } else if (mensagem.value == "") {
-    alert("Você necessita colocar uma mensagem");
+    alert("Você necessita colocar uma mensagem ");
   } else {
-    alert(" Cadastro enviado " + nome.value);
+    alert("Cadastro enviado  " + nome.value + "  Obrigado!");
     nome.value = "";
     email.value = "";
     nome.value = "";

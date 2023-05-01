@@ -14,12 +14,20 @@ body {
 /* Posição centralizada do site da pagina */
 .posicao {
   background-color: #dde3eb;
-  width: 100%;
+  width: 80%;
   max-width: 80vw;
   height: 100%;
   display: flex;
   flex-direction: column;
   padding: 1vw;
+}
+
+.posicao {
+  font-size: 16px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 100%;
 }
 /* Criando cabeçalho */
 header {
@@ -43,7 +51,7 @@ ul li {
   list-style-type: none;
   border: 1px solid #fff;
   padding: 0;
-  border-radius: 15vw;
+  border-radius: 10vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,45 +66,56 @@ ul li a {
   text-shadow: 0px 2px 7px #6db3b3;
 }
 
+header ul li a:hover {
+  background-color: #021313;
+  transition: 0.5s;
+  opacity: 0.7;
+  color: #ffff;
+}
 main {
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  margin: 20px 60px 0px 0px;
+  justify-content: space-between;
+  align-items: center;
 }
 /* Main do conteudo principal*/
 main .conteudoPrincipal {
-  height: 25vw;
-  margin-left: 30vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 15vw;
+  width: 15vw;
+  margin-left: 11vw;
+  margin-right: 1vw;
   flex-direction: column;
 }
 
 main .conteudoPrincipal h1 {
   font-family: "Roboto", sans-serif;
-  margin-bottom: 1%;
-  margin-right: 30%;
   font-weight: 700;
   font-size: 2vw;
-  padding: 10px 10px;
+  font-style: italic;
+  padding: 0;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  margin-right: 1vw;
 }
 
 main .conteudoPrincipal button {
-  width: 8vw;
+  width: 12vw;
+  height: 3vw;
   padding: 0.5vw 0;
   background-color: #03151a;
   color: #e4eeee;
   border: 1px solid #5acec7;
-  box-shadow: 5px 7px 8px #5acec7;
+  box-shadow: 2px 2px 2px #5acec7;
   border-radius: 20px;
-  margin-bottom: 15%;
-  margin-right: 40%;
   font-weight: 800;
-  font-size: 1vw;
+  font-size: 1.3vw;
   line-height: 1.5vh;
   cursor: pointer;
+  margin-left: 0.5vw;
+  margin-bottom: 0.5vw;
+  margin-top: 0.2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 main .conteudoPrincipal button:active {
   transform: scale(95%);
@@ -108,6 +127,9 @@ main .conteudoPrincipal button:hover {
 
 main img {
   max-width: 50%;
+  margin-right: 22vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
 }
 /*criando as seções*/
 
@@ -141,7 +163,9 @@ section .conteudoDaSecoes h4 {
   font-family: "roboto", sans-serif;
   font-style: italic;
   font-weight: 700;
-  font-size: 1.5vw;
+  font-size: 1.8vw;
+  margin-top: 2.5vh;
+  margin-bottom: 1vh;
 }
 
 section .images1,
@@ -184,12 +208,11 @@ section .elementoFormulario .formulario form {
   display: flex;
   width: 100%;
   flex-direction: column;
-
   gap: 1.5vw;
 }
 section .elementoFormulario .formulario button {
-  width: 5vw;
-  height: 3vw;
+  width: 6vw;
+  height: 2vw;
   background-color: #03151a;
   color: #5acec7;
   border: 1px solid #6db3b3;
@@ -199,7 +222,7 @@ section .elementoFormulario .formulario button {
   font-size: 1vw;
   line-height: 5.5vh;
   cursor: pointer;
-  margin: 10% 5% 10% 20%;
+  margin: 10% 0% 10% 35%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -213,10 +236,11 @@ section .elementoFormulario .formulario input {
   font-size: 1vw;
 }
 section .conteudoDaSecoes .elementoFormulario img {
-  width: 32vw;
+  width: 30vw;
+  height: 23vw;
   margin-left: 10vw;
-  margin-bottom: 5vw;
-  margin-top: 3vw;
+  margin-bottom: 1vw;
+  margin-top: 2vw;
 }
 
 section .conteudoDaSecoes .elementoFormulario label {
@@ -236,7 +260,7 @@ section .conteudoDaSecoes .elementoFormulario textarea {
 
 footer {
   bottom: 0;
-  width: 78vw;
+  width: 77vw;
   background-color: #dde3eb;
   border-style: solid;
   border-color: #142434;
@@ -248,9 +272,9 @@ footer {
 footer h4 {
   font-weight: 3vh;
   font-family: "roboto", sans-serif;
-  font-size: 0.7vw;
+  font-size: 0.9vw;
   text-shadow: 2px 2px 3px #07191b;
-  padding: 2%;
+  padding: 1%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -259,13 +283,67 @@ footer .image {
   display: flex;
   justify-content: flex-end;
   align-items: display flex-end;
-  padding: 1% 0 1%;
+  padding: 1%;
 }
 
 .imageminst,
 .imagemtik,
 .imagemfacebook {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   padding: 2%;
+}
+
+section .images1 img:hover {
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -ms-transform: scale(1.25);
+  transform: scale(1.25);
+}
+
+section .images2 img:hover {
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -ms-transform: scale(1.25);
+  transform: scale(1.25);
+}
+
+@media screen and (max-device-width: 480px) {
+  .posicao {
+    background-color: #dde3eb;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  main .conteudoPrincipal h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-size: 2vw;
+    padding: 0;
+  }
+}
+
+@media screen and (max-device-width: 480px) {
+  main {
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    padding: 0;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  main img {
+    width: 300%;
+  }
+}
+
+@media screen and (max-device-width: 480px) {
+  main .conteudoPrincipal button {
+    width: 80%;
+    margin-right: 200%;
+    font-size: 1vw;
+  }
 }
