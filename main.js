@@ -46,9 +46,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
       const nameInput = document.getElementById("name");
       const emailInput = document.getElementById("email");
+      const messageInput = document.getElementById("message"); 
 
       const name = nameInput.value.trim();
       const email = emailInput.value.trim();
+      const message = messageInput.value.trim();
 
       if (name === "" || email === "") {
         alert("Por favor, preencha todos os campos.");
@@ -61,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
 
       // Aqui, você pode enviar o formulário ou processar as informações conforme necessário
-      console.log("Formulário enviado:", { name, email });
+      console.log("Formulário enviado:", { name, email, message });
       contactForm.reset();
     });
   }
