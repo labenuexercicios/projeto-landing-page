@@ -10,7 +10,7 @@
     background-color: #ee2727;
     color: #fff;
     border-radius: 50px;
-    font-family: 'open_sansregular';
+    font-family: Helvetica;
     padding: 0.5em 0.8em;
     display: block;
     float: none;
@@ -114,7 +114,7 @@
 /*Formulario*/
 .title_contato {
 
-    font-family: 'open_sansregular';
+    font-family: Helvetica;
     font-weight: 600;
     font-size: 4em;
     color: #fff;
@@ -303,7 +303,7 @@ input[type=checkbox]:checked+label {
 }
 
 .main_footer_copy p {
-    font-family: 'open_sanslight';
+    font-family: Helvetica;
     font-size: 1em;
     color: #e1e0e0;
     height: 20px;

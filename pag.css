@@ -271,7 +271,7 @@ nav ul a:hover::after {
 
 body {
   background: var(--light-bg);
-  font-family: "Space Grotesk", sans-serif;
+  font-family: Helvetica;
   color: var(--dark);
 }
 
@@ -834,7 +834,7 @@ a {
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
 
 * {
-  font-family: Open Sans;
+  font-family: Helvetica;
 }
 
 footer section {
@@ -876,7 +876,7 @@ footer section {
 
 .footer-distributed h3{
 	color:  #ffffff;
-	font: normal 36px 'Open Sans', cursive;
+	font: normal 36px 'Helvetica', cursive;
 	margin: 0;
 }
 
