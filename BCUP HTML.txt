@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 food alimentos</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="script.js" defer> </script>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="./media/Logo 4Food.png">
+        <h4><p><a href="#"> Sobre a 4Food </a></p></h4>
+        <h4><p><a href="#"> Alimentação personalizada </a></p></h4>
+        <h4><p><a href="#"> Compre Agora! </a></p></h4>
+        <h2 class="ponto-unico">.</h2>       
+
+    </header>
+
+    <main>
+        <section class="sec1">
+        <img class="section-1" src="./media/capa-sec1.png">
+        </section>
+        <div class="div1"><h2><i>ESSA EMPRESA É BEM CHERIFAL VÉINHU! PAPO RETO ELA É ZICA!</i></h2></div>
+        <nav class="nav1">
+            <img class="img-nav1-sec1" src="./media/Logo 4Food.png">
+            <img class="img-nav1-sec1" src="./media/Logo 4Food.png">
+            <img class="img-nav1-sec1" src="./media/Logo 4Food.png">
+            <img class="img-nav1-sec1" src="./media/Logo 4Food.png">
+             </nav>
+
+        <section class="sec2">
+            <img class="section-1" src="./media/capa-sec2.png">
+
+        </section>
+        <nav class="nav2">
+            <img class="img-nav1-sec1" src="./media/Logo 4Food.png">
+            <img class="img-nav1-sec1" src="./media/Logo 4Food.png">
+            <img class="img-nav1-sec1" src="./media/Logo 4Food.png">
+            <img class="img-nav1-sec1" src="./media/Logo 4Food.png">
+                   </nav>
+
+
+        <section class="sec3">
+            <img class="section-1" src="./media/capa-sec3.png">
+        </section>
+        <nav class="nav3">
+            <img class="img-nav1-sec1" src="./media/Logo 4Food.png">
+            <img class="img-nav1-sec1" src="./media/Logo 4Food.png">
+            <img class="img-nav1-sec1" src="./media/Logo 4Food.png">
+            <img class="img-nav1-sec1" src="./media/Logo 4Food.png">
+           
+        </nav>
+
+
+    </main>
+
+    <footer>
+        <img class="logo" src="./media/Logo 4Food.png">
+        <img class="red-soc" src="./media/fb.png">
+        <img class="red-soc" src="./media/wts.png">
+        <img class="red-soc" src="./media/ig.png">
+        <img class="red-soc" src="./media/gp-icon.jpg">
+        <img class="red-soc" src="./media/as-icon.jpg">
+
+
+    </footer>
+
+
+</body>
+
+</html>
