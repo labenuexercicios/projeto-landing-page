@@ -153,8 +153,8 @@ nav ul a:hover::after {
   padding-left: 10px;
 }
 
-.faca-mais .faca-mais-text p {
-  margin: 5px 10 5px 0;
+.faca-mais .faca-mais-text h1 {
+  margin: 10px;
 }
 
 .faca-mais .faca-mais-img {
