@@ -176,13 +176,14 @@ nav ul a:hover::after {
   margin: 0px 40px;
 }
 
-.sobre2-text.sobre2-text h3 {
+.sobre2 .sobre2-text h3 {
   font-size: 56px;
   padding: 10px;
 }
 
-.sobre2-text .sobre2-text p {
+.sobre2 .sobre2-text p {
   margin: 5px 10 5px 0;
+  text-align: justify;
 }
 
 .sobre2 .sobre2-img {
@@ -237,7 +238,7 @@ nav ul a:hover::after {
   margin-bottom: 15px;
 }
 
-.servicos .card-item .descri-servico {
+.servicos .card-item .descricao {
   font-size: 15px;
   padding: 0 15px;
 }
