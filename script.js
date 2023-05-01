@@ -1,0 +1,1 @@
+/* alert("ATENÇÃO\nEsta página não é apropriada para crianças, nem para adultos que não se comportam como crianças.")

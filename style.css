@@ -1,0 +1,264 @@
+/* O objetivo do CSS dessa página, assim como todo o resto, é gerar confusão e desespero. */
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Rubik+Wet+Paint&family=Sedgwick+Ave+Display&display=swap');
+
+* {
+    font-family: 'Comic Neue', cursive;
+    scroll-behavior: smooth;
+}
+
+#logo {
+  width: 250px;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.title {
+    animation: 2s popout ease;
+}
+@keyframes popout {
+    0% {
+    color: black;
+    transform: scale(0);
+    opacity: 0;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+    25% {
+    color: red;
+    transform: scale(2);
+    opacity: 1;
+    text-shadow: 3px 10px 5px rgba(0, 0, 0, 0.5);
+    }
+    50% {
+    color: black;
+    transform: scale(1);
+    opacity: 1;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+    transform: scale(1);
+    opacity: 1;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+.lineUp {
+    animation: 2s anim-lineUp ease-out;
+  }
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  background: brown;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #00c2cb;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: red;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #00c2cb;
+  display: flex;
+  flex-direction: row;
+}
+
+nav a:hover {
+  background: crimson;
+  color: blue;
+  transition: 0.5s;
+  letter-spacing: 2px;
+  animation: 1s popout ease
+}
+
+.cartao {
+  background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+}
+
+main a {
+  font-family: 'Rubik Wet Paint', cursive;
+  color: red;
+  background-color: green;
+}
+
+nav a {
+  padding: 5px;
+  font-size: 1rem;
+  color: purple;
+  border-radius: 5px;
+  letter-spacing: 0.5px;
+  animation: 2s popout ease;
+}
+
+#welcome {
+    background-color: yellowgreen;
+    font-family: 'Rubik Wet Paint', cursive;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  visibility: hidden;
+  top: -50px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: #45a049;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.contact {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+footer {
+    background-color: blue;
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw 25vw;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.socialMedia {
+    height: 50px;
+}
+
+.logoFooter {
+  height: 200px;
+}
+
+#logoFooter1 {
+  grid-row: 1/4;
+  grid-column: 1/2;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#footerText1 {
+  grid-row: 1/2;
+  grid-column: 2/4;
+  background-color: orangered;
+}
+
+#orkut {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  animation-name: rotation;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background-color: aquamarine;
+}
+
+#googlePlus {
+  grid-row: 2/3;
+  grid-column: 3/4;
+  animation-name: rotation;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotation {
+  from {
+      transform: rotateY(0deg);
+  }
+  to {
+      transform:rotateY(360deg);
+  }
+}
+
+#footerText2 {
+  grid-row: 3/4;
+  grid-column: 2/4;
+  background-color: pink;
+}
+
+#logoFooter2 {
+  grid-row: 1/4;
+  grid-column: 4/5;
+  animation-name: spin;
+  animation-direction: reverse;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.blink {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
