@@ -160,6 +160,7 @@ nav ul a:hover::after {
 .faca-mais .faca-mais-img {
   /*elemento pai*/
   width: 50%;
+  padding-left: 30px;
 }
 
 .faca-mais .faca-mais-img img {
@@ -817,9 +818,7 @@ a {
     flex-basis: calc(45% - 18px);
   }
 
-  .faca-mais .faca-mais-text {
-    max-width: auto;
-  }
+  
 }
 
 @media (min-width: 1140px) {
@@ -828,7 +827,14 @@ a {
   }
 }
 
-
+@media (max-width: 860px) {
+.faca-mais .faca-mais-text h3 {
+  font-size: 40px;
+}
+.faca-mais .faca-mais-text {
+  max-width: 100%;
+}
+}
 
 
 
