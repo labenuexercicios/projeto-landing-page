@@ -51,15 +51,17 @@ function showCards(cards) {
     reforma.style = 'display: block';
     moradia.style = 'display: none';
     kitnets.style = 'display: none';
-    kitnets.className = 'btn';
+    reforma.scrollIntoView();
   } else if (cards == 2) {
     reforma.style = 'display: none';
     moradia.style = 'display: block';
     kitnets.style = 'display: none';
+    moradia.scrollIntoView();
   } else if (cards == 3) {
     reforma.style = 'display: none';
     moradia.style = 'display: none';
     kitnets.style = 'display: block';
+    kitnets.scrollIntoView();
   }
 }
 

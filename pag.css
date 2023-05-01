@@ -148,7 +148,8 @@ nav ul a:hover::after {
 }
 
 .faca-mais .faca-mais-text h3 {
-  font-size: 56px;
+  font-size: 50px;
+  padding-left: 10px;
 }
 
 .faca-mais .faca-mais-text p {
@@ -218,7 +219,7 @@ nav ul a:hover::after {
   margin: 15px;
   border-radius: 5px;
   text-align: center;
-  width: 350px;
+  width: 330px;
   transition: 0.3s;
   cursor: pointer;
 }
@@ -432,7 +433,7 @@ a {
 
   width: 100%;
   background: #3c8179;
-  padding: 60px 5%;
+  padding: 60px 0%;
   text-align: center;
 
 }

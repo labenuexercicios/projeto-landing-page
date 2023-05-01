@@ -253,6 +253,12 @@ textarea {
     }
 }
 
+@media (max-width: 560px) {
+    input, textarea {
+        width: 80%;
+    }
+}
+
 input[type=checkbox]+label {
     color: #ccc;
     font-style: italic;
