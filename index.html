@@ -5,128 +5,255 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>4Food</title>
 </head>
 
 <body>
-    <header>
-        <img src="./imagens e icones/4food.png" alt="logotipo">
-        <nav>
-            <a href="">Sobre</a> <a href="">Promoções</a> <a href="">4Food Card</a> <a href="">Trabalhe conosco</a>
+    <div id="cor-de-fundo">
+        <header>
+            <img id="logo-cabecalho" src="./icones/logo-com-escrita.png" alt="logotipo 4FOOD">
+            <nav class="menu">
+                <a href="">Sobre</a>
+                <a href="">Promoções</a>
+                <a href="">4Food Card</a>
+                <a href="">Trabalhe conosco</a>
+            </nav>
+            <nav>
+                <a href="">Criar conta/entrar </a> <img class="login" src="./icones/usuario.png" alt="ícone usuario">
 
-            <a href="">Criar conta/entrar </a> <img src="./icones/usuario.png" alt="ícone usuario">
+                <a href="">Carrinho</a> <img class="carrinho" src="./icones/carrinho-de-compras.png"
+                    alt="Carrinho de compras">
+            </nav>
 
-            <a href="">Carrinho</a> <img src="./icones/carrinho-de-compras.png" alt="Carrinho de compras">
+        </header>
+        <main>
+            <section class="abertura">
 
-
-        </nav>
-    </header>
-    <main>
-        <section>
-            <img src="./imagens e icones/comida1.jpg" alt="imagem de temperos">
-
-            <p>A 4Food está no mercado a 7 anos e pensando em melhorar a experiencia do nosso publico, ampliamos nossa
-                rede para as plataformas digitais. </p> <button>Baixe agora o app da 4Food na play store ou na appe
-                store.</button>
-
-            <img src="./imagens e icones/4food.png" alt="logotipo mercado">
-        </section>
-        <section>
-            <h3>Está sem tempo de ir ao mercado?<br>
-                Deixa com a gente!<br>
-                Foi pensando em você que a 4Food nasceu!<br>
-                <button> Adquira já o seu 4Food Card e ganhe 10% na primeira compra!</button><br>
-            </h3>
-
-            <img src="./imagens e icones/celarenja.jpg" alt="pessoa segurando o celular">
-            <img src="./imagens e icones/entrega0.jpg" alt="entregador caminhando">
-            <img src="./imagens e icones/entrega1.jpg" alt="entregador caminhando">
-            <img src="./imagens e icones/entrega2.jpg" alt="entregador caminhando">
-
-        </section>
-        <section>
-            <article>
-                <h2>Restaurante</h2>
-                <img src="./imagens e icones/restaurante1.jpg" alt="imagem de batata frita com molhos">
-                <h2>Mercado</h2>
-                <img src="./imagens e icones/mercado.jpg" alt="imagem de um carrinho de supermecado com uma laranja">
-                <h2>Farmácia</h2>
-                <img src="./imagens e icones/farmacia.jpg" alt="imagem de uma mão segurando remédios">
-                <h2>Lanches</h2>
-                <img src="./imagens e icones/ifood.jpg" alt="imagem de um hamburguer">
-                <h2>Pet shop</h2>
-                <img src="./imagens e icones/petcoelho.jpg" alt="imagem de um coelho usando óculos">
-
-            </article>
-        </section>
-
-        <section>
-            <button> Confira agora nossas promoções e cupons de desconto.</button>
-            <img src="./imagens e icones/mercado4.jpg" alt="mercado">
-
-            <button> Adquira já o seu 4Food Card e ganhe 10% na primeira compra!</button><br>
-
-            <img src="./imagens e icones/mercado3.jpg" alt="mercado">
-
-        </section>
-
-        <section>
-            <img src="./imagens e icones/ali1.jpg" alt="foto de cerveja">
-            <img src="./imagens e icones/ali3.webp" alt="foto de nutella">
-            <img src="./imagens e icones/ali9.webp" alt="foto de amaciante">
-            <img src="./imagens e icones/ali5.jpg" alt="foto de miojo">
-            <img src="./imagens e icones/ali7.jpg" alt="foto de papel higiênico">
-            <img src="./imagens e icones/ali8.jpg" alt="foto de macarrão ">
-            <h3>Fazer compras nunca foi tão fácil! <br> Confira nossos cupons de desconto!</h3>
-
-        </section>
-        <aside>
-            <h1>Junte-se ao 4Food</h1>
-            <img src="./imagens e icones/entregador2.jpg" alt="foto de um entregador">
-            <h2>Seja um entregador</h2>
-            <img src="./imagens e icones/mec1.jpg" alt="foto de mercado">
-            <h2>Registre seu negócio</h2>
-            <img src="./imagens e icones/trabalhe conosco2.jpg" alt="imagem de pessoa sentada trabalhando com notbook">
-            <h2>Trabalhe conosco</h2>
+                <img id="imagem1-abertura" src="./icones/entregador-segunda-foto.png"
+                    alt="imagem de um homem segurando uma caixa de verduras">
 
 
-            <h1>Seja um do nosssos colaboradores, preencha o formulário que entraremos em contato!</h1>
 
-            <article>
-                <p>FORMULÁRIO</p>
-                <form>
-                    <label for="nome-completo">Nome</label>
-                    <input type='text' id='nome-completo' required>
-                    <br>
+                <aside class="frase-de-abertura">
+                    <p>Bem-vindo ao 4 Food, o seu supermercado digital! Aqui, você encontra uma ampla variedade de
+                        produtos alimentícios, limpeza, saúde e até para o seu pet. Nós nos orgulhamos em oferecer
+                        produtos de alta qualidade com preços competitivos e um atendimento excepcional. Faça suas
+                        compras conosco e aproveite a praticidade de ser 4Food. </p>
 
-                    <label for="telefone">Telefone para contato</label>
-                    <input type='number' id='telefone' required>
-                    <br>
+                    <a class="btn-app" href="">Baixe agora o app da 4Food</a>
 
-                    <label for="email">E-mail</label>
-                    <input type='text' id='email' required>
-                    <br>
+                </aside>
 
-                    <label for="opcao">Selecione uma das opções para envio</label>
-                    <input type='text' id='opcao' required>
-                    <br>
 
-                    <button type="submit">Enviar!</button>
+                <img id="figurinha-entregador" src="./icones/entregador.png" alt="figurinha de uma entregador">
 
-                </form>
-            </article>
 
-        </aside>
-    </main>
+            </section>
+            <section id="facilidades">
+
+                <img id="imag1" src="./icones/celular.png" alt="pessoa segurando o celular">
+                <img id="imag2" src="./icones/pedir-comida.png" alt="entregador caminhando">
+                <img id="imag3" src="./icones/entrega-de-alimentos.png" alt="entregador caminhando">
+                <img id="imag4" src="./icones/entrega (1).png" alt="imagem de um celular mostrando o mapa de entrega">
+                <img id="imag5" src="./icones/entrega-de-pacote (1).png" alt="imagem de entrega de pacote">
+
+                <div class="shape" id="pergunta">
+                    <p>Navegue pelo nosso mercado virtual e encontre tudo o que precisa, desde frutas e verduras até
+                        carnes, peixes e produtos de limpeza. Com o nosso sistema de entrega rápida e confiável, você
+                        pode receber seus produtos diretamente na porta de casa ou onde estiver, economizando tempo e
+                        energia.
+                    </p>
+
+
+                    <a id="frase-botao" href="">Adquira já o seu 4Food Card e ganhe 10% na primeira
+                        compra!</a>
+
+                </div>
+
+
+
+            </section>
+
+            <div id="frase-servicos">Confira nossa lista de serviços</div>
+
+            <section class="servicos">
+
+                <figure id="restaurante">
+                    <figcaption>Restaurante</figcaption>
+                    <img src="./icones/mesa-de-jantar.png" alt="mesa de jantar">
+                </figure>
+
+                <figure id="mercado">
+                    <figcaption>Mercado</figcaption>
+                    <img src="./icones/doacao (1).png" alt="imagem de um carrinho de supermecado ">
+                </figure>
+
+
+                <figure id="farmacia">
+                    <figcaption>Farmácia</figcaption>
+                    <img src="./icones/farmacia.png" alt="simbolis de farmacia">
+                </figure>
+
+
+                <figure id="lanches">
+                    <figcaption>Lanches</figcaption>
+                    <img src="./icones/hamburguer.png" alt="imagem de um hamburguer">
+                </figure>
+
+                <figure id="pet-shop">
+                    <figcaption>Pet shop</figcaption>
+                    <img src="./icones/pet-shop.png" alt="imagem de um pet-shop">
+                </figure>
+
+
+            </section>
+
+
+            <section>
+                <div id="promocoes">
+
+                    <figure id="item1">
+                        <figcaption>5% de desconto comprando 2 caixas</figcaption>
+                        <img src="./imagens e icones/ali1.jpg" alt="">
+                    </figure>
+
+                    <figure id="item2">
+                        <figcaption>5% de desconto comprando 2 caixas</figcaption>
+                        <img src="./imagens e icones/ali3.webp" alt="">
+                    </figure>
+
+                    <figure id="item3">
+                        <figcaption>5% de desconto comprando 2 caixas</figcaption>
+                        <img src="./imagens e icones/ali9.webp" alt="">
+                    </figure>
+
+                    <figure id="item4">
+                        <figcaption>5% de desconto comprando 2 caixas</figcaption>
+                        <img src="./imagens e icones/ali5.jpg" alt="">
+                    </figure>
+
+
+                    <figure id="item5">
+                        <figcaption>5% de desconto comprando 2 caixas</figcaption>
+                        <img src="./imagens e icones/ali7.jpg" alt="">
+                    </figure>
+
+                    <figure id="item6">
+                        <figcaption>5% de desconto comprando 2 caixas</figcaption>
+                        <img src="./imagens e icones/ali8.jpg" alt="">
+                    </figure>
+
+                    <p id="frase-oferta">
+                        Fazer compras nunca foi tão fácil, confira nossos cupons de desconto. <br>Além disso, oferecemos
+                        preços competitivos e promoções exclusivas para que você possa economizar enquanto faz suas
+                        compras.</p>
+                </div>
+
+
+            </section>
+            <section id="frase-4food">
+                <h3>Junte-se ao 4Food</h3>
+                <h4>Seja um do nosssos colaboradores, preencha o formulário que entraremos em contato!</h4>
+                <br>
+            </section>
+
+            <section id="categorias">
+
+                <figure id="registre">
+                    <figcaption>Registre seu negócio</figcaption>
+                    <img src="./imagens e icones/entregador.jpg" alt="foto de um entregador">
+                </figure>
+
+
+                <figure id="entregador">
+                    <figcaption>Seja um entregador</figcaption>
+                    <img src="./imagens e icones/entregador2.jpg" alt="foto de mercado">
+                </figure>
+
+                <figure id="trabalhe-conosco">
+                    <figcaption>Trabalhe conosco</figcaption>
+                    <img src="./imagens e icones/trabalhe conosco2.jpg"
+                        alt="imagem de pessoa sentada trabalhando com notbook">
+                </figure>
+
+            </section>
+            <section id="formulario">
+
+                <div class="box">
+                    <form action="">
+                        <fieldset>
+                            <legend><b>Formulário</b></legend>
+                            <br>
+                            <div class="inputBox">
+                                <input type="text" name="nome" id="none" class="inputUser" required>
+                                <label for="nome" class="labelInput">Nome Completo</label>
+                            </div>
+                            <br>
+                            <div class="inputBox">
+                                <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                                <label for="telefone" class="labelInput">Telefone</label>
+                            </div>
+                            <br>
+                            <div class="inputBox">
+                                <input type="text" name="email" id="email" class="inputUser" required>
+                                <label for="email" class="labelInput">E-mail</label>
+                            </div>
+                            <br>
+                            <label for="data-nascimento">Data de nascimento</label>
+                            <input type="date" name="data-nascimento" id="data-nascimento" required>
+                            <br><br>
+                            <p>Escolha para quais sessões enviar o formulário</p>
+                            <br>
+                            <input type="radio" id="opcoes" name="selecao" value="negócio" required>
+                            <label for="opcoes">Registrar meu negócio </label>
+                            <br>
+
+                            <input type="radio" id="opcoes" name="selecao" value="entregador" required>
+                            <label for="opcoes">Ser um(a) entregador(a) </label>
+                            <br>
+
+                            <input type="radio" id="opcoes" name="selecao" value="trabalhe" required>
+                            <label for="opcoes">Trabalhe conosco </label>
+                            <br>
+
+                            <input type="radio" id="opcoes" name="selecao" value="4FOOD Card" required>
+                            <label for="opcoes">4FOOD Card </label>
+                            <br><br>
+
+                            <input type="submit" name="submit" id="submit">
+
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+
+
+
+
+
     <footer>
-        <img src="./imagens e icones/4food.png" alt="logotipo">
-        <a href="https://web.whatsapp.com/" target="_blank"><img src="./icones/whatsapp (1).png"
-                alt="Logotipo whatsapp"></a>
-        <a href="https://www.instagram.com/" target="_blank"><img src="./icones/instagram.png"
-                alt="Logotipo instagram"></a>
-        <a href="https://twitter.com/?lang=pt-br" target="_blank"><img src="./icones/twitter.png"
-                alt="Logotipo Twitter"></a>
+        <div id="logo-footer">
+            <img src="./icones/logo-sem-escrita.png" alt="logotipo 4FOOD">
+        </div>
+        <div id="sessao-footer">
+            <a href="">Sobre</a>
+            <a href="">Nossos Serviços</a>
+            <a href="">4Food Card </a>
+            <a href="">Trabalhe conosco</a>
+        </div>
+        <div class="redes-sociais">
+            <a href="https://web.whatsapp.com/" target="_blank"><img src="./icones/whatsapp (1).png"
+                    alt="Logotipo whatsapp"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="./icones/instagram.png"
+                    alt="Logotipo instagram"></a>
+            <a href="https://twitter.com/?lang=pt-br" target="_blank"><img src="./icones/twitter.png"
+                    alt="Logotipo Twitter"></a>
+        </div>
     </footer>
+    </div>
 </body>
 
 </html>
