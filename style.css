@@ -1,14 +1,51 @@
 * {
     padding: 0;
     margin: 0;
+estrutura-basica
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+header{
+    background-color: #e0d9d6;
+=======
 }
 
 header{
     background-color: #887062;
+ main
     height: 80px;
     padding: 10px;
     display:flex;
     align-items: center;
     justify-content: space-evenly;
     font-family:Zen Kaku Gótico Novo;
+ estrutura-basica
+    border: 3px; color: #887062;
 }
+
+body{
+    border: 3px; color: #ccc;
+}
+
+
+section{
+    background-color: white;
+    border: 3px; color: black;
+
+}
+
+.footer{
+    height: 1px;
+    width: 1px;
+}
+
+footer{
+background-color: #887062;
+    border: black;
+
+}
+
+=======
+}
+ main
