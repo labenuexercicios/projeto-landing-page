@@ -1,14 +1,14 @@
-// // FUNÇÃO MENU HAMBURGUER
+// FUNÇÃO MENU HAMBURGUER
 
-// let show = true
+let show = true
 
-// const menuSection = document.querySelector('.menu-section')
-// const menuToggle = menuSection.querySelector('.menu-toggle')
+const menuSection = document.querySelector('.menu-section')
+const menuToggle = menuSection.querySelector('.menu-toggle')
 
-// menuSection.addEventListener('click', () => {
-//   document.body.style = show ? 'hidden' : 'initial'
-//   // overflow
+menuSection.addEventListener('click', () => {
+  document.body.style = show ? 'hidden' : 'initial'
+  // overflow
 
-//   menuSection.classList.toggle('on', show)
-//   show = !show
-// })
+  menuSection.classList.toggle('on', show)
+  show = !show
+})
