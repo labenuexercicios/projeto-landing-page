@@ -76,3 +76,19 @@
   visibility: visible;
   opacity: 1;
 }
+
+@media screen and (min-width: 480px) and (max-width: 1250px) {
+  .modal-content {
+    left: 0%;
+    margin-top: 3rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+  }
+  .modal-active #modal-img {
+    width: 100%;
+    transform: scale(1);
+  }
+}
