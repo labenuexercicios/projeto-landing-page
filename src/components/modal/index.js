@@ -25,3 +25,58 @@
 //     closeModal()
 //   }
 // })
+
+// const logButton = document.querySelector('.button')
+
+// logButton.addEventListener('click', function (e) {
+//   e.preventDefault()
+
+//   let nameInput = document.querySelector('#inputName')
+//   let telefoneInput = document.querySelector('#inputNumber')
+//   let emailInput = document.querySelector('#inputEmail')
+//   let passwordInput = document.querySelector('#inputPassword')
+//   let validation = document.querySelector('#validation')
+
+//   if (!nameInput.value || !isNaN(nameInput.value)) {
+//     validation.textContent = 'Por favor, digite um nome válido.';
+//     return;
+//   } else {
+//     validation.textContent = '';
+//   }
+
+//   if (isNaN(telefoneInput.value) || telefoneInput.value.length < 11) {
+//     validation.innerHTML = 'Por favor digite um telefone válido'
+//     return
+//   } else {
+//     validation.innerHTML = ''
+//   }
+
+//   if (!emailInput.value || '') {
+//     validation.textContent = 'Por favor, digite um email válido.';
+//     return;
+//   } else {
+//     validation.textContent = '';
+//   }
+
+//   if (!passwordInput.value || isNaN(passwordInput.value) || passwordInput.value.length < 6) {
+//     validation.textContent = 'Por favor, digite um passwor válido.';
+//     return;
+//   } else {
+//     validation.textContent = '';
+//   }
+
+//   nameInput.value = ''
+//   telefoneInput.value = ''
+//   emailInput.value = ''
+//   passwordInput.value = ''
+
+//   modal.classList.add('hidden')
+//   overlay.classList.add('hidden')
+
+//   alert('Formulário enviado com sucesso')
+
+// })
+
+
+
+
