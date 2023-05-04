@@ -45,21 +45,21 @@
 //   }
 
 //   if (isNaN(telefoneInput.value) || telefoneInput.value.length < 11) {
-//     validation.innerHTML = 'Por favor digite um telefone válido'
+//     validation.innerHTML = 'Por favor, digite um telefone válido'
 //     return
 //   } else {
 //     validation.innerHTML = ''
 //   }
 
 //   if (!emailInput.value || '') {
-//     validation.textContent = 'Por favor, digite um email válido.';
+//     validation.textContent = 'Por favor, digite um e-mail válido.';
 //     return;
 //   } else {
 //     validation.textContent = '';
 //   }
 
 //   if (!passwordInput.value || isNaN(passwordInput.value) || passwordInput.value.length < 6) {
-//     validation.textContent = 'Por favor, digite um passwor válido.';
+//     validation.textContent = 'Por favor, digite um password válido.';
 //     return;
 //   } else {
 //     validation.textContent = '';

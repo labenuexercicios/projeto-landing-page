@@ -17,7 +17,7 @@
 //   })
 // }
 
-// function closeImageModal() {
+// const closeImageModal = () => {
 //   modal_show.classList.toggle('modal-active')
 
 //   modalImg.classList.add('hidden')
