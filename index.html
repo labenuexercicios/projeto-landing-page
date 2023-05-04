@@ -5,98 +5,216 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>4Comfort</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <title>4Comfort</title>
 </head>
 
 <body>
-
     <main>
-        <header>
-            <img src="./media/logo.webp" alt="logo" id="logo">
-            <nav>
-                <p>
-                    Opções para navegação na page
-                </p>
+        <header class="cabecalho">
+            <nav class="opcoes">
+                <ul id="redirect">
+                    <li><a href="#feminino" id="nav-link">Home</a></li>
+                    <li><a href="#favoritos" id="nav-link">Favoritos</a></li>
+                    <li><a href="#lancamentos" id="nav-link">Lançamentos</a></li>
+                </ul>
             </nav>
+            <div class="logo">
+                <a href="#" class="logo"><img src="./media/logo.webp" alt="logo"></a>
+            </div>
+            <nav class="opcoes">
+                <ul id="conta">
+                    <li>
+                        <a href="#" id="nav-link"><i class="fa-solid fa-magnifying-glass fa-xl"
+                                style="color: #83969c;"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="nav-link"><i class="fa-regular fa-circle-user fa-xl"
+                                style="color: #83969c;"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="nav-link"><i class="fa-solid fa-cart-shopping fa-xl"
+                                style="color: #83969c;"></i></a>
+                    </li>
+                </ul>
+            </nav>
+            </div>
         </header>
-
-        <section>
-            <img src="./media/tenis-fem1.jpg" alt="tenis feminino">
-            <img src="./media/tenis-fem2.jpg" alt="tenis feminino">
-            <button>Ver Mais</button>
-            <button>Ver Mais</button>
-            <p>
-                Aqui vão duas Imagens lado a lado com botões e um texto sobrepondo as imagens
-            </p>
+        <section id="feminino">
+            <div class="containerMascFem">
+                <img src="./media/tenis-fem1.jpg" id="fem1" alt="tenis feminino">
+                <img src="./media/tenis-fem2.jpg" id="fem2" alt="tenis feminino">
+                <button class="btn-masc-fem" id="btn1">Ver Mais</button>
+                <h1 id="tituloFem">Dias Longos, Tênis leves</h1>
+                <p id="textoFem">Dê aos seus pés conforto e estilo, em qualquer ocasião.</p>
+            </div>
         </section>
 
-        <section>
-            <h2>Nossos Favoritos</h2>
-            <p>
-                Aqui vai a sessão dos favoritos, separados pelo segmento, com três imagens de exemplo para cada (ao
-                passar o mouse as imagens devem aproximar, ficar escuras e botões deverão aparecer)
-            </p>
-            <a>
-                Sport
-            </a>
+        <section id="favoritos">
+            <div id="container-nossos-favoritos">
+                <h2>Nossos Favoritos</h2>
+            </div>
+            <div id="texto-nossos-favoritos">
+                <p>
+                    Seja para um dia de trabalho, de esportes ou de descanço
+                    <br />
+                    Estes são os nossos favoritos:
+                </p>
+            </div>
+            <div id="container-img-nossos-favoritos">
+                <img src="./media/favoritos1.png" class="img-favoritos" alt="Favoritos">
+                <img src="./media/favoritos2.jpg" class="img-favoritos" alt="Favoritos">
+                <img src="./media/favoritos3.jpg" class="img-favoritos" alt="Favoritos">
+            </div>
         </section>
 
-        <section>
-            <p>
-                Aqui vão duas Imagens lado a lado com botões diferentes
-            </p>
-            <img src="./media/masc3.jpg" alt="tenis masculino">
-            <img src="./media/masc1.jpg" alt="tenis masculino">
-            <button>Ver Mais</button>
-            <button>Ver Mais</button>
+        <section id="masculino">
+            <div class="containerMascFem">
+                <img src="./media/masc3.jpg" id="masc1" alt="tenis masculino">
+                <img src="./media/masc1.jpg" id="masc2" alt="tenis masculino">
+                <button class="btn-masc-fem" id="btn2">Ver Mais</button>
+                <h1 id="tituloMasc">Mantenha-se em Movimento</h1>
+                <p id="textoMasc">Nossos tênis são pensados para aguentar qualquer ritmo.</p>
+            </div>
         </section>
 
-        <section>
-            <p>
-                Aqui vai um pequeno texto com uma sacada da marca
-            </p>
+        <section id="vantagens">
+            <div class="imgTerritorio">
+                <img src="./media/territorio2.png" id="territorio" alt="Brasil">
+                <i class="fa-thin fa-location-dot fa-2xl" id="imgPin" style="color: #454e51;"></i>
+            </div>
+
+            <div class="textoTerritorio">
+                <p>
+                    A 4Confort atende todo o território nacional, com entregas rápidas e eficientes. Faça já seu pedido
+                    e receba em até 7 dias úteis.
+                </p>
+                <button class="btn-frete" id="btn5">Calcule seu Frete</button>
+            </div>
+        </section>
+
+        <section id="lancamentos">
             <p>
                 Aqui vão os lançamentos, com varios exemplos e uma seta de rolagem lateral (caso consiga)
             </p>
-            <img src="./media/tenis1.jfif" alt="tenis masculino">
-            <img src="./media/tenis-masc2.jpg" alt="tenis masculino">
-            <img src="./media/tenis-masc3.jpg" alt="tenis masculino">
-            <img src="./media/tenis-masc4.jpg" alt="tenis masculino">
-            <img src="./media/tenis-masc5.jpg" alt="tenis masculino">
-            <img src="./media/masc2.jpg" alt="tenis masculino">
-            <img src="./media/fem1.jfif" alt="tenis feminino">
-            <img src="./media/fem2.jfif" alt="tenis feminino">
-            <img src="./media/tenis-fem3.jpg" alt="tenis feminino">
-            <img src="./media/tenis-fem4.png" alt="tenis feminino">
-            <img src="./media/tenis-fem5.jpg" alt="tenis feminino">
-            <img src="./media/tenis-fem6.jfif" alt="tenis feminino">
+            <div id="container-img-lancamentos">
+                <img src="./media/Meu projeto 3.jpg" class="img-lancamentos" alt="Lançamentos">
+                <img src="./media/Meu projeto 4.jpg" class="img-lancamentos" alt="Lançamentos">
+                <img src="./media/Meu projeto 5.jpg" class="img-lancamentos" alt="Lançamentos">
+
+                <!-- Para se conseguir fazer o slide -->
+                <!-- <img src="./media/Meu projeto.png" alt="Lançamentos">
+                <img src="./media/Meu projeto 2.jpg" alt="Lançamentos"> 
+                <img src="./media/Meu projeto (1).png" alt="Lançamentos"> -->
+            </div>
+
+            <!-- <img src="./media/tenis-masc3.jpg" alt="tenis masculino"> img de fundo1
+            <img src="./media/tenis-masc4.jpg" alt="tenis masculino"> img de fundo2 -->
         </section>
 
-        <section>
-            <p>
-                Aqui vai o formulário de inscrição
-            </p>
+        <section id="form">
+
             <form>
-                <input type="text" name="email" placeholder="Seu e-mail...">
+                <h2>Quer receber as últimas novidades?</h2>
+                <p>
+                    Se inscreva em nossa lista de e-mail ou de whatsapp para receber, em primeira mão, nossos
+                    lançamentos
+                </p>
+                <input type="text" name="nome" placeholder="Seu nome...">
+                <input type="email" name="email" placeholder="Seu e-mail...">
                 <input type="tel" name="telefone" placeholder="Seu telefone...">
-                <input type="submit" name="acao" value="Quero receber as últimas novidades">
+                <input type="submit" name="acao" value="Inscrever">
             </form>
-            <button>Quero receber os lançamentos</button>
         </section>
 
     </main>
     <footer>
-        <p>
-            Aqui vão as informações da empresa (quem somos, nossos materiais, propósito, investidores, trabalhe
-            conosco), ajuda (telefone de contato, email de contato, FAQ, devolução/troca), loja (masc, fem, kids),
-            links para redes sociais (Insta, twitter, facebook) e talvez isso aqui: © 2022 Allbirds, Inc. All Rights
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <div id="footer_social_media">
+                    <a href="https://www.instagram.com/" class="footer-link" target="_blank" id="Instagram">
+                        <i class="fa-brands fa-instagram fa-xl" style="color: #83969c;"></i>
+                    </a>
+                </div>
+
+                <div id="footer_social_media">
+                    <a href="https://www.facebook.com/" class="footer-link" target="_blank" id="Facebook">
+                        <i class="fa-brands fa-facebook-f fa-xl" style="color: #83969c;"></i>
+                    </a>
+                </div>
+
+                <div id="footer_social_media">
+                    <a href="https://www.twitter.com/" class="footer-link" target="_blank" id="Twitter">
+                        <i class="fa-brands fa-twitter fa-xl" style="color: #83969c;"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Loja</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Masculino</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Feminino</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Favoritos</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Lançamentos</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Quem Somos</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Valores</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Missão</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">investidores</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Nossa Equipe</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Ajuda</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Central de Ajuda</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">FAQ</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Contato</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Devolução/Troca</a>
+                </li>
+            </ul>
+        </div>
+        <div id="footer_copyright">
+            &#169
+            2022 4Comfort, Inc. All Rights
             Reserved. Terms, Privacy & Accessibility
-        </p>
+        </div>
     </footer>
-    <p id="teste">
-        Paleta Definida
-    </p>
 </body>
 
 </html>
