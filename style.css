@@ -6,14 +6,13 @@
 }
 
 main {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
     background-color: #DAE5E8;
     opacity: 0.85;
     width: 100vw;
 }
 
 /* Header e logo */
-
 header {
     background-color: #DAE5E8;
     display: flex;
@@ -35,7 +34,6 @@ header {
 }
 
 /* Nav do site */
-
 #redirect {
     display: flex;
     list-style: none;
@@ -51,7 +49,7 @@ header {
     width: 33vw;
     gap: 2rem;
     padding-right: 3rem;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 #nav-link {
@@ -70,7 +68,6 @@ header {
 /* Sessão Principal */
 
 /* Feminino */
-
 #fem1,
 #fem2 {
     width: 50vw;
@@ -129,17 +126,22 @@ header {
 }
 
 /* Favoritos */
-section#favoritos {
-    height: 100vh;
+#favoritos {
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
-#container-nossos-favoritos {
-    height: 25vh;
+#titulo-nossos-favoritos {
+    height: 20vh;
     display: flex;
     justify-content: center;
     align-items: end;
     padding-bottom: .5rem;
-    color: #5c6d71;
+    color: #454e51;
+    font-size: xx-large;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 #texto-nossos-favoritos {
@@ -150,24 +152,48 @@ section#favoritos {
     text-align: center;
 }
 
+#container-favs {
+    width: 70vw;
+    border-top: 1px solid #454e51;
+}
+
 #container-img-nossos-favoritos {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 3rem;
     overflow: hidden;
+    padding-top: 2rem;
 }
 
-.img-favoritos {
-    transition: transform .5s;
+.tenis-box {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
 }
 
-.img-favoritos:hover {
+.tenis-box img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-out;
+    max-width: 100%;
+}
+
+.tenis-info {
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    height: 80px;
+    position: absolute;
+    width: 300px;
+    opacity: .65;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tenis-box img:hover {
     transform: scale(1.05);
     cursor: pointer;
-
 }
-
 
 /* Masculino */
 #masc1,
@@ -220,11 +246,23 @@ section#favoritos {
 }
 
 /* Vantagens */
-section#vantagens {
-    height: 100vh;
+.vantagens {
+    height: 95vh;
     width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container-vantagens {
+    height: 75vh;
+    width: 75vw;
+    align-items: center;
+    justify-content: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    border-top: 1px solid #454e51;
+    border-bottom: 1px solid #454e51;
 }
 
 #territorio {
@@ -239,6 +277,7 @@ section#vantagens {
     align-items: center;
     justify-content: center;
     width: 50vw;
+    padding-left: 16rem;
 }
 
 #imgPin {
@@ -255,6 +294,7 @@ section#vantagens {
     font-weight: bold;
     color: #454e51;
     width: 50vw;
+    padding-right: 16rem;
 }
 
 .textoTerritorio p {
@@ -280,10 +320,23 @@ section#vantagens {
     transition: .2s;
 }
 
+#pin {
+    justify-content: center;
+}
+
 /* Lançamentos */
 
-section#lancamentos {
-    height: 80vh;
+#lancamentos {
+    height: 100vh;
+}
+
+#titulo-lancamentos {
+    padding: 4rem 0;
+    font-size: xx-large;
+    color: #454e51;
+    display: flex;
+    justify-content: center;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 #container-img-lancamentos {
@@ -304,6 +357,16 @@ section#lancamentos {
 
 }
 
+.tenis-info2 {
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    height: 80px;
+    position: absolute;
+    width: 300px;
+    opacity: .65;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
 
 /* Form */
 
@@ -416,6 +479,7 @@ footer {
     color: #9C8773;
     color: #E8E1DA;
     color: #83969C;
+    color: #454e51;
 }
 
 

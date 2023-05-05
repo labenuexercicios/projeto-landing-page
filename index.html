@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -29,17 +30,17 @@
                 <ul id="conta">
                     <li>
                         <a href="#" id="nav-link"><i class="fa-solid fa-magnifying-glass fa-xl"
-                                style="color: #83969c;"></i>
+                                style="color: #454e51;"></i>
                         </a>
                     </li>
                     <li>
                         <a href="#" id="nav-link"><i class="fa-regular fa-circle-user fa-xl"
-                                style="color: #83969c;"></i>
+                                style="color: #454e51;"></i>
                         </a>
                     </li>
                     <li>
                         <a href="#" id="nav-link"><i class="fa-solid fa-cart-shopping fa-xl"
-                                style="color: #83969c;"></i></a>
+                                style="color: #454e51;"></i></a>
                     </li>
                 </ul>
             </nav>
@@ -56,20 +57,43 @@
         </section>
 
         <section id="favoritos">
-            <div id="container-nossos-favoritos">
-                <h2>Nossos Favoritos</h2>
+            <div id="titulo-nossos-favoritos">
+                <h3>Nossos Favoritos</h3>
             </div>
             <div id="texto-nossos-favoritos">
                 <p>
-                    Seja para um dia de trabalho, de esportes ou de descanço
-                    <br />
-                    Estes são os nossos favoritos:
+                    Seja para um dia de trabalho, de esportes ou de descanço.
                 </p>
+
             </div>
-            <div id="container-img-nossos-favoritos">
-                <img src="./media/favoritos1.png" class="img-favoritos" alt="Favoritos">
-                <img src="./media/favoritos2.jpg" class="img-favoritos" alt="Favoritos">
-                <img src="./media/favoritos3.jpg" class="img-favoritos" alt="Favoritos">
+            <div id="container-favs">
+                <div id="container-img-nossos-favoritos">
+                    
+                    <div class="tenis-box">
+                        <img src="./media/favoritos1.png" class="img-favoritos" alt="Favoritos">
+                        <div class="tenis-info">
+                            <h3>Nome do Tenis</h3>
+                            <p>R$ 359,90</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tenis-box">
+                        <img src="./media/favoritos2.jpg" class="img-favoritos" alt="Favoritos">
+                        <div class="tenis-info">
+                            <h3>Nome do Tenis</h3>
+                            <p>R$ 359,90</p>
+                        </div>
+                    </div>
+
+                    <div class="tenis-box">
+                        <img src="./media/favoritos3.jpg" class="img-favoritos" alt="Favoritos">
+                        <div class="tenis-info">
+                            <h3>Nome do Tenis</h3>
+                            <p>R$ 359,90</p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </section>
 
@@ -83,29 +107,55 @@
             </div>
         </section>
 
-        <section id="vantagens">
-            <div class="imgTerritorio">
-                <img src="./media/territorio2.png" id="territorio" alt="Brasil">
-                <i class="fa-thin fa-location-dot fa-2xl" id="imgPin" style="color: #454e51;"></i>
-            </div>
+        <section class="vantagens">
 
-            <div class="textoTerritorio">
-                <p>
-                    A 4Confort atende todo o território nacional, com entregas rápidas e eficientes. Faça já seu pedido
-                    e receba em até 7 dias úteis.
-                </p>
-                <button class="btn-frete" id="btn5">Calcule seu Frete</button>
+            <div id="container-vantagens">
+                <div class="imgTerritorio">
+                    <img src="./media/territorio2.png" id="territorio" alt="Brasil">
+                    <i class="fa-solid fa-location-dot fa-2xl" id="pin" style="color: #454e51;"></i>
+                    <i class="fa-solid fa-location-dot fa-2xl" id="pin" style="color: #454e51;"></i>
+                    <i class="fa-solid fa-location-dot fa-2xl" id="pin" style="color: #454e51;"></i>
+                    <i class="fa-solid fa-location-dot fa-2xl" id="pin" style="color: #454e51;"></i>
+                    <i class="fa-solid fa-location-dot fa-2xl" id="pin" style="color: #454e51;"></i>
+                </div>
+
+                <div class="textoTerritorio">
+                    <p>
+                        A 4Confort atende todo o território nacional, com entregas rápidas e eficientes. Faça já seu
+                        pedido
+                        e receba em até 7 dias úteis.
+                    </p>
+                    <button class="btn-frete" id="btn5">Calcule seu Frete</button>
+                </div>
             </div>
         </section>
 
         <section id="lancamentos">
-            <p>
-                Aqui vão os lançamentos, com varios exemplos e uma seta de rolagem lateral (caso consiga)
-            </p>
+            <h3 id="titulo-lancamentos">
+                Lançamentos
+            </h3>
             <div id="container-img-lancamentos">
-                <img src="./media/Meu projeto 3.jpg" class="img-lancamentos" alt="Lançamentos">
-                <img src="./media/Meu projeto 4.jpg" class="img-lancamentos" alt="Lançamentos">
-                <img src="./media/Meu projeto 5.jpg" class="img-lancamentos" alt="Lançamentos">
+                <div class="tenis-box">
+                    <img src="./media/Meu projeto 3.jpg" class="img-favoritos" alt="Favoritos">
+                    <div class="tenis-info2">
+                        <h3>Nome do Tenis</h3>
+                        <p>R$ 359,90</p>
+                    </div>
+                </div>
+                <div class="tenis-box">
+                    <img src="./media/Meu projeto 4.jpg" class="img-favoritos" alt="Favoritos">
+                    <div class="tenis-info2">
+                        <h3>Nome do Tenis</h3>
+                        <p>R$ 359,90</p>
+                    </div>
+                </div>
+                <div class="tenis-box">
+                    <img src="./media/Meu projeto 5.jpg" class="img-favoritos" alt="Favoritos">
+                    <div class="tenis-info2">
+                        <h3>Nome do Tenis</h3>
+                        <p>R$ 359,90</p>
+                    </div>
+                </div>
 
                 <!-- Para se conseguir fazer o slide -->
                 <!-- <img src="./media/Meu projeto.png" alt="Lançamentos">
