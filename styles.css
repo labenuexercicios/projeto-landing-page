@@ -292,6 +292,13 @@ header .nav-container {
   font-weight: 500;
 }
 
+.rodape address {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (min-width: 600px) and (max-width: 1250px) {
   .main {
     position: relative;
