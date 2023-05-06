@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header .line{
+ justify-content: space-between;
+}
+
+.container {
+  max-width: 100%;
+  margin: auto;
+  background-color: rgb(128,0,0);
+  margin-top: 0;
+ 
+}
+
+.header--area{
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  width: 100%;
+  align-items: start;
+  
+
+}
+
+.header--left img{
+  width: 100px;
+  height: 100px;
+}
+
+li {
+  list-style-type: none;
+
+}
+
+.header--right{
+  display: flex;
+  font-size: 2rem;
+  gap: 24px;
+  justify-content: space-between;
+}
+
+.header--right a{
+  text-decoration: none;
+  color:#ffa07a ;
+}
+
+
+
+.banner img{
+  width: 150px;
+  height: 130px;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.container-main{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.container-main h2{
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.container-main h4{
+  font-size: 24px;
+}
+
+.titulo{
+  text-align: center;
+  color: #be5252;
+  
+}
+
+#mercado {
+  display: flex ;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  background-color: #977a7fd7;
+}
+
+#marmita {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  background-color:#977a7fd7 ;
+}
+
+.imagens img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.imagens p {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.botao {
+  background-color:rgb(72,143,131) ;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.botao:hover {
+  background-color:rgb(72,84,143) ;
+}
+
+.container-main p {
+  font-size:25px;
+  color: #36090b;
+}
+
+.imagens{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+main {
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(116, 14, 14);
+    flex-wrap: wrap;
+}
+
+#quem-somos {
+  background-color:#977a7fd7 ;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.ordem{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#quem-somos h2 {
+  font-size: 28px;
+  color: #410404;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#quem-somos p {
+  font-size: 24px;
+  /* line-height: 1.5; */
+  color: #660a0a;
+  /* margin-bottom: 20px; */
+  text-align: center;
+}
+
+#quem-somos img {
+  /* display: block; */
+  max-width: 40vw;
+  margin: 0 auto;
+}
+
+
+/* form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  border: solid 5px rgb(61, 4, 13);
+  background-color:rgb(156, 66, 66) ;
+  text-align:center;
+  color: #300101;
+  
+} */
+
+/* Estilos para o formulário de contato */
+
+#contact-form {
+  background-color:rgb(156, 66, 66);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  padding: 20px;
+  margin-top: 40px;
+  color: #410404;
+}
+
+#contact-form h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#contact-form label {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  border: 1px solid rgb(63, 3, 3);
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  border-color: #5c93b8;
+  outline: none;
+}
+
+#contact-form button {
+  background-color: #655cb8;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+#contact-form button:hover {
+  background-color: #4c66ae;
+}
+
+
+label {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+input[type="email"],
+textarea {
+  border: 1px solid rgb(116, 14, 14);
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+footer {
+    font-size: 1 rem;
+    background-color: #5f0f0f;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    margin-bottom: 5px;
+  }
+  
+  footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  footer ul li a {
+    color: #555;
+    text-decoration: none;
+  }
+
+
+
+  footer ul li a img {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    margin-bottom: 0;
+    
+  }
+
+  .container-redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  @media screen and (max-width: 800px){
+    header{
+      height: 25vh;
+    }
+    
+    main{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      background-color:rgb(116, 14, 14) ;
+      
+    }
+
+    .header--right{
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 16px;
+      margin-right: 15px;
+    }
+    #marmita{
+      display: flex;
+      flex-direction: column;
+    }
+
+    #mercado{
+      display: flex;
+      flex-direction: column;
+      
+    }
+
+    #quem-somos{
+      display: flex;
+      flex-direction: column;
+      margin-right: 15px;
+      margin-left: 15px;
+    }
+
+    #contact-form{
+      display: flex;
+      flex-direction: column;
+    }
+       
+        .container-quem-somos img {
+          border-radius: 10px;
+        }
+        
+      }   
+      
+    
+
+  
+
+  
+
+
+
