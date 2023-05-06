@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -51,7 +51,7 @@
                 <img src="./media/tenis-fem1.jpg" id="fem1" alt="tenis feminino">
                 <img src="./media/tenis-fem2.jpg" id="fem2" alt="tenis feminino">
                 <button class="btn-masc-fem" id="btn1">Ver Mais</button>
-                <h1 id="tituloFem">Dias Longos, Tênis leves</h1>
+                <h1 id="tituloFem">Dias Longos, Tênis Leves</h1>
                 <p id="textoFem">Dê aos seus pés conforto e estilo, em qualquer ocasião.</p>
             </div>
         </section>
@@ -68,28 +68,28 @@
             </div>
             <div id="container-favs">
                 <div id="container-img-nossos-favoritos">
-                    
+
                     <div class="tenis-box">
                         <img src="./media/favoritos1.png" class="img-favoritos" alt="Favoritos">
                         <div class="tenis-info">
-                            <h3>Nome do Tenis</h3>
+                            <h3>Model 1</h3>
                             <p>R$ 359,90</p>
                         </div>
                     </div>
-                    
+
                     <div class="tenis-box">
                         <img src="./media/favoritos2.jpg" class="img-favoritos" alt="Favoritos">
                         <div class="tenis-info">
-                            <h3>Nome do Tenis</h3>
-                            <p>R$ 359,90</p>
+                            <h3>Model 2</h3>
+                            <p>R$ 429,90</p>
                         </div>
                     </div>
 
                     <div class="tenis-box">
                         <img src="./media/favoritos3.jpg" class="img-favoritos" alt="Favoritos">
                         <div class="tenis-info">
-                            <h3>Nome do Tenis</h3>
-                            <p>R$ 359,90</p>
+                            <h3>Model 3</h3>
+                            <p>R$ 329,90</p>
                         </div>
                     </div>
 
@@ -98,7 +98,7 @@
         </section>
 
         <section id="masculino">
-            <div class="containerMascFem">
+            <div class="containerMasc">
                 <img src="./media/masc3.jpg" id="masc1" alt="tenis masculino">
                 <img src="./media/masc1.jpg" id="masc2" alt="tenis masculino">
                 <button class="btn-masc-fem" id="btn2">Ver Mais</button>
@@ -112,11 +112,11 @@
             <div id="container-vantagens">
                 <div class="imgTerritorio">
                     <img src="./media/territorio2.png" id="territorio" alt="Brasil">
-                    <i class="fa-solid fa-location-dot fa-2xl" id="pin" style="color: #454e51;"></i>
-                    <i class="fa-solid fa-location-dot fa-2xl" id="pin" style="color: #454e51;"></i>
-                    <i class="fa-solid fa-location-dot fa-2xl" id="pin" style="color: #454e51;"></i>
-                    <i class="fa-solid fa-location-dot fa-2xl" id="pin" style="color: #454e51;"></i>
-                    <i class="fa-solid fa-location-dot fa-2xl" id="pin" style="color: #454e51;"></i>
+                    <i class="fa-solid fa-location-dot fa-2xl pin" id="pin1" style="color: #454e51;"></i>
+                    <i class="fa-solid fa-location-dot fa-2xl pin" id="pin2" style="color: #454e51;"></i>
+                    <i class="fa-solid fa-location-dot fa-2xl pin" id="pin3" style="color: #454e51;"></i>
+                    <i class="fa-solid fa-location-dot fa-2xl pin" id="pin4" style="color: #454e51;"></i>
+                    <i class="fa-solid fa-location-dot fa-2xl pin" id="pin5" style="color: #454e51;"></i>
                 </div>
 
                 <div class="textoTerritorio">
@@ -131,40 +131,20 @@
         </section>
 
         <section id="lancamentos">
-            <h3 id="titulo-lancamentos">
-                Lançamentos
-            </h3>
-            <div id="container-img-lancamentos">
-                <div class="tenis-box">
-                    <img src="./media/Meu projeto 3.jpg" class="img-favoritos" alt="Favoritos">
-                    <div class="tenis-info2">
-                        <h3>Nome do Tenis</h3>
-                        <p>R$ 359,90</p>
-                    </div>
-                </div>
-                <div class="tenis-box">
-                    <img src="./media/Meu projeto 4.jpg" class="img-favoritos" alt="Favoritos">
-                    <div class="tenis-info2">
-                        <h3>Nome do Tenis</h3>
-                        <p>R$ 359,90</p>
-                    </div>
-                </div>
-                <div class="tenis-box">
-                    <img src="./media/Meu projeto 5.jpg" class="img-favoritos" alt="Favoritos">
-                    <div class="tenis-info2">
-                        <h3>Nome do Tenis</h3>
-                        <p>R$ 359,90</p>
-                    </div>
-                </div>
-
-                <!-- Para se conseguir fazer o slide -->
-                <!-- <img src="./media/Meu projeto.png" alt="Lançamentos">
-                <img src="./media/Meu projeto 2.jpg" alt="Lançamentos"> 
-                <img src="./media/Meu projeto (1).png" alt="Lançamentos"> -->
+            <div id="container-titulo-lancamentos">
+                <h3 id="titulo-lancamentos">Lançamentos</h3>
             </div>
-
-            <!-- <img src="./media/tenis-masc3.jpg" alt="tenis masculino"> img de fundo1
-            <img src="./media/tenis-masc4.jpg" alt="tenis masculino"> img de fundo2 -->
+            <div class="wrapper">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <div class="carrossel">
+                    <img src="./media/Meu projeto 3.jpg" alt="Lançamentos">
+                    <img src="./media/Meu projeto 4.jpg" alt="Lançamentos">
+                    <img src="./media/Meu projeto.png" alt="Lançamentos">
+                    <img src="./media/Meu projeto 2.jpg" alt="Lançamentos">
+                    <img src="./media/Meu projeto (1).png" alt="Lançamentos">
+                </div>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+            </div>
         </section>
 
         <section id="form">
