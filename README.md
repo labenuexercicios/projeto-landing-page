@@ -130,3 +130,13 @@ A sua Landing Page deve conter:
 4.  Abra um novo Pull Request (PR) com a frase **PR para correção**. Caso não saiba como fazê-lo, assista a esse [vídeo](https://www.canva.com/design/DAFY4nS5W2c/t92uFMR61YtmA7bCwj2S1Q/watch).
 5.  Envie o link do seu PR e do surge no [formulário de entrega](https://forms.gle/nrh5KpDhAMwXBjC29).
 
+link surge:versed-rub.surge.sh
+
+![img-1](./imagens/print-1.png)
+![img-2](./imagens/print-2.png)
+![img-3](./imagens/print-3.png)
+![img-4](./imagens/print-4.png)
+![imm-5](./imagens/print-5.png)
+![img-6](./imagens/print-6.png)
+![img-7](./imagens/print-7.png)
+![img-8](./imagens/print-7.png)
