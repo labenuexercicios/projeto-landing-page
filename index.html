@@ -7,16 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>4food</title>
   <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
+
 </head>
 
 <body>
   <header class="cabecalho">
-    <img class="cabecalho-imagem" src="imagens/4food.png" alt="logo">
+    <img class="cabecalho-imagem" src="imagens/4food-removebg-preview (1).png" alt="logo">
     <nav class="cabecalho-menu">
       <button class="cabecalho-menu-item"><a href="">Inicio</a></button>
-      <button class="cabecalho-menu-item"><a href="">Quem somos</a></button>
-      <button class="cabecalho-menu-item"><a href="">Nossa frota</a></button>
-      <button class="cabecalho-menu-item"><a href="">Catalogo</a></button>
+      <button class="cabecalho-menu-item"><a href="#Quem somos">Quem somos?</a></button>
+      <button class="cabecalho-menu-item"><a href="#nossa-frota">Nossa frota</a></button>
     </nav>
   </header>
 
@@ -24,54 +25,68 @@
 
     <section class="conteudo-principal">
       <div class="conteudo-principal-escrito">
-        <h1 class="conteudo-principal-escrito-titulo">Bem vindos ao 4Food<h1>
-            <h2 class="conteudo-principal-escrito-subtitulo">Faça seu pedido e receba tudo no conforto do seu lar !</h2>
-            <h3>A 4food foi criada com o intuito de ajudar as famílias na pandemia a receberem seus produtos
+        <h1 class="conteudo-principal-escrito-titulo" id="Quem somos">Bem vindos ao 4Food<h1>
+            <p class="paragrafo-principal">A 4food foi criada com o intuito de ajudar as famílias na
+              pandemia a receberem seus produtos
               higienizados e
-              seguros sem precisar de deslocar ao mercado , com uma logísta rápida e eficiente , em algumas horas suas
+              seguros sem precisar se deslocar ao mercado , com uma logísta rápida e eficiente , em algumas horas suas
               compras
               estão no seu endereço. Esse modelo de entregas foi de um sucesso tão grande e bem avaliado pelos clientes
-              que continuamos até hoje sempre buscando melhorar nossos serviços. Faça seu pedido !</h3>
-            <button class="conteudo-principal-escrito-botao"><a href="">Faça seu pedido</a></button>
+              que continuamos até hoje sempre buscando melhorar nossos serviços. Faça seu pedido !</p>
+            <button class="conteudo-principal-escrito-botao"><a href="#formulario">Faça seu pedido</a></button>
       </div>
       <img class="conteudo-principal-imagem" src="imagens/entregador-site-horticamp.png" alt="imagem do entregador">
     </section>
 
-    <section class="conteudo-secundario">
-      <h3 class="conteudo-secundario-titulo"> Revolução no quesito delivery.</h3>
-      <p class="conteudo-secundario-paragrafo">Receba suas compras no conforto do seu lar.</p>
-      <p class="conteudo-secundario-paragrafo">Prático ,rápido e seguro !</p>
-      
+    <section class="comida-fit">
+
+      <div class="comida-fit-titulo">
+        <h1>Praticidade para o seu dia a dia com o nosso cardápio de comidas congeladas<h1>
+      </div>
+
+      <img class="barra-fit" src="imagens/comida-fit-removebg-preview.png" alt="">
+
     </section>
 
-    <section class="frota-titulo">
-      <h1>NOSSA FROTA</h1>
-  
-    <section class="frota-imagens">
+    <section class="conteudo-secundario-titulo">
+      <div>
+        <h1 id="nossa-frota">NOSSA FROTA.</h1>
+        <p> Veículos a nossa disposição para entregar suas compras rapidamente !</p>
+      </div>
+
       <img class="fiorino" src="imagens/frota_fiorino.png" alt="">
-      <img class="fiorino-dois" src="imagens/thumb.png" alt="">
-    </section>
-
-    <section class="catalogo">
-      
-      <h1 >CATÁLOGO DE HORTIFRUTI</h1>
+      <img class="fiorino" src="imagens/thumb.png" alt="">
 
     </section>
+
+
+
+    <form id="formulario">
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" placeholder="Digite seu e-mail aqui">
+
+      <label for="phone">Telefone:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Digite seu telefone aqui">
+
+      <input type="submit" value="Enviar">
+    </form>
 
   </main>
-  
+
   <footer class="redes-sociais">
-    <h1>REDES SOCIAIS</h1>
-    <a href=""><img src="imagens/facebook.png" alt=""></a>
-    <a href=""><img src="imagens/instagram.png" alt=""></a>
-    <a href=""><img src="imagens/twitter.png" alt=""></a>
-    <a href=""><img src="imagens/whatsapp.png" alt=""></a>
-    
-    <!-- <button><a href="">FAQ</a></button>
-    <button><a href="">Telefone</a></button>
-    <button><a href="">Chat</a></button> -->
-   
+
+    <h1 class="redes-sociais-titulo">REDES SOCIAIS</h1>
+
+    <section>
+      <a href="https://www.facebook.com/" target="_blank"><img src="imagens/facebook.png" alt=""></a>
+      <a href="https://www.instagram.com/" target="_blank"><img src="imagens/instagram.png" alt=""></a>
+      <a href="https://twitter.com" target="_blank"><img src="imagens/twitter.png" alt=""></a>
+      <a href="https://web.whatsapp.com/" target="_blank"><img src="imagens/whatsapp.png" alt=""></a>
+    </section>
+
   </footer>
+
+
 </body>
 
 </html>

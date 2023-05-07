@@ -130,3 +130,14 @@ A sua Landing Page deve conter:
 4.  Abra um novo Pull Request (PR) com a frase **PR para correção**. Caso não saiba como fazê-lo, assista a esse [vídeo](https://www.canva.com/design/DAFY4nS5W2c/t92uFMR61YtmA7bCwj2S1Q/watch).
 5.  Envie o link do seu PR e do surge no [formulário de entrega](https://forms.gle/nrh5KpDhAMwXBjC29).
 
+link
+
+![img-1](./imagens/Print1.png)
+![img-2](./imagens/Print2.png)
+![img-3](./imagens/Print3.png)
+![img-4](./imagens/print-cel1.png)
+![img-5](./imagens/print-cel2.png)
+![img-6](./imagens/print-cel3.png)
+![img-7](./imagens/print-cel4.png)
+![img-8](./imagens/print-cel5.png)
+
