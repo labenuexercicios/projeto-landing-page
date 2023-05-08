@@ -50,7 +50,7 @@
             <div class="containerMascFem">
                 <img src="./media/tenis-fem1.jpg" id="fem1" alt="tenis feminino">
                 <img src="./media/tenis-fem2.jpg" id="fem2" alt="tenis feminino">
-                <button class="btn-masc-fem" id="btn1">Ver Mais</button>
+                <button onclick="lojaIndisponivel()" class="btn-masc-fem" id="btn1">Ver Mais</button>
                 <h1 id="tituloFem">Dias Longos, Tênis Leves</h1>
                 <p id="textoFem">Dê aos seus pés conforto e estilo, em qualquer ocasião.</p>
             </div>
@@ -101,14 +101,13 @@
             <div class="containerMasc">
                 <img src="./media/masc3.jpg" id="masc1" alt="tenis masculino">
                 <img src="./media/masc1.jpg" id="masc2" alt="tenis masculino">
-                <button class="btn-masc-fem" id="btn2">Ver Mais</button>
+                <button onclick="lojaIndisponivel()" class="btn-masc-fem" id="btn2">Ver Mais</button>
                 <h1 id="tituloMasc">Mantenha-se em Movimento</h1>
                 <p id="textoMasc">Nossos tênis são pensados para aguentar qualquer ritmo.</p>
             </div>
         </section>
 
         <section class="vantagens">
-
             <div id="container-vantagens">
                 <div class="imgTerritorio">
                     <img src="./media/territorio2.png" id="territorio" alt="Brasil">
@@ -125,7 +124,7 @@
                         pedido
                         e receba em até 7 dias úteis.
                     </p>
-                    <button class="btn-frete" id="btn5">Calcule seu Frete</button>
+                    <button onclick="frete()" class="btn-frete" id="btn5">Calcule seu Frete</button>
                 </div>
             </div>
         </section>
@@ -149,16 +148,16 @@
 
         <section id="form">
 
-            <form>
+            <form onsubmit="exibirDados(event)">
                 <h2>Quer receber as últimas novidades?</h2>
                 <p>
                     Se inscreva em nossa lista de e-mail ou de whatsapp para receber, em primeira mão, nossos
                     lançamentos
                 </p>
-                <input type="text" name="nome" placeholder="Seu nome...">
-                <input type="email" name="email" placeholder="Seu e-mail...">
-                <input type="tel" name="telefone" placeholder="Seu telefone...">
-                <input type="submit" name="acao" value="Inscrever">
+                <input type="text" id="nome" name="nome" placeholder="Seu nome...">
+                <input type="email" id="email" name="email" placeholder="Seu e-mail...">
+                <input type="tel" id="telefone" name="telefone" placeholder="Seu telefone...">
+                <button onclick="window.location.href='#form'" type="submit" id="submit">Inscrever</button>
             </form>
         </section>
 

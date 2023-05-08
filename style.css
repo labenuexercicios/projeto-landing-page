@@ -9,8 +9,7 @@ main {
     font-family: Verdana, Tahoma, sans-serif;
     background-color: #DAE5E8;
     opacity: 0.85;
-    width: 100vw;
-    
+    min-width: 100%;
 }
 
 /* Header e logo */
@@ -19,7 +18,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -29,7 +27,7 @@ header {
 .logo {
     display: flex;
     height: 10vh;
-    width: 33vw;
+    max-width: 100%;
     justify-content: center;
     margin: auto;
 }
@@ -74,7 +72,7 @@ header {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-  }
+}
 
 #fem1,
 #fem2 {
@@ -202,9 +200,7 @@ header {
     padding: 10px;
     text-align: center;
     height: 80px;
-    position: absolute;
-    width: 300px;
-    opacity: .65;
+    width: 100%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -248,9 +244,11 @@ header {
 
 .containerMasc #btn2 {
     position: absolute;
-    bottom: 5%; /* Ajuste a posição vertical conforme necessário */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translateX(-50%); /* Centraliza horizontalmente */
+    bottom: 5%;
+    left: 50%;
+    /* Centraliza horizontalmente */
+    transform: translateX(-50%);
+    /* Centraliza horizontalmente */
     width: 14vw;
     height: 5vh;
     background-color: #5c6d71;
@@ -272,9 +270,11 @@ header {
 
 .containerMasc #tituloMasc {
     position: absolute;
-    top: 83%; /* Ajuste a posição vertical conforme necessário */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translateX(-50%); /* Centraliza horizontalmente */
+    top: 83%;
+    left: 50%;
+    /* Centraliza horizontalmente */
+    transform: translateX(-50%);
+    /* Centraliza horizontalmente */
     width: 62vw;
     height: 4vh;
     font-size: xxx-large;
@@ -283,9 +283,11 @@ header {
 
 .containerMasc #textoMasc {
     position: absolute;
-    top: 88%; /* Ajuste a posição vertical conforme necessário */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translateX(-50%); /* Centraliza horizontalmente */
+    top: 88%;
+    left: 50%;
+    /* Centraliza horizontalmente */
+    transform: translateX(-50%);
+    /* Centraliza horizontalmente */
     width: 70vw;
     height: 4vh;
     color: #FFFFFF;
@@ -301,7 +303,7 @@ header {
 }
 
 #container-vantagens {
-    height: 75vh;
+    height: auto;
     width: 75vw;
     align-items: center;
     justify-content: center;
@@ -309,6 +311,8 @@ header {
     grid-template-columns: 1fr 1fr;
     border-top: 1px solid #454e51;
     border-bottom: 1px solid #454e51;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 #territorio {
@@ -316,6 +320,7 @@ header {
     border-radius: 200px;
     align-items: center;
     justify-content: center;
+    max-width: 50vw;
 }
 
 .imgTerritorio {
@@ -403,12 +408,13 @@ header {
     padding: 0 35px;
     gap: 3rem;
 }
+
 #container-titulo-lancamentos {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     border-bottom: 1px solid #454e51;
-    width: 75vw;
+    width: 75%;
 }
 
 #titulo-lancamentos {
@@ -422,7 +428,8 @@ header {
 .wrapper .carrossel {
     font-size: 0;
     cursor: pointer;
-    white-space: nowrap; /* Não sei o que faz */
+    white-space: nowrap;
+    /* Não sei o que faz */
     overflow: hidden;
     scroll-behavior: smooth;
 }
@@ -440,7 +447,7 @@ header {
     position: absolute;
     font-size: 1.2rem;
     text-align: center;
-    line-height: 46px; 
+    line-height: 46px;
     background: #83969C;
     border-radius: 50%;
     transform: translateY(-50%);
@@ -498,8 +505,8 @@ form {
     border-radius: 6px;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     color: #454e51;
-    width: 40%;
-    height: 70%;
+    width: auto;
+    height: auto;
     text-align: center;
     padding: 15px 15px;
     max-width: 450px;
@@ -522,7 +529,7 @@ form input[type=email] {
     outline: 0;
 }
 
-form input[type=submit] {
+#submit {
     background-color: #DAE5E8;
     border-radius: 6px;
     color: #454e51;
@@ -534,7 +541,7 @@ form input[type=submit] {
     margin-top: 20px;
 }
 
-form input[type=submit]:hover {
+#submit:hover {
     background-color: #5c6d71;
     color: #DAE5E8;
     transition: 0.2s;
@@ -548,6 +555,8 @@ footer {
     font-family: Arial, Helvetica, sans-serif;
     height: 45vh;
     width: 100%;
+    position: relative;
+    bottom: 0;
 }
 
 #footer_content {
@@ -588,52 +597,326 @@ footer {
     opacity: .7;
 }
 
-#Paleta {
-    color: #DAE5E8;
-    color: #FFFFFF;
-    color: #9C8773;
-    color: #E8E1DA;
-    color: #83969C;
-    color: #454e51;
-}
+@media screen and (min-device-width: 481px) and (max-device-width: 1200px) {
 
+    main {
+        min-width: auto;
+    }
 
-/* @media screen and (max-width: 768px) {
+    #redirect {
+        display: none;
+    }
 
+    .containerMascFem #tituloFem {
+        position: absolute;
+        top: 70%;
+        font-size: xx-large;
+    }
 
+    .containerMascFem #textoFem {
+        position: absolute;
+        top: 80%;
+        font-size: small;
+    }
+
+    .containerMascFem #btn1 {
+        position: absolute;
+        top: 88%;
+        font-size: small;
+    }
+
+    #favoritos {
+        height: auto;
+        padding-bottom: 2rem;
+    }
+
+    #titulo-nossos-favoritos {
+        font-size: 1.3rem;
+    }
+
+    #texto-nossos-favoritos {
+        font-size: small;
+    }
+
+    #container-img-nossos-favoritos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .containerMasc #btn2 {
+        bottom: 10%;
+        font-size: small;
+    }
+
+    .containerMasc #tituloMasc {
+        top: 50%;
+        font-size: xx-large;
+    }
+
+    .containerMasc #textoMasc {
+        top: 70%;
+        font-size: small;
+    }
+
+    .vantagens {
+        height: auto;
+    }
+
+    #container-vantagens {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imgTerritorio {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 2rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .textoTerritorio {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #pin1 {
+        top: 39%;
+        left: 65%;
+    }
+
+    #pin2 {
+        top: 29%;
+        left: 40%;
+    }
+
+    #pin3 {
+        top: 57%;
+        left: 65%;
+    }
+
+    #pin4 {
+        top: 44%;
+        left: 52%;
+    }
+
+    #pin5 {
+        top: 73%;
+        left: 55%;
+    }
+
+    .textoTerritorio {
+        gap: 2rem;
+        font-weight: bold;
+    }
+
+    .textoTerritorio p {
+        max-width: 400px;
+    }
+
+    #btn5 {
+        font-size: small;
+        width: 14vh;
+        height: auto;
+    }
+
+    
+    #titulo-lancamentos {
+        font-size: 1.7rem;
+    }
+
+    .carrossel img {
+        width: calc(100% / 2);
+    }
+
+    #form {
+        width: auto;
+    }
+
+    footer {
+        min-height: 100vh;
+    }
 
     #footer_content {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
     }
+
 }
 
+@media screen and (max-device-width: 480px) {
 
-@media screen and (max-width: 426px) {
+    main {
+        min-width: auto;
+    }
 
+    #redirect {
+        display: none;
+    }
 
+    #conta {
+        display: none;
+    }
+
+    #feminino {
+        position: relative;
+        top: 0;
+    }
+
+    .containerMascFem #tituloFem {
+        position: absolute;
+        top: 65%;
+        font-size: large;
+    }
+
+    .containerMascFem #textoFem {
+        position: absolute;
+        top: 75%;
+        font-size: smaller;
+    }
+
+    .containerMascFem #btn1 {
+        position: absolute;
+        top: 88%;
+        font-size: smaller;
+    }
+
+    #favoritos {
+        height: auto;
+        padding-bottom: 2rem;
+    }
+
+    #titulo-nossos-favoritos {
+        font-size: 1.3rem;
+    }
+
+    #texto-nossos-favoritos {
+        font-size: small;
+    }
+
+    #container-img-nossos-favoritos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .containerMasc #btn2 {
+        bottom: 10%;
+        font-size: smaller;
+    }
+
+    .containerMasc #tituloMasc {
+        top: 50%;
+        /* Ajuste a posição vertical conforme necessário */
+        font-size: medium;
+    }
+
+    .containerMasc #textoMasc {
+        top: 65%;
+        font-size: smaller;
+    }
+
+    .carrossel img {
+        width: 100%;
+    }
+
+    .vantagens {
+        height: auto;
+    }
+
+    #container-vantagens {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imgTerritorio {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 2rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .textoTerritorio {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #pin1 {
+        top: 39%;
+        left: 65%;
+    }
+
+    #pin2 {
+        top: 29%;
+        left: 40%;
+    }
+
+    #pin3 {
+        top: 57%;
+        left: 65%;
+    }
+
+    #pin4 {
+        top: 44%;
+        left: 52%;
+    }
+
+    #pin5 {
+        top: 73%;
+        left: 55%;
+    }
+
+    .textoTerritorio {
+        gap: 2rem;
+        font-weight: bold;
+    }
+
+    .textoTerritorio p {
+        max-width: 400px;
+    }
+
+    #btn5 {
+        font-size: small;
+        width: 14vh;
+        height: auto;
+    }
+
+    #titulo-lancamentos {
+        font-size: 1.7rem;
+    }
+
+    #form {
+        width: auto;
+    }
+
+    footer {
+        min-height: 120vh;
+    }
 
     #footer_content {
         grid-template-columns: repeat(1, 1fr);
         padding: 3rem 2rem;
-    }
-} */
-
-
-@media screen and (max-width: 900px) {
-
-    .carrossel img{
-        width: calc(100% / 2);
+        gap: 2rem;
     }
 
-    
-}
-
-@media screen and (max-width: 550px) {
-
-    .carrossel img{
-        width: 100%;
-    }
-
-    
 }
