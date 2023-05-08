@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <img src="midia/new-logo.PNG" alt="logo" class="logo">
+    <nav>
+      <ul class="lista">
+        <li><a class="menu-header" href="#alugue-seu-carro"><button>Alugue Seu Carro</button></a></li>
+        <li><a class="menu-header" href="#carros-populares"><button>Carros Populares</button></a></li>
+        <li><a class="menu-header" href="#transporte-luxo"><button>Carro De Luxo</button></a></li>
+        <li><a class="menu-header" href="#contato"><button>Contato</button></a></li>
+      </ul>
+    </nav>
+    <div class="hamburguer">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </header>
+
+      <main>
+        <section class="seção-inicial"> 
+          <img classe="imagem-seção-inicial" src="midia/img-de-fundo.jpg" alt="imagem-seção-inicial">
+          <div class="frase-seção-inicial">
+            <h5>Vá mais longe por menos com a 4cars - Aluguel de carros acessível!</h5>
+          </div>
+        </section>
+
+        <section class="alugue-seu-carro" id="alugue-seu-carro">
+            <h1>Alugue seu carro</h1>
+            <p>Alugar um carro na 4cars é simples e fácil. Primeiro, acesse o nosso site e escolha o carro que melhor atende às suas necessidades e preferências, podendo escolher entre carros populares ou de luxo. Em seguida, selecione a data e horário de retirada e devolução do veículo. Após preencher algumas informações pessoais e de pagamento, você receberá a confirmação da reserva por e-mail. Na data e horário agendados, basta retirar o carro em uma de nossas unidades, apresentando os documentos necessários, e pronto! Você pode desfrutar de seu carro alugado com total segurança e tranquilidade.</p>
+            <form class="formulario-retirada" action="#">
+              <label for="retirada">Retirada</label>
+              <input type="datetime-local" id="retirada">
+              <br>
+              <label for="devolucao">Devolucao</label>
+              <input type="datetime-local" name="" id="devolucao">
+              <br>
+              <label for="carro">Carro Popular</label>
+              <input type="checkbox" name="carro-popular" id="carro">
+              <br>
+              <label for="carro">Carro de Luxo</label>
+              <input type="checkbox" name="carro-de-luxo" id="carro">
+              <br>
+              <button class="botao-limpa" type="reset">Alugue!!</button>
+          </form>
+
+          
+            <!-- Incluir aqui as instruÃ§Ãµes passo a passo para alugar um carro na 4cars -->
+          </section>
+        <section id="carros-populares">
+          <h1>Carros Populares</h1>
+          
+          <div>
+          <img src="midia/carro-popular-1.jpg" alt="wv-polo" class="carro">
+          <h2>Fiat Argo</h2>
+          <p>O Fiat Argo é um carro hatchback compacto moderno e atraente, projetado para oferecer conforto e tecnologia avançada. Com opções de motorização a gasolina e etanol, transmissão manual ou automática, é uma ótima opção para quem busca praticidade e eficiência no trânsito urbano. É um carro bem avaliado pelos seus proprietários e ideal para quem busca um carro econômico e ágil para aluguel.</p>
+          </div>
+
+          <div>
+          <img src="midia/carro-popular-2.jpeg" alt="carro-popular-2" class="carro">
+          
+          <h2>Fiat Mobi</h2>
+          <p>O Fiat Mobi é um carro compacto e econômico, projetado para o uso urbano. Com um design moderno e eficiente, é fácil de manobrar e possui baixo consumo de combustível, tornando-o uma excelente escolha para aluguel. Ele é equipado com um motor 1.0 de três cilindros e transmissão manual de cinco marchas, oferecendo uma direção suave e ágil. O interior é confortável e espaçoso, com tecnologia avançada, como uma central multimídia integrada. O Fiat Mobi é uma opção prática e acessível para quem precisa de um carro para se locomover pela cidade.</p>
+          </div>
+
+          <div>
+          <img src="midia/carro-popular-3.jpg" alt="carro-popular-3" class="carro">
+          <h2>Volkswagen Polo</h2>
+          <p>O Volkswagen Polo é um carro hatchback compacto e elegante, projetado para oferecer conforto, segurança e tecnologia avançada. Com motorização eficiente e opções de transmissão manual ou automática, é uma ótima escolha para quem busca desempenho e economia. O interior é espaçoso e bem equipado, com recursos como tela sensível ao toque para controle do sistema de entretenimento e outras funções do carro. O Volkswagen Polo é um carro bem avaliado pelos seus proprietários e ideal para quem busca um carro moderno e sofisticado para aluguel.</p>
+          </div>
+        </section>
+        <section id="transporte-luxo">
+          <h1>Carro de Luxo</h1>
+          <div>
+          <img src="midia/carro-de-luxo.avif" alt="meca-luxo"  class="carro">
+          <h2>Mercedes-Benz C200</h2>
+          <p>A 4cars também oferece carros de luxo para aluguel, proporcionando a oportunidade para que nossos clientes possam desfrutar de uma experiência de condução de alto padrão. Nossa frota conta com diversos modelos de carros de luxo, que são revisados e higienizados regularmente para garantir a segurança e o conforto dos nossos clientes.. Se você está procurando uma experiência de condução diferenciada ou para ocasiões especiais, a 4cars oferece a escolha perfeita para você.</p>
+          </div>
+        </section>
+
+        <section class="formulario-cadastro">
+          <h1 class="main-tudo">Cadastro</h1>
+
+          <form class="contato-f" action="#">
+            <label class="cor-form" for="nome">Nome</label>
+            <input type="text" name="nome" id="nome">
+            <label class="cor-form" for="email">E-mail</label>
+            <input type="text" name="email" id="email">
+
+            <input class="botao-limpa" type="button" name="limpar" value="Enviar" onclick="botaoLimpa();">
+
+          </form>
+        </section>
+      </main>
+      
+      <footer>
+        <section id="contato">
+          <h4>Contato</h4>
+          <ul>
+            <p> E-mail: contato@4cars.com.br
+              <i class="fa-solid fa-envelope" style="color: #000000;"></i>
+            </p>
+            <p> Telefone: (12) 3456-7890 (horário de atendimento de segunda a sexta, das 9h às 18h)
+              <i class="fa-solid fa-phone" style="color: #000000;"></i>
+            </p>
+            <p> Chat online disponível em nosso site durante o horário de atendimento.</p>
+            <p> Facebook: https://www.facebook.com/4carsaluguel/
+              <i class="fa-brands fa-facebook fb-logo" style="color: #000000;"></i>
+            </p>
+            <p> Instagram: https://www.instagram.com/4carsaluguel/
+              <i class="fa-brands fa-instagram" style="color: #000000;"></i>
+            </p>
+    </footer>
+</body>
+</html>
