@@ -45,3 +45,31 @@ carrosel.addEventListener("mousedown", dragStart)
 carrosel.addEventListener("mousemove", dragging)
 carrosel.addEventListener("mouseup", dragStop)
 carrosel.addEventListener("mouseleave", dragStop)
+
+// Form
+
+const exibirDados = (event) =>{
+    const nome = document.getElementById("nome").value;
+    const telefone = document.getElementById("telefone").value;
+    const email = document.getElementById("email").value;
+
+    if (nome === "") {
+        alert("Voce deve preencher o nome");
+    } else if (email === "") {
+        alert("Você deve preencher o email")
+    } else if (telefone === "") {
+        alert("Você deve preencher o telefone")
+    } else {
+        alert(`Sua inscrição foi concluída, ${nome}!\nVocê receberá nossas melhores ofertas em sua caixa de e-mail.`)
+    }
+}
+
+// Outros Botões
+
+const lojaIndisponivel = () => {
+    alert("Produto Indisponível.\nVamos inaugurar a Loja amanhã!")
+}
+
+const frete = () => {
+    alert("Frete grátis para primeira compra!")
+}
