@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="script.js" defer></script> -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    <header>
+      <!-- Incluir aqui o logo da 4cars e o menu de navegação -->
+        <section>
+        <img src="conteudos/logo.avif" alt="logomarca da empresa" class="logo">
+        <nav>
+            <ul class="classe-ul">
+                <li><a href="#">Nosso Serviço</a></li>
+                <li><a href="#">Como Alugar</a></li>
+                <li><a href="#">Quem Somos</a></li>           
+            </ul>
+        </nav>
+        <a href="#"><button>Contato</button></a class="botao-contato">
+                
+    </header>
+    <main>
+        <section id="banner">
+          <!-- Incluir aqui uma imagem representativa dos carros da 4cars e uma mensagem de boas-vindas -->
+          
+          <p>Bem vindo a 4cars! </p>
+        </section>
+        <section id="carros-populares">
+          <!-- <h2>Carros Populares</h2> -->
+          <h2>Nosso Serviço</h2>
+          <!-- Incluir aqui uma lista com os modelos de carros populares disponíveis para aluguel, com fotos e informações relevantes -->
+          <img src="conteudos/carro-popular-1.jpg" alt="carro-popular-1" class="carro" >
+  
+          <p>O Fiat Argo é um carro hatchback compacto moderno e atraente, projetado para oferecer conforto e tecnologia avançada. Com opções de motorização a gasolina e etanol, transmissão manual ou automática, é uma ótima opção para quem busca praticidade e eficiência no trânsito urbano. É um carro bem avaliado pelos seus proprietários e ideal para quem busca um carro econômico e ágil para aluguel.</p>
+  
+          <img src="conteudos/carro-popular-2.jpeg" alt="carro-popular-2" class="carro">
+  
+          <p>O Fiat Mobi é um carro compacto e econômico, projetado para o uso urbano. Com um design moderno e eficiente, é fácil de manobrar e possui baixo consumo de combustível, tornando-o uma excelente escolha para aluguel. Ele é equipado com um motor 1.0 de três cilindros e transmissão manual de cinco marchas, oferecendo uma direção suave e ágil. O interior é confortável e espaçoso, com tecnologia avançada, como uma central multimídia integrada. O Fiat Mobi é uma opção prática e acessível para quem precisa de um carro para se locomover pela cidade.</p>
+  
+          <img src="conteudos/carro-popular-3.jpg" alt="carro-popular-3" class="carro">
+          <p>O Volkswagen Polo é um carro hatchback compacto e elegante, projetado para oferecer conforto, segurança e tecnologia avançada. Com motorização eficiente e opções de transmissão manual ou automática, é uma ótima escolha para quem busca desempenho e economia. O interior é espaçoso e bem equipado, com recursos como tela sensível ao toque para controle do sistema de entretenimento e outras funções do carro. O Volkswagen Polo é um carro bem avaliado pelos seus proprietários e ideal para quem busca um carro moderno e sofisticado para aluguel.</p>
+  
+        </section>
+        <section id="transporte-luxo">
+          <h2>Transporte de Luxo</h2>
+          <!-- Incluir aqui uma lista com os modelos de carros de luxo disponíveis para aluguel, com fotos e informações relevantes -->
+  
+          <img src="conteudos/carro-de-luxo.avif" alt="carro-de-luxo" class="carro">
+          <p>O Mercedes-Benz C200 é um sedã de luxo elegante e sofisticado, projetado para oferecer conforto, desempenho e tecnologia avançada. Com um motor turbocharged de quatro cilindros e transmissão automática de nove velocidades, é uma ótima escolha para quem busca desempenho e luxo combinados. O interior é espaçoso e bem equipado, com bancos em couro, sistema de som premium e recursos de segurança avançados, como assistente de frenagem automática e monitoramento de pontos cegos. O Mercedes-Benz C200 é um carro altamente avaliado e ideal para quem busca um carro de luxo premium para aluguel.</p>
+  
+        </section>
+        <section id="como-alugar">
+          <h2>Como Alugar</h2>
+          <!-- Incluir aqui as instruções passo a passo para alugar um carro na 4cars -->
+          <p>Alugar um carro em nosso site de locação de automóveis é simples e fácil. Basta selecionar o carro de sua preferência, inserir as datas de retirada e devolução e a localização desejada. Em seguida, você poderá escolher entre diversas opções de seguro e extras, como GPS, cadeira de bebê, entre outros. Após a confirmação do pagamento, você receberá um e-mail com todos os detalhes da reserva e as instruções para retirada do veículo. Na hora da retirada, basta apresentar sua carteira de motorista válida, o cartão de crédito utilizado para a reserva e um comprovante de endereço. Pronto! Você estará pronto para desfrutar do seu carro alugado.</p>
+        </section>
+        <!-- <section id="depoimentos">
+          <h2>Depoimentos</h2>
+          Incluir aqui depoimentos de clientes satisfeitos com a 4cars
+        </section> -->
+        <section id="quem-somos">
+          <h2>Quem Somos</h2>
+          <!-- Incluir aqui depoimentos de clientes satisfeitos com a 4cars -->
+          <p>A 4cars é uma empresa de locação de carros que oferece soluções acessíveis e de qualidade para quem não possui um carro próprio. Com uma frota de carros bem cuidados e preços justos, nossa equipe de profissionais experientes está sempre disponível para ajudá-lo em todas as etapas da locação. Acreditamos que a locação de carros pode ser uma solução inteligente para economizar tempo e dinheiro, sem comprometer a segurança e o conforto. Venha conhecer a 4cars e descubra como podemos ajudá-lo a ter mais liberdade e qualidade de vida.</p>
+        </section>
+      </main>
+      <!-- <footer>
+        Incluir aqui informações de contato e direitos autorais
+      </footer> -->
+      
+      <footer>
+          <div class="container">
+          <div class="row">
+              <div class="col-md-6">
+                  <h3>Contato</h3>
+                  <p>Endereço: Rua dos Carros, 123 - Centro, São Paulo/SP</p>
+                  <p>Telefone: (11) 1234-5678</p>
+                  <p>E-mail: contato@4cars.com.br</p>
+              </div>
+              <div class="col-md-6">
+                  <h3>Direitos autorais</h3>
+                  <p>&copy; 2023 4cars - Todos os direitos reservados</p>
+              </div>
+          </div>
+          </div>
+      </footer>
+    </body>
+    </html>
