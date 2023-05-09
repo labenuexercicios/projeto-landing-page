@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contatos - 4Confort</title>
+        
+        <link rel="stylesheet" href="contato.css">
+        
+    </head>
+    <body>
+        <section id="fundo">
+            <section class="frete">
+                <a href="#Cep">Frete Grátis <img src="./imagens/localizacao.png" alt="icone de localizacao"></a>
+            </section>
+            <section id="cabecalho">
+                <div class="fundo"> 
+                    <img src="./imagens/4comfort.png"  alt="logo da loja" class="logo">
+                </div>
+            </section>
+            <header>
+                <div class="caixa">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="contato.html">Contatos</a></li>
+                            <li><a href="https://curso-javascript.labenu.com.br/">Labenu</a></li>
+                            
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <main>
+                <form>
+                    <label for="nomesobrenome">Nome e sobrenome: </label>
+                    <input type="tex" id="nomesobrenome" class="input-padrao" required>
+
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+                    <label for="telefone">Telefone: </label>
+                    <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+                    <fieldset>
+                        <legend>Como prefere nosso contato</legend>
+                        <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>                    
+
+                        <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>                    
+
+                        <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+
+                    </fieldset>
+                    <!-- <fieldset>
+                        <legend>Qual horário prefere ser atendido?</legend>
+                        <select>
+                            <option>Manha</option>
+                            <option>Tarde</option>
+                            <option>Noite</option>
+                        </select>
+                        
+                    </fieldset> -->
+
+                <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+                
+
+                    <input type="submit" value="Enviar formulário" class="enviar">
+                </form>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dia</th>
+                            <th>Horário</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Segunda</td>
+                            <td>8h ~ 20h</td>
+                        </tr>
+                        <tr><td>Quarta</td>
+                            <td>8h ~ 20h</td>
+                        </tr>
+                        <tr><td>Sexta</td>
+                            <td>8h ~ 20h</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </main>
+            <footer>
+                <article>
+                    <img class="logo" src="./imagens/4comfort.png" alt="logo">
+                </article>
+                <article  >
+                    <div class="logos">
+                        <h3 class="item1">Formas de pagamento</h3>
+                        <div class="item2">
+                            <img class="icone-cartao" src="./imagens/visa.png" alt="logo visa">
+                            <img class="icone-cartao" src="./imagens/logo-mastercard-256.png" alt="logo logo-mastercard">
+                            <img class="icone-cartao" src="./imagens/logo-hipercard-256.png" alt="logo logo-hipercard">
+                            <img class="icone-cartao" src="./imagens/logo-cartao-elo-256.png" alt="logo-cartao-elo">
+                            <img class="icone-cartao" src="./imagens/logo-american-express-256.png" alt="">
+                            <img class="icone-cartao" src="./imagens/codigo_barras.png" alt="logo codigo de barras">
+                        </div>
+                        <p class="copyright">&copy;Copyright 4Comfort - 2023</p>                    
+                    </div>
+                </article>
+                <article>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13816.988646240312!2d-51.24055503095452!3d-30.029766271493102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519790e4d043eab%3A0x769a0820bae18fd4!2sHistorical%20Centre%2C%20Porto%20Alegre%20-%20RS!5e0!3m2!1sen!2sbr!4v1682512822383!5m2!1sen!2sbr" width="400" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </article>
+            </footer>
+        </section>
+    </body>
+</html>
