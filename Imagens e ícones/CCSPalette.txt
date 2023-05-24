@@ -1,0 +1,21 @@
+/* CSS HEX */
+--thistle-green: #c9c6ac;
+--rangoon-green: #151710;
+--red-damask: #e07b39;
+--cedar: #482319;
+
+
+/* SCSS HEX */
+$thistle-green: #c9c6ac;
+$rangoon-green: #151710;
+$red-damask: #e07b39;
+$cedar: #482319;
+
+
+/* SCSS RGB */
+--thistle-green: rgba(201,198,172,1);
+--rangoon-green: rgba(21,23,16,255,1);
+--red-damask: rgba(224,123,57,1);
+--cedar: rgba(72,35,25,255,1);
+
+
