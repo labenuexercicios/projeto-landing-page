@@ -90,7 +90,7 @@ A sua Landing Page deve conter:
 
 - [ ] **Redes Sociais:** Incluir pelo menos  2 ícones para redes sociais, visíveis e clicáveis.	
 
-- [ ] **Formulário de Contato:** Inclua um formulário de contato para que os visitantes possam se comunicar com a empresa fictícia. O formulário deverá solicitar, no mínimo, um e-mail para contato.	
+- [ ] **Formulário de Contato:** Inclua um formulário de contato para que os visitantes possam se comunicar com a empresa fictícia. O formulário deverá solicitar, no mínimo, um e-mail para contato. (veja um exemplo nesse vídeo: https://coda.io/d/_duQBJ-J3TJr/Funcionalidades_suFtt#_lu2rX)
 
 - [ ] **Responsividade:** Sua landing page deve ser responsiva e adaptável a diferentes tamanhos de tela, como smartphones e desktops. Além disso, é importante testar sua landing page em diferentes dispositivos, como o iPhone 6/7/8 para a versão mobile, e em uma tela de 1280px de largura para a versão desktop.
 
