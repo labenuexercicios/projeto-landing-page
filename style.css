@@ -1,54 +1,3 @@
-* {
-    padding: 0;
-    margin: 0;
-estrutura-basica
-    box-sizing: border-box;
-    text-decoration: none;
-}
-
-header{
-    background-color: #e0d9d6;
-=======
-}
-
-header{
-    background-color: #887062;
- main
-    height: 80px;
-    padding: 10px;
-    display:flex;
-    align-items: center;
-    justify-content: space-evenly;
-    font-family:Zen Kaku Gótico Novo;
- estrutura-basica
-    border: 3px; color: #887062;
-}
-
-body{
-    border: 3px; color: #ccc;
-}
-
-
-section{
-    background-color: white;
-    border: 3px; color: black;
-
-}
-
-.footer{
-    height: 1px;
-    width: 1px;
-}
-
-footer{
-background-color: #887062;
-    border: black;
-
-}
-
-=======
-}
- main
 
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
 
@@ -314,11 +263,11 @@ gap: 5rem;
     border-radius: 8px;
     background-color: rgba(211, 195, 187, 0.54);
 }
-    
+
 form {
     display: flex;
     flex-direction: column;
-        
+
 }
 
 .input-field {
@@ -363,7 +312,7 @@ form .input-field:first-child {
     color: rgba(0, 0, 0, 0.7);
     width: 100%;
 }
-    
+
 .input-field input::placeholder {
     color: rgba(0, 0, 0, 0.5);
 }
@@ -440,7 +389,7 @@ form input[type="submit"]:hover {
 .social-field.facebook {
     background: linear-gradient(to right, #1e3c72, #2a5298);
 }
-    
+
 .rodape{
     padding: 32px;
     border-top: 0.4px solid #FFF2E7;
