@@ -1,0 +1,579 @@
+*{
+    margin:0;
+   
+    
+}
+
+/* HEADER */
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    background-color: #3b4f67;
+}
+
+#logo {
+    width: 12%;
+}
+
+#cabecalho {
+    display: inline-flex;
+    text-decoration: none;
+    margin: 25px;
+    font-size: 18px;
+    color: #f2f1f1;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#alugar {
+    border: 2px solid #3b4f67;
+    background-color: #8cba79;
+    padding: 12px;
+    border-radius: 15px;
+    color: #f2f1f1;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+#alugar:hover {
+    background-color: #94a4b4;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+/* SECTION PÁGINA INICIAL */
+
+
+.comeco {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    background-color: #f2f1f1;
+    padding: 11vw;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url(/4safe/pronampe.jpg);
+    background-size: cover;
+   
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 29vw;
+    border: 2px solid #3b4f67;
+    border-radius: 15px;
+    height: 23vw;
+    background-color: #3b4f67;
+    padding: 10px;
+}
+
+.safe {
+    width: 50vw;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+h1 {
+    font-size: 28px;
+    color: #8cba79;
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+
+}
+
+.container p {
+    font-size: 21px;
+     color: #f2f1f1;
+     margin-top: 10px;
+     text-align: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 16px;
+    font-size: 23px;
+    color: rgb(34,34,34);
+    align-items: center;
+    
+}
+
+
+/* SEGUNDA SECTION: SEGUROS (CONHEÇA NOSSOS SEGUROS) */
+
+.seguros {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+  
+}
+
+.seguros h1 {
+    color: #3b4f67;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+  
+
+
+h5 {
+    font-size: 25px;
+    color: #3b4f67;
+}
+
+.alinhamento {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+ #vida {
+    border: 3px none;
+    border-radius: 5px;
+    height: 14vw;
+    width: 28vw;
+    background-color: #f1f1f1;
+    
+}
+.tamanhoImg {
+    width: 28vw;
+    height: 20vw;;
+    border-radius: 5px;
+    
+}
+
+
+.tipoSeguro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    margin-top: 2vw;
+    margin-bottom: 6vw;
+    color: rgb(34,34,34);
+    font-size: 22px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+#automovel h5 {
+    text-align: center;
+    padding: 15px;
+}
+
+#vida h5 {
+    text-align: center;
+    padding: 15px;
+}
+
+
+.descricaoSeguro {
+    font-size: 15px;
+    margin-bottom: 40px;
+    
+}
+
+
+.contrateAgora {
+    border: 2px none #8cba79;
+    border-radius: 8px;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 17px;
+    margin: 10px;
+    color: #f2f1f1;
+    background-color: #8cba79;
+    text-align: center;
+    text-decoration: none;
+    width: 150px;
+    
+}.contrateAgora:hover {
+    background-color: #94a4b4;
+}
+
+
+
+
+
+/* SECTION SOBRE NÓS */
+
+.sobrenos {
+    background-color: #3b4f67;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12vw;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#cavalo {
+    width: 20vw;
+}
+
+.sobrenos p {
+    font-size: 28px;
+    text-align: justify;
+    padding: 20px;
+    color: #94a4b4;
+    margin-top: 15px;
+
+}
+
+
+
+
+
+/* SECTION DEPOIMENTOS DOS CLIENTE */
+
+.depoimentoClientes h1 {
+    color: #3b4f67;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+.depoimentos-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .depoimentos-box {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    width: 60vh;
+    height: 50vh;
+    margin-bottom: 20vh;
+    margin-top: 10vh;
+    
+  }
+  
+  .depoimentos {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+  }
+  
+  .depoimentos img {
+    width: 20vh;
+    height: 20vh;
+    border-radius: 50%;
+    margin-right: 10px;
+
+  }
+  
+  .depoimentos h2 {
+    font-size: 22px;
+    margin: 0;
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+  }
+  
+  .testimonial-comment {
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 3vh;
+  }
+  
+
+ /* SECTION FIM (SECTION COM FORMULARIO DE CONTATO) */
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.fim{
+    padding: 151px;
+    background-color: #3b4f67;
+    
+}
+.fim h2 {
+    color: #f2f1f1;
+}
+
+.fim h1 {
+    color: #f2f1f1;
+    font-size: 56px;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+form [type="submit"]{
+    height: 50px;
+    width: 50%;
+    background-color: #8cba79;
+    color: white;
+    font-weight: bold;
+}
+form [type="submit"]:hover{
+    cursor: pointer;
+    background-color: #94a4b4;
+
+}
+
+input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+}
+
+
+#footerContent {
+    display: flex;
+   justify-content: space-around;
+    padding: 10px;
+    background-color: #3b4f67;
+}
+
+
+#footerMidias {
+    display: flex;
+    height: 4vw;
+    gap: 2rem;
+   font-size: 1.5vw;;
+}
+
+#footerCopyright {
+    display: flex;
+    justify-content: center;
+    background-color: #3b4f67;
+    font-size: 15px;
+    padding: 10px;
+    font-weight: 100;
+    color: #f1f1f1;
+}
+
+
+
+@media screen and (max-device-width:480px){  
+   
+    /* HEADER */
+header{
+   
+ 
+    
+}
+
+#logo {
+ display: none; 
+}
+
+#cabecalho {
+    font-size: 20px;
+    margin: 10px;
+}
+
+#alugar {
+    display: none;
+}  
+
+
+/*---------------------------------------------*/
+
+/*SECTION PÁGINA INICIAL*/
+
+.comeco {
+   background-image: none;
+   background-color: #3b4f67;
+   height: 60vh;
+}
+
+.container{ 
+   margin-top: 20vh;  
+}
+
+h1 {
+    font-size: 33px;
+}
+
+.container p {
+    font-size: 22px;
+     text-align: center;
+}
+
+.contrateAgora {
+    justify-content: center;
+    align-items: center;
+    margin-right: 13vh;
+}
+
+/*---------------------------------------------*/
+
+/* SECTION SEGUROS - TIPOS DE SEGUROS*/
+
+    .seguros{
+        height: 225vh;
+    }
+
+    .seguros h1{
+        font-size: 30px;  
+    }
+
+    h5{
+        font-size: 3vh;
+    }
+   
+    .alinhamento{
+        flex-direction: column;
+    }
+
+    #vida{
+        border: 2px none;
+        height: 32vh;
+        width: 40vh;
+        margin: 18px;
+    }
+
+    .tamanhoImg{
+        width: 40vh;
+        height: 30vh;
+    }
+
+    .tipoSeguro{
+        display: flex;
+        flex-direction: colum;
+    }
+    
+    .descricaoSeguro{
+        font-size: 2vh;   
+    }
+    
+    .contrateAgora{
+        display: flex;
+        margin-left: 10vh;
+        width: 14vh
+        
+    }
+
+
+/*-----------------------------------------*/
+
+/* SECTION SOBRE NÓS */
+
+    .sobrenos{
+        flex-direction: column-reverse;
+    
+    }
+
+    .container {
+        border: 2px none;
+        height: 40vh;
+        width: 40vh;
+        margin: 10px;
+     
+    }
+
+    #cavalo{
+        width: 25vh;
+        
+    }
+
+    .sobrenos p{
+        font-size: 22px;
+    }
+
+/* ---------------------------------------- */
+
+/* SECTION DEPOIMENTOS CLIENTES */
+
+.depoimentos-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.depoimentos-box{
+    width: 40vh;
+   margin: 18px;
+}
+
+.depoimentos h2 {
+    font-size: 30px;
+}
+
+/* ---------------------------------------- */
+
+
+/* SECTION CONTATO - FORMULÁRIO */
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 40vh;
+}
+
+.fim{
+    padding: 151px;
+    background-color: #3b4f67;
+    width: 25vw;
+    height: 48vh;
+    
+}
+.fim h2 {
+    width: 30vh;
+}
+
+.fim h1 {
+    margin-bottom: 3vh;
+}
+
+form [type="submit"]{
+font-size: 18px;    
+}
+
+/* ---------------------------------------- */
+
+/* FOOTER */
+
+
+#footerContent {
+flex-direction: column;
+width: 48vh;
+}
+
+
+#footerMidias {
+   font-size: 2.5vh;
+   justify-content: center;
+   padding: 5px;
+   margin-bottom: 3px;
+}
+
+#footerCopyright {
+    font-size: 17px;
+}
+
+}
