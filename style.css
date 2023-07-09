@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    border: 1px black solid;
+}
+
+.secao1{
+    border: 1px black solid;
+}
+
+.formulario{
+    border: 1px black solid;
+}
+
+.secao2{
+    border: 1px black solid;
+}
+
+img{
+    width: 300px;
+}
+
+footer{
+    border: 1px black solid;
+}
+
+.rede-social{
+    height: 50px;
+    width: 50px;
+}
+
+.icones-quadrados{
+    width: 100px;
+    height: 100px;
+}
+
+#dados-dev{
+    border: 1px black solid;
+}
