@@ -138,3 +138,6 @@ A sua Landing Page deve conter:
 3.  Clique em **Merge Pull Request** para enviar todas as suas alterações para a branch main.
 4.  Copie o link do Pull Request e o envie o link do seu PR no [**formulário de entrega**](https://docs.google.com/forms/d/e/1FAIpQLSfziutw6aVuh1sCuG14L5zn-2ds80yMkrgUWhe_aZRaixopdw/viewform).
 
+- link surge: https://kevineduardo.surge.sh/
+
+
