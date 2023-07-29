@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --preto: #1F1F24;
+    --marromclaro: #b08f4e;
+    --branco: #ece4d4;
+    --marromescuro: #5b4a28;
+    --cinza: #84848c;
+    --bege: #d3c4b4;
+    --fonte1: font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    display: flex;
+    background-color: var(--preto);
+    height: 12vh;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    border: white solid 2px;
+}
+
+header #logo-upfor {
+    height: 100%;
+    width: 14%;
+    border: greenyellow 2px solid;
+}
+
+header nav {
+    border: solid lightcoral 2px;
+    height: 100%;
+    width: 80%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header nav .menu-hamburguer {
+    display: flex;
+    border: lightgreen solid 2px;
+    height: 3rem;
+    width: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    display: none;
+
+
+}
+
+header nav .menu-hamburguer .bar {
+    width: 40px;
+    height: 20px;
+    background-color: var(--bege);
+    border-radius: 12px;
+    
+}
+
+header nav ul {
+    display: flex;
+    width: 90vw;
+    height: 12vh;
+    margin-right: 2px;
+    justify-content: space-around;
+    align-items: center;
+    /* gap: 15px; */
+}
+
+header nav ul li {
+    color: var(--marromclaro);
+    list-style-type: none;
+    font-size: 0.8em;
+    font-family: 'Courier New', Courier, monospace;
+}
