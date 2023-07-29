@@ -3,116 +3,337 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">>
     <link rel="stylesheet" href="style.css" type="text/css">
     <title>F4 LIFE</title>
 </head>
+
 <body>
-    <header> HEADER
-        <h1>F4 LIFE</h1>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close-menu"></label>
+    <div>
+        <aside class="menu blue-background">
+        <div class="main-content menu-content">
+            <h1 onclick="getElementById('close-menu').checked=false;> 
+                <a href="#"><img class="logo-tamanho" src="./Imagens/1.1.jpg" alt="logo"></a>
+            </h1>
 
-        <img src="./Imagens/Logo1.jpg" alt="logo">
-
-    <nav>
-        <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">F4 LIFE</a></li>
-            <li><a href="#">ALUGUE</a></li>
-            <li><a href="#">ANUNCIE SEU IMÓVEL</a></li>
-            <li><a href="#">CONTATO</a></li>
-            <li><a href="#">PESQUISA</a></li>
-        </ul>
-    </nav>
-
-    </header>
+            <nav>
+                <ul onclick="getElementById('close-menu').checked=false;>
+                    <li><a href="#intro">HOME</a></li>
+                    <li><a href="#secao2">F4 LIFE</a></li>
+                    <li><a href="#grid-one">ALUGUE</a></li>
+                    <li><a href="#gallery">GALERIA DE IMAGENS</a></li>
+                    <li><a href="#">BUSCAR IMÓVEL</a></li>
+                </ul>
+            </nav>
+            <div>
+                <!-- <button type="submit">
+                    <p class="button">Login</p>
+                </button> -->
+                <button class="menu-botao">Login</button>
+            </div>
+        </div>   
+        </aside>
+    </div>
     
-    <section class="secao1">
-        <h2>Seção 1 - O que é o aluguel de república para pessoas universitárias?</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sequi velit quasi dolore in, alias, quaerat tempora cumque inventore quidem eius totam deserunt sapiente quos neque harum distinctio mollitia ipsam!</p>
+    <div class="menu-spacing"></div>
+    
+    <section id="intro" class="intro-img section"> 
+        <div class="intro">
+            <video autoplay muted loop id="intro-img">
+                <source src="/Imagens/Video/1103318901-preview.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+              </video>
+        </div>
+          
+        <div class="main-content1 intro-content intro-content-teste">    
+            <div class="intro-text-content">
+                <h2>Seção 1 - O que é o aluguel de república para pessoas universitárias?</h2>
+                <p class="intro-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sequi velit quasi dolore in, alias, quaerat tempora cumque inventore quidem eius totam deserunt sapiente quos neque harum distinctio mollitia ipsam!</p>
+            </div>
+        </div>
     </section>
 
-    <div class="formulario"
-        <h1>Encontre aqui sua moradia estudantil. Faça sua busca!</h1>
-        <form>
-            <label for="cidade">Cidade</label>
-            <input type="text" name="Busque pela cidade" id="cidade">
-            <label for="bairro">Bairro</label>
-            <input type="text" name="Busque pelo bairro" id="bairro">
-            <label for="instituicao">Instituição de Ensino</label>
-            <input type="text" name="Busque pela instituição de ensino" id="instituicao">
-            <label for="moradia">Tipo de moradia</label>
-            <input type="text" name="Escolha o tipo de moradia" id="moradia">
-            <label for="aluguel">Valor do aluguel</label>
-            <input type="text" name="Escolha o valor" id="aluguel">
-            
-            <button type="submit">Buscar moradia</button>
-        </form>
-    </div>
+    <!-- <section id="intro" class="intro main-background section">      
+        <div class="main-content intro-content">    
+            <div class="intro-text-content">
+                <h2>Seção 1 - O que é o aluguel de república para pessoas universitárias?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sequi velit quasi dolore in, alias, quaerat tempora cumque inventore quidem eius totam deserunt sapiente quos neque harum distinctio mollitia ipsam!</p>
+            </div>
+            <div class="intro-img">
+                <video autoplay muted loop id="intro-img">
+                    <source src="/Imagens/Video/1103318901-preview.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                  </video>
+            </div>
+        </div>
+    </section> -->
 
-         
-      <section class="secao2">
-        <h2>Seção 2 - Se você procura um local especial para seus estudos, venha alugar na F4 LIFE!</h2>
-        <p>Conteúdo da Seção 2</p>
-
-        
-        
-      </section>
-
-      <section>
-        <img  class="icones-quadrados" src="./Imagens/Simbolos/Acessibilidade1.png" alt="acessibilidade">
-        <img class="icones-quadrados" src="./Imagens/Simbolos/Cafe1.png" alt="cafe">
-        <img class="icones-quadrados" src="./Imagens/Simbolos/Cama1.png" alt="cama">        
-        <img class="icones-quadrados" src="./Imagens/Simbolos/Cozinha2.png" alt="cozinha">
-        <img class="icones-quadrados" src="./Imagens/Simbolos/Estudos2.png" alt="lampada">
-        <img class="icones-quadrados" src="./Imagens/Simbolos/Gym1.png" alt="ginastica">
-        <img class="icones-quadrados" src="./Imagens/Simbolos/Lavanderia1.png" alt="lavanderia">
-        <img class="icones-quadrados" src="./Imagens/Simbolos/Livro1.png" alt="livro">
-        <img class="icones-quadrados" src="./Imagens/Simbolos/Pet1.png" alt="pet">
-        <img class="icones-quadrados" src="./Imagens/Simbolos/Pet2.png" alt="pet">
-        <img class="icones-quadrados" src="./Imagens/Simbolos/Pet3.png" alt="pet">
-        <img class="icones-quadrados" src="./Imagens/Simbolos/Pet4.png" alt="pet">
-        <img class="icones-quadrados" src="./Imagens/Simbolos/Pet5.png" alt="pet">
-        <img class="icones-quadrados" src="./Imagens/Simbolos/Yoga2.png" alt="yoga">
+    <section id="secao2" class="white-background">
+        <div class="main-content secao2-content">
+            <h2>Seção 2 - Se você procura um local especial para seus estudos, venha alugar na F4 LIFE!</h2>
+            <p>Conteúdo da Seção 2</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, unde inventore! Quae nulla laboriosam consequatur suscipit aspernatur magnam tempora ratione, odio fugit consectetur eveniet necessitatibus quis eos facilis ipsam. Harum.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, unde inventore! Quae nulla laboriosam consequatur suscipit aspernatur magnam tempora ratione, odio fugit consectetur eveniet necessitatibus quis eos facilis ipsam. Harum.</p>
+        </div>
+    </section>
        
-        
-       
-        
-        
+    <section id="grid-one" class="grid-one main-background section">
+        <div class="main-content grid-one-content">
+            <h2 class="grid-main-heading-secao2">Alugue</h2>
+            <p class="grid-description">Breve descrição</p>
 
-      </section>
+            <div class="grid">
+                <article>
+                    <h3 class="secao2-h3">Teste 1</h3>
+                    <p class="secao2-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. At deleniti corporis ad sequi nisi! Perspiciatis nobis corporis voluptatum, omnis aut sequi illum, commodi ipsa ab cumque voluptates, tenetur culpa consectetur.</p>
+                </article>
+                <article>
+                    <h3 class="secao2-h3">Teste 2</h3>
+                    <p class="secao2-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. At deleniti corporis ad sequi nisi! Perspiciatis nobis corporis voluptatum, omnis aut sequi illum, commodi ipsa ab cumque voluptates, tenetur culpa consectetur.</p>
+                </article>
+                <article>
+                    <h3 class="secao2-h3">Teste 3</h3>
+                    <p class="secao2-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. At deleniti corporis ad sequi nisi! Perspiciatis nobis corporis voluptatum, omnis aut sequi illum, commodi ipsa ab cumque voluptates, tenetur culpa consectetur.</p>
+                </article>
+            </div>
+            <div class="grid-imagens">
+                <img  class="icones-quadrados" src="./Imagens/Simbolos/Acessibilidade1.png" alt="acessibilidade">
+                <img class="icones-quadrados" src="./Imagens/Simbolos/Cafe1.png" alt="cafe">
+                <img class="icones-quadrados" src="./Imagens/Simbolos/Cama1.png" alt="cama">        
+                <img class="icones-quadrados" src="./Imagens/Simbolos/Cozinha2.png" alt="cozinha">
+                <img class="icones-quadrados" src="./Imagens/Simbolos/Estudos2.png" alt="lampada">
+                <img class="icones-quadrados" src="./Imagens/Simbolos/Gym1.png" alt="ginastica">
+                <img class="icones-quadrados" src="./Imagens/Simbolos/Lavanderia1.png" alt="lavanderia">
+                <img class="icones-quadrados" src="./Imagens/Simbolos/Livro1.jpg" alt="livro">
+                <img class="icones-quadrados" src="./Imagens/Simbolos/Pet1.png" alt="pet">
+                <img class="icones-quadrados" src="./Imagens/Simbolos/Yoga2.png" alt="yoga">
+              </div>
+        </div>
+    </section>
 
-    <footer>FOOTER
+    <section id="gallery" class="white-background section">
+        <div class="main-content grid-one-content">
+            <h2 class="grid-main-heading">Gallery</h2>
+            <p class="grid-description">Breve descrição</p>
 
-        <img src="./Imagens/Logo1.jpg" alt="logo">
+            <div class="grid">
+                <div class="gallery-img">
+                    <img class="img-tamanho" src="./Imagens/Img/Screenshot_19.png" alt="#">
+                </div>
+                <div class="gallery-img">
+                    <img class="img-tamanho" src="./Imagens/Img/Screenshot_20.png" alt="#">
+                </div>
+                <div class="gallery-img">
+                    <img class="img-tamanho" src="./Imagens/Img/Screenshot_21.png" alt="#">
+                </div>
+                <div class="gallery-img">
+                    <img class="img-tamanho" src="./Imagens/Img/Screenshot_22.png" alt="#">
+                </div>
+                <div class="gallery-img">
+                    <img class="img-tamanho" src="./Imagens/Img/Screenshot_23.png" alt="#">
+                </div>
+                <div class="gallery-img">
+                    <img class="img-tamanho" src="./Imagens/Img/Screenshot_9.png" alt="#">
+                </div>
+                <div class="gallery-img">
+                    <img class="img-tamanho" src="./Imagens/Img/Screenshot_24.png" alt="#">
+                </div>
+                <div class="gallery-img">
+                    <img class="img-tamanho" src="./Imagens/Img/Screenshot_26.png" alt="#">
+                </div>
+                <div class="gallery-img">
+                    <img class="img-tamanho" src="./Imagens/Img/Screenshot_27.png" alt="#">
+                </div>
+                <div class="gallery-img">
+                    <img class="img-tamanho" src="./Imagens/Img/Screenshot_28.png" alt="#">
+                </div>
+                <div class="gallery-img">
+                    <img class="img-tamanho" src="./Imagens/Img/Screenshot_29.png" alt="#">
+                </div>
+                <div class="gallery-img">
+                    <img class="img-tamanho" src="./Imagens/Img/Screenshot_30.png" alt="#">
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section>
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">F4 LIFE</a></li>
-                <li><a href="#">ALUGUE</a></li>
-                <li><a href="#">ANUNCIE SEU IMÓVEL</a></li>
-                <li><a href="#">CONTATO</a></li>
-            </ul>
+    <!-- <section id="pricing" class="white-background">
+        <div class="main-content secao2-content">
+            <h2>Encontre aqui sua moradia estudantil</h2>
+            <p>Faça sua busca! Conteúdo da Seção 2</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, unde inventore! Quae nulla laboriosam consequatur suscipit aspernatur magnam tempora ratione, odio fugit consectetur eveniet necessitatibus quis eos facilis ipsam. Harum.</p>
             
-            <ul>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Política de privacidade</a></li>
-                <li><a href="#">Formas de pagamento</a></li>
-                <li><a href="#">Trabalhe conosco</a></li>
-            </ul>
+            <div class="responsive-table">
+                <table>
+                    <caption>Pricing table</caption>
 
-        </section>
+                    <thead>
+                        <tr>
+                        <th>Titulo 1</th>
+                        <th>Titulo 2</th>
+                        <th>Titulo 3</th>
+                        <th>Titulo 4</th>
+                        <th>Titulo 5</th>
+                        </tr>
+                    </thead>
 
-          <img class="rede-social" src="./Imagens/Redes sociais/Face4.png">
-          <img class="rede-social" src="./Imagens/Redes sociais/Insta2.png">
-          <img class="rede-social" src="./Imagens/Redes sociais/TikTok2.png">
-          <img class="rede-social" src="./Imagens/Redes sociais/Whats1.png">
-          <img class="rede-social" src="./Imagens/Redes sociais/Youtube2.png">
-          
+                    <tbody>
+                        <tr>
+                            <td>Conteudo 1</td>
+                            <td>Conteudo 2</td>
+                            <td>Conteudo 3</td>
+                            <td>Conteudo 4</td>
+                            <td>Conteudo 5</td>
+                        </tr>
+                        <tr>
+                            <td>Conteudo 1</td>
+                            <td>Conteudo 2</td>
+                            <td>Conteudo 3</td>
+                            <td>Conteudo 4</td>
+                            <td>Conteudo 5</td>
+                        </tr>
+                        <tr>
+                            <td>Conteudo 1</td>
+                            <td>Conteudo 2</td>
+                            <td>Conteudo 3</td>
+                            <td>Conteudo 4</td>
+                            <td>Conteudo 5</td>
+                        </tr>
 
-        
-        <p id="dados-dev">©Copyright 2023 by Fernanda Zanette. All rights reversed.</p>
-
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Testando</td>
+                        </tr>
+                    </tfoot>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section> -->
+   
+    <!-- <div class="menu-spacing"></div> -->
+    <!-- <section id="contact" class="intro main-background section">      -->
     
-      </footer>
+    <section id="contact" class="intro main-background main-content3 section"> 
+        <div class="contact-form">
+            <fieldset class="form-grid">
+                    
+                <h2 class="contact-titulo">Encontre aqui sua moradia estudantil. Faça sua busca!</h2>
+                <p class="contact-p">Conteúdo da Seção 2</p>
+                <p class="contact-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, unde inventore! Quae nulla laboriosam consequatur suscipit aspernatur magnam tempora ratione, odio fugit consectetur eveniet necessitatibus quis eos facilis ipsam. Harum.</p>
+                  
+                <!-- <legend>Encontre aqui sua moradia estudantil. Faça sua busca!</legend> -->
+
+                <div class="form-group full-width">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" name="Busque pela cidade" id="cidade" placeholder="Cidade">
+                        <label for="bairro">Bairro</label>
+                        <input type="text" name="Busque pelo bairro" id="bairro" placeholder="Bairro">
+                        <label for="instituicao">Instituição de Ensino</label>
+                        <input type="text" name="Busque pela instituição de ensino" id="instituicao" placeholder="Instituição de ensino">
+                        <label for="moradia">Tipo de moradia</label>
+                        <input type="text" name="Escolha o tipo de moradia" id="moradia" placeholder="Tipo de moradia">
+                        <label for="aluguel">Valor do aluguel</label>
+                        <input type="text" name="Escolha o valor" id="aluguel" placeholder="Valor do aluguel">
+                </div>
+                <div class="form-group full-width">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea name="mensagem" id="mensagem" cols="30" role="10" placeholder="Mensagem"></textarea>
+                </div>
+                <div class="form-group full-width">
+                        <button type="submit">Buscar moradia</button>
+                </div>
+            </fieldset>         
+        </div>
+    </section>     
+       
+
+    <section id="redes-sociais">          
+        <div class="main-content2 redes-sociais-content">
+            <div>       
+                <h2>Siga a F4LIFE</h2>
+                <p>Faça parte da nossa comunidade nas redes sociais</p>
+            </div>
+            <div class="redes-sociais-column">
+                <img class="rede-social-img" src="./Imagens/Redes sociais/Face4.png">
+                <img class="rede-social-img" src="./Imagens/Redes sociais/Insta2.png">
+                <img class="rede-social-img" src="./Imagens/Redes sociais/TikTok2.png">
+                <img class="rede-social-img" src="./Imagens/Redes sociais/Whats1.png">
+                <img class="rede-social-img" src="./Imagens/Redes sociais/Youtube2.png">
+            </div>
+        </div>
+    </section>
+    
+    <section id="app">          
+        <div class="main-content2 app-content">
+            <div>       
+                <h2>App da F4LIFE</h2>
+                <p>Tudo que nossos residentes precisam saber da F4LIFE em um único lugar!<br>Baixe e aproveite!</p>
+            </div>
+            <div class="app-column">
+                <img class="app-img" src="./Imagens/Redes sociais/APP1.png">
+                <img class="app-img" src="./Imagens/Redes sociais/APP2.png">
+            </div>
+        </div>
+    </section>
+
+    <!-- <section>          
+        <div class="main content redes-sociais-container">
+            <div class="column">    
+                <h2>Siga a F4LIFE</h2>
+                <p>Faça parte da nossa comunidade nas redes sociais</p>
+            </div>
+            <div>
+                <img class="rede-social" src="./Imagens/Redes sociais/Face4.png">
+                <img class="rede-social" src="./Imagens/Redes sociais/Insta2.png">
+                <img class="rede-social" src="./Imagens/Redes sociais/TikTok2.png">
+                <img class="rede-social" src="./Imagens/Redes sociais/Whats1.png">
+                <img class="rede-social" src="./Imagens/Redes sociais/Youtube2.png">
+            </div>
+        </div>
+    </section> -->
+
+    <footer>
+        <section id="footer"> 
+            <div class="main-content1 footer-content">
+                <h1> 
+                    <a href="#"><img class="footer-logo-tamanho" src="./Imagens/1.1.jpg" alt="logo"></a>
+                </h1>
+                <nav class="footer-coluna">
+                    <ul class="sem-bolinhas">
+                        <li><a class="footer-anchor" href="#">HOME</a></li>
+                        <li><a class="footer-anchor" href="#">F4 LIFE</a></li>
+                        <li><a class="footer-anchor" href="#">ALUGUE</a></li>
+                        <li><a class="footer-anchor" href="#">ANUNCIE SEU IMÓVEL</a></li>
+                        <li><a class="footer-anchor" href="#">CONTATO</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-coluna">
+                    <ul class="sem-bolinhas">
+                        <li><a class="footer-anchor" href="#">FAQ</a></li>
+                        <li><a class="footer-anchor" href="#">Política de privacidade</a></li>
+                        <li><a class="footer-anchor" href="#">Formas de pagamento</a></li>
+                        <li><a class="footer-anchor" href="#">Trabalhe conosco</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>    
+    </footer>
+
+    <div class="white-background">
+        <div class="container"> 
+            <p class="dados-dev">©Copyright 2023 by Fernanda Zanette. All rights reversed.</p>
+        </div>
+    </div>
+    
+    <a class="back-to-top" href="#">➤</a>
 </body>
 </html>
