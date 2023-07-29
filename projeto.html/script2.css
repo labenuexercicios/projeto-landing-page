@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    overflow-x: hidden;
+}
+
+header{
+
+    display: flex;
+    height: 11vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 0.02rem 0.3rem rgb(245, 243, 243);
+    background-color: rgb(19,34,53);
+}
+header #image{
+
+    height: 95.5%;
+    width: 10vw; 
+}
+
+nav{
+
+    display: flex;
+    /* position: relative; */
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    
+}
+
+#menu{
+
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;    
+    
+}
+/* nav ul ul{
+
+    display: none;
+    height: 100vh;
+}
+nav ul li:hover ul{
+
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 200px;
+    position: absolute;
+    left: 35%;
+    background-color:rgba(255, 255, 255, 0.219);
+    text-align: center;
+    padding: 20px 0;
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    transform: translateX(-35%);
+    justify-content: space-around;
+
+}
+
+nav ul li:hover ul a{
+
+    color:rgb(0, 0, 0);
+
+} */
+
+#icon{
+
+    display: flex;
+    height: 100%;
+    width: 20%;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    font-size: 1.2rem;
+}
+
+header  a{
+
+    cursor: pointer;
+    color: aliceblue;
+
+}
+.style-button{
+
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgb(255,255,255);
+}
+/* div{
+
+    box-shadow: 0 0.02rem 0.3rem rgb(245, 243, 243); 
+} */
+main{
+
+    background-color: rgb(19,34,53);
+    color: whitesmoke;
+}
+main #main-conteiner{
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-top:70px;
+}
+#main-conteiner .son-conteiner{
+
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(19,34,53);
+}
+
+#main-conteiner .son-conteiner table{
+
+    display: flex;
+    text-align: center;
+    height: 30vh;
+}
+
+#main-conteiner .son-conteiner table th{
+
+    padding: 1rem;
+}
+
+#main-conteiner .son-conteiner button{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    height: 5vh;
+    width: 10%;
+    cursor: pointer;
+    border-radius: 12px;
+
+}
+#main-conteiner .son-conteiner button:hover{
+
+    background-color: rgba(255, 255, 255, 0.589);
+    transition: 4s;
+}
+#main-conteiner .son-conteiner img{
+
+    display: flex;
+    flex-direction:row;
+    width: 32.9vw;
+    height: 50vh;
+}
+
+#main-conteiner .son-conteiner .son{
+
+    display: flex;
+    
+}
+
+
+.baseboard{
+
+    display: flex;
+    height: 45vh;
+    flex-direction: column;
+    height:45vh;
+    color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: rgb(19,34,53);
+    box-shadow: 0 0.02rem 0.3rem rgb(245, 243, 243); 
+}
+
+
+/*RESPONSIVIDADE*/
