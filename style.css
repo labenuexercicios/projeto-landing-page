@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(54 78 105);
+    /*height: 100px;*/
+    display: flex;
+    justify-content: space-between;
+
+}
+
+img {
+    height: 150px;
+    width: 150px;
+}
+
+.safe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.seguros {
+    margin-left: 12px;
+    color: white;
+
+}
+
+nav ul{
+    display: flex;
+    column-gap: 30px;
+    margin-right: 12px;
+    color: white;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.bloco {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-size: 40px;
+    Inserifont-family: 'Lobster', cursive;;
+}
+
+.bloco:nth-of-type(1) {
+    background-image: url("img/couple-955926.jpg");
+    margin: 0px 0px 40px 0px;
+}
+
+.bloco:nth-of-type(2) {
+    background-image: url("img/pexels-curtis-adams-15062125.jpg");
+    margin: 0px 0px 40px 0px;
+}
+
+.bloco:nth-of-type(3) {
+    background-image: url("img/kwid_intense_021-1200x800.webp");
+}
+
+#bloco-2 {
+    display: flex;
+    /*  justify-content: right;*/
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#bloco-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#bloco-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#enviar {
+    font-size: 30px;
+}
+
+
+
+
