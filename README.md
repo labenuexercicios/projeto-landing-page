@@ -138,3 +138,27 @@ A sua Landing Page deve conter:
 3.  Clique em **Merge Pull Request** para enviar todas as suas alterações para a branch main.
 4.  Copie o link do Pull Request e o envie o link do seu PR no [**formulário de entrega**](https://docs.google.com/forms/d/e/1FAIpQLSfziutw6aVuh1sCuG14L5zn-2ds80yMkrgUWhe_aZRaixopdw/viewform).
 
+
+Link para acessar o projeto:
+https://orange-ship.surge.sh/#intro
+
+Imagens versão desktop:
+![Alt text](image.png)
+![Alt text](image-1.png)
+![Alt text](image-2.png)
+![Alt text](image-3.png)
+![Alt text](image-4.png)
+![Alt text](image-5.png)
+![Alt text](image-6.png)
+![Alt text](image-7.png)
+
+Imagens versão mobile:
+![Alt text](image-8.png)
+![Alt text](image-9.png)
+![Alt text](image-10.png)
+![Alt text](image-11.png)
+![Alt text](image-12.png)
+![Alt text](image-13.png)
+![Alt text](image-14.png)
+![Alt text](image-15.png)
+![Alt text](image-16.png)
