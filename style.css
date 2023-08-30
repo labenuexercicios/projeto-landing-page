@@ -1,0 +1,185 @@
+*{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+#logo{
+    width: 20vw;
+}
+
+main{
+    background-color: rgb(31,31,36); 
+    
+}
+header{
+    display: flex;
+    color: white;
+    margin-top: 100px;
+   justify-items: end;
+}
+    
+
+section{
+    display: flex;
+}
+/* header img{
+
+        width: 50vw;
+        height: 30vh;
+        
+} */
+#cadastro button{
+    /* width: 100vw;
+    height: 4vw; */
+    background-color:yellow;
+    font-size: 2rem;
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    top: 0;
+    cursor: pointer;
+
+}
+#cadastro button:hover{
+    background-color: rgb(31,31,36);
+    color: antiquewhite;
+}
+#cadastro button:active{
+    color: gray;
+    
+}
+#simule{
+    /* width: 40%; */
+    display: flex;
+    
+
+}
+#simule button{
+    background-color: yellow;
+    color: black;
+    font-size: 1.3rem;
+    cursor: pointer;
+    /* width: 0%; */
+    height: 60px;
+    border-radius: 20px;
+
+}
+#simule button:hover{
+    background-color: rgb(31,31,36);
+    color: antiquewhite;
+}
+#simule button:active{
+    color: gray;
+}
+
+#bloco-central{
+    display: grid;
+    grid-template: repeat(4,1fr) / repeat(2,1fr);
+    /* border: 1px solid red; */
+    color: antiquewhite;
+    justify-items: center;
+    align-items:start;
+    margin-top: 200px;
+    width: 100vw;
+    
+    
+    
+    
+}
+#bloco-1{
+    height: 500px;
+    /* width: 30vw; */
+    /* background-color: blue; */
+    grid-column: 1/2;
+    grid-row: 1/2;
+    /* border: 2px solid white; */
+    font-size: 1.3rem;
+    text-align: end;
+    border-radius: 20px;
+    
+
+}
+#imagem-dinheiro{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    height: 50vh;
+    width: 50vw; 
+    text-align: center;
+    border-radius: 30px;
+}
+#bloco-2{
+    /* background-color: blueviolet; */
+    width: 500px;
+    height: 500px;
+    grid-column: 2/2;
+    grid-row: 2/3;
+    font-size: 2rem;
+    text-align: start;
+
+
+}
+#imagem-costureira{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    text-align: end;
+    border-radius: 30px;
+}
+#bloco-3{
+    /* background-color: aqua; */
+    height: 500px;
+    width: 500px;
+    grid-row: 3/4;
+    grid-column: 1/2;
+    /* border: 2px solid white; */
+    font-size: 2rem;
+    text-align: end;
+
+}
+#imagem-hotdog{
+    grid-row: 3/4;
+    grid-column: 2/2;
+    height: 500px;
+    width: 500px;
+    text-align: start;
+    border-radius: 30px;
+}
+#bloco-5{
+    /* background-color:coral ; */
+    height: 500px;
+    width: 500px;
+    grid-row: 4/5;
+    grid-column: 2/2;
+    /* border: 2px solid white; */
+    font-size: 2rem;
+    text-align: start;
+
+
+}
+#imagem-confeitaria{
+    grid-row: 4/5;
+    grid-column: 1/2;
+    text-align: end;
+    border-radius: 30px;
+    border-radius: 100px;
+}
+
+footer{
+    width: 50%;
+    display: flex;
+    justify-items:flex-end;
+    color: white;
+
+}
+h6{
+    width: 20vw;
+    
+}
+#insta{
+    width: 10%;
+}
+
+#facebook{
+    width: 50%;
+}
