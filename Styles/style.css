@@ -95,5 +95,54 @@ img {
     background-color: #b6580a;
     color: #ffffff; 
 }
+/* Estilização da sessão "Conta-corrente-digital"*/
+
+.Conta-corrente-digital {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+/* Estilização da imagem 2*/
+
+.imagem {
+    flex: 1 ; /*/* Ocupa metade da largura da seção */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.imagem img {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    border-radius: 30px;
+}
+/* Estilo CSS para o texto */
+
+.texto{
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5em;
+}
+.texto h1{
+    padding: 20px;
+    text-shadow: 2px 2px 4px rgb(0,0,0,0.5);     
+}
+
+.texto a {
+    padding: 20%;
+    color: black;
+}
+
+.texto a:hover{
+    color:#b6580a;
+}
+
+
+
 
 
