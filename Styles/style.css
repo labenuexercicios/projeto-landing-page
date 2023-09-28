@@ -134,7 +134,7 @@ img {
 }
 
 .texto a {
-    padding: 20%;
+    padding: 10%;
     color: black;
 }
 
@@ -142,7 +142,140 @@ img {
     color:#b6580a;
 }
 
+/* Estilização da sessão "Cartao"*/
 
+.Cartao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+/* Estilização cartao*/
 
+.imagem-02 {
+    flex: 1 ; /*/* Ocupa metade da largura da seção */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+}
 
+.imagem-02 img {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    border-radius: 30px;
+    height: 100%;
+    object-fit: cover;
+}
+/* Estilo CSS para o texto */
 
+.texto-02{
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5em;
+}
+.texto-02 h1{
+    padding: 20px;
+    text-shadow: 2px 2px 4px rgb(0,0,0,0.5);     
+}
+
+.texto-02 a {
+    padding: 10%;
+    color: black;
+}
+
+.texto-02 a:hover{
+    color:#b6580a;
+}
+/*Estilizando "abrir conta"*/
+
+#Container-abrir-conta {
+    background-color: #b6580a;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#Container-abrir-conta h2{
+    padding: 30px;
+    font-weight: bold; 
+}
+/* Estilo CSS para o formulário de abrir conta */
+
+.formulario{
+    background-color: black;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.formulario input [type="texto"],
+.formulario input [type="CPF"] {
+    width: 100%;
+    padding: 20%;
+    margin: 30px;
+    border: none;
+    border-radius: 5px;
+}
+.formulario button {
+    color:black;
+    padding: 2px 8px;
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+}
+.formulario button:hover{
+    background-color: #b6580a;
+    color: white
+}
+
+/* Estilização cartao*/
+
+.App {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+/* Estilização da imagem 2*/
+
+.imagem-app {
+    flex: 1 ; /*/* Ocupa metade da largura da seção */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.imagem-app img {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    border-radius: 30px;
+}
+/* Estilo CSS para o texto */
+
+.texto-app{
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5em;
+}
+.texto-app h1{
+    padding: 20px;
+    text-shadow: 2px 2px 4px rgb(0,0,0,0.5);     
+}
+
+.texto-app a {
+    padding: 10%;
+    color: black;
+}
+
+.texto-app a:hover{
+    color:#b6580a;
+}
