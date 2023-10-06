@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 12vh;
+    background-color: rgb(3, 57, 104);
+}
+#imagem-logo{
+    height: 12vh;
+    
+}
+main{
+    height: 58vh;
+    background-color: rgb(105, 126, 47);
+}
+#botao-rapido{
+    
+    border-radius: 10px 20px 30px;
+}
+footer{
+    height: 30vh;
+    background-color: #eb0808;
+}
+
+label, textarea {
+    display:inline;
+}
+textarea {
+    margin: 15px 0;
+    width: 250px;
+    height: 20px
+  }
