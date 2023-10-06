@@ -8,18 +8,11 @@
 }
 
 header {        
-    padding: 30px 6%;
-    background-color:white;
+    padding: 20px 6%;
+    background-color:#F8914D;
     display: flex;
     justify-content: space-between;
     width: 100%;
-}
-
-.Logo {
-    color: rgb(221, 144, 20);
-    font-size: 20px;
-    line-height: 25px;
-    font-family:'Ubuntu', sans-serif; ;
 }
 
 .navlist{
@@ -39,13 +32,13 @@ header {
  
 
  .navlist :hover{
-    color: rgb(221, 144, 20);
+    color: #f8f2f2;
  }
 
-.Logo h1{
-    padding: 7px;
-}
+.Logo img {
+    max-width: 80px;
 
+}
 
 /*Criando estilos na main*/
 
@@ -135,11 +128,11 @@ img {
 
 .texto a {
     padding: 10%;
-    color: black;
+    color: #b6580a;
 }
 
 .texto a:hover{
-    color:#b6580a;
+    color:black;
 }
 
 /* Estilização da sessão "Cartao"*/
@@ -184,11 +177,11 @@ img {
 
 .texto-02 a {
     padding: 10%;
-    color: black;
+    color: #b6580a;
 }
 
 .texto-02 a:hover{
-    color:#b6580a;
+    color:black;
 }
 /*Estilizando "abrir conta"*/
 
@@ -257,14 +250,16 @@ img {
     padding: 0;
     margin: 0;
     border-radius: 30px;
+    height: 100%;
 }
 /* Estilo CSS para o texto */
 
 .texto-app{
     flex: 1;
-    padding: 20px;
+    padding: 40px;
     text-align: center;
     font-size: 1.5em;
+    margin: 0 0 0 30px;
 }
 .texto-app h1{
     padding: 20px;
@@ -278,4 +273,353 @@ img {
 
 .texto-app a:hover{
     color:#b6580a;
+}   
+
+/*Estilização do footer*/
+footer{
+    display: block;
+    justify-content: space-around;
+    background-color: #f8f2f2;
+}
+.div-footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+footer li {
+     display: block;
+    padding: 8px; 
+}
+
+footer a{
+    color: #1b1a1a;
+}
+
+footer a:hover {
+    color: #b6580a;
+
+}
+
+.div-footer2{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.div-footer2 p{
+    padding: 30px;
+
+}
+
+.div-footer2 ul i{
+    font-size: 25px;
+    padding: 30px;
+}
+
+.div-footer2 ul {
+    align-items: center;
+}
+
+.div-footer2 ul i:hover{
+    color: #b6580a;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:500px){
+    
+    header {        
+        padding: 20px 6%;
+        background-color:#F8914D;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .navlist{
+        display: flex;
+        align-items: center;
+    }
+    
+    .navlist a {
+     color: black;
+     margin: 20px;
+     font-size: 15px;
+     }
+    
+     .navlist li {
+        display: inline-block;
+     }
+     
+    
+     .navlist :hover{
+        color: #f8f2f2;
+     }
+    
+    .Logo img {
+        max-width: 80px;
+    
+    }
+    
+    /*Criando estilos na main*/
+    
+    
+    main {
+        display: block;
+        height: 100%;
+        width: 100%;
+        min-height: 90vh;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(245.59deg,#b6580a 0%,#2b1a0e 26.53%, #1b1a1a 75.52%)
+    }
+    
+    article {
+    
+        display: block;
+        max-width: 100%; 
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        font-size: 1.5em;
+    }
+    
+    article h1 {    
+        color: #ffffff;
+        padding: 20px;
+    }
+    
+    img {
+        max-width: 350px;               
+        margin-top: 20%;
+        margin-left: 5%;
+    }
+    
+    /*estilizando botão abrir-conta*/
+       
+    .Conta-corrente-digital {
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+        
+     .Conta-corrente-digital .imagem img {
+        flex: 1 ; /*/* Ocupa metade da largura da seção */
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        border-radius: none;
+        
+    }
+    
+    .imagem img {
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+       border: none;
+        
+    }
+    /* Estilo CSS para o texto */
+    
+    .texto{
+        text-align: center;
+        font-size: 1.5em;
+    }
+    .texto h1{
+        padding: 10px;
+        text-shadow: 2px 2px 4px rgb(0,0,0,0.5);     
+    }
+       
+    /* Estilização da sessão "Cartao"*/
+    
+    .Cartao {
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    /* Estilização cartao*/
+    
+    .imagem-02 {
+        flex: 1 ; /*/* Ocupa metade da largura da seção */
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 30px;
+    }
+    
+    .imagem-02 img {
+        max-width: 100%;
+        margin: 0;
+        height: 100%;
+    }
+    /* Estilo CSS para o texto */
+    
+    .texto-02{
+        flex: 1;
+        padding: 20px;
+        text-align: center;
+        font-size: 1.5em;
+    }
+    .texto-02 h1{
+        padding: 20px;
+        text-shadow: 2px 2px 4px rgb(0,0,0,0.5);     
+    }
+    
+    .texto-02 a {
+        padding: 10%;
+        color: #b6580a;
+    }
+    
+    .texto-02 a:hover{
+        color:black;
+    }
+    /*Estilizando "abrir conta"*/
+    
+    #Container-abrir-conta {
+        background-color:rgb(32, 31, 31);
+        color: white;
+        text-align: center;
+        padding: 100px 0;
+    }
+    
+    #Container-abrir-conta h2 {
+        padding: 30px;
+        font-weight: bold; 
+    }
+    /* Estilo CSS para o formulário de abrir conta */
+
+    .formulario {
+        background-color:rgb(32, 31, 31); /* Cor de fundo do formulário com transparência */
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 600px; /* Largura máxima do formulário */
+        margin: 0 auto; /* Centraliza horizontalmente */
+       }
+    
+    .formulario input[type="text"],
+    .formulario input[type="cpf"]{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 5px;
+    }
+    
+    .formulario button {
+        background-color: white;
+    
+    /* Estilização cartao*/
+    }
+
+    .App {
+        display: block;
+        width: 100%;
+
+    }
+    /* Estilização da imagem 2*/
+    
+    .imagem-app {
+        justify-content: center;
+        text-align: center;
+        padding: 30px;
+    }
+    
+    .imagem-app img {
+        max-width: 400px;               
+        margin-left: 5%;
+    }
+    /* Estilo CSS para o texto */
+    
+    .texto-app{
+        padding: 5px;
+        text-align: center;
+        font-size: 1.5em;
+        margin: auto;
+    }
+    .texto-app h1{
+        padding: 10px;
+        text-shadow: 2px 2px 4px rgb(0,0,0,0.5);     
+    }
+    
+    .texto-app a {
+        padding: 10%;
+        color: black;
+    }
+    
+    .texto-app p {
+        padding: 10px;
+    }
+
+
+    .texto-app a:hover{
+        color:#b6580a;
+    }   
+    
+    /*Estilização do footer*/
+    footer{
+        display: block;
+        justify-content: space-around;
+        background-color: #f8f2f2;
+    }
+    .div-footer{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 30px;
+    }
+    footer li {
+         display: block;
+        padding: 8px; 
+    }
+    
+    footer a{
+        color: #1b1a1a;
+    }
+    
+    footer a:hover {
+        color: #b6580a;
+    
+    }
+    
+    .div-footer2{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    
+    .div-footer2 p{
+        padding: 30px;
+    
+    }
+    
+    .div-footer2 ul i{
+        font-size: 25px;
+        padding: 30px;
+    }
+    
+    .div-footer2 ul {
+        align-items: center;
+    }
+    
+    .div-footer2 ul i:hover{
+        color: #b6580a;
+    }
+
+
+
 }

@@ -6,7 +6,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="./Styles/style.css">
     <!-- Importando fontes do google --> 
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,700&display=swap" rel="stylesheet">
@@ -14,17 +13,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <!-- Importando fontawesome --> 
+    <link rel="stylesheet" href="./Assets/fontawesome-free-6.4.2-web/css/all.css">
+<!-- Importando script --> 
+    <script src="./Assets/Script/script.js">
+    </script>
+
+<script>
+            
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('irParaAbrirConta').addEventListener('click', irParaAbrirConta);
+       });
+     </script>
+
 </head>
 <body>
     <header>
         <div class="Logo">  
-            <h1> F4 </h1>
-            <h1> Bank </h1>
+            <img src="./Assets/" alt="">
         </div>    
 
         <ul class="navlist">
             <li> <a href="#"> Sobre nos </a> </li>    
-            <li> <a href="#">Abra sua conta</a></li>    
+            <li> <a onclick="irParaAbrirConta()" >Abra sua conta</a></li>    
             <li> <a href="#"> Contato</a> </li>    
             <li> <a href="#">Central de ajuda</a> </li>   
             
@@ -40,7 +51,7 @@
                 F4Bank <br>
                 E tenha soluções financeiras para um amanhã melhor!
             </h1>
-            <button id="Abrir-conta"> 
+            <button onclick= "irParaAbrirConta ()" id="Abrir-conta"> 
                 Abra sua conta 
     
             </button>
@@ -80,13 +91,13 @@
             <h2> Abra sua conta </h2>
             <form action="#" method="post">
                 <input type="text" name="Nome" placeholder="Seu Nome">
-                <input type="text" name="CPF" placeholder="Seu CPF">
+                <input type="CPF" name="CPF" placeholder="Seu CPF">
                 <button type="submit"> Enviar </button>
             </form>
         </div>
     </section>
     <section class="App">
-        <div class="Imagem app">
+        <div class="imagem-app">
             <img src="./Assets/mockup app.png" alt="">
         </div>
         <div class="texto-app">
@@ -95,6 +106,63 @@
             <a href="#"> Abra sua conta agora mesmo! </a>
         </div>                          
     </section>
+
+    <footer>
+        <div class="div-footer">
+            <ul>
+                <li><b>Transparência</b></li>
+                <li><a href="#">Politica de Privacidade</a></li>
+                <li><a href="#">Politica de Segurança</a></li>
+                <li><a href="#">Relatórios Financeiros</a></li>
+                <li><a href="#">Contratos</a></li>
+                <li><a href="#">Ética e Compliance</a></li>
+                <li><a href="#">SCR</a></li>
+                <li><a href="#">Dados Abertos</a></li>
+                <li><a href="#">Convenção de Boletos</a></li>
+            </ul>
+            <ul>
+                <li><b>F4Bank</b></li>
+                <li><a href="#">Quem Somos</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Nós na Imprensa</a></li>
+                <li><a href="#">Investidores</a></li>
+            </ul>
+            <ul>
+                <li><b>Produtos</b></li>
+                <li><a href="#">Conta Digital</a></li>
+                <li><a href="#">Conta PJ</a></li>
+                <li><a href="#">Cartão de Crédito</a></li>
+                <li><a href="#">Cartão de Crédito PJ</a></li>
+            </ul>
+        </div>
+
+        <div class="div-footer2">
+            <ul>
+            <p>
+                <b>SAC</b> <br>
+                0800 025 7777 <br>
+                Disponivel todos os dias 24h 
+            </p>
+            <p>
+                <b>SAC em Libras</b> <br>
+                <a href="#">Para atendimento em libras clique aqui</a> <br>
+                Disponivel de segunda a sexta das 10h às 16h. 
+            </p>
+            <p>
+                <b>SAC F4Bank negócios PJ</b> <br>
+                 0800 026 7777 <br>
+                 Disponivel de segunda a sexta das 10h às 16h. 
+            </p>
+            <i class="fa-brands fa-facebook"></i>   
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            </ul>
+            </div> 
+        
+
+    </footer>
+
 
 </body>
 </html>
