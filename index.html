@@ -18,32 +18,23 @@
 <!-- Importando script --> 
     <script src="./Assets/Script/script.js">
     </script>
-
-<script>
-            
-    document.addEventListener('DOMContentLoaded', function() {
-      document.getElementById('irParaAbrirConta').addEventListener('click', irParaAbrirConta);
-       });
-     </script>
-
 </head>
 <body>
     <header>
-        <div class="Logo">  
-            <img src="./Assets/" alt="">
-        </div>    
-
-        <ul class="navlist">
-            <li> <a href="#"> Sobre nos </a> </li>    
-            <li> <a onclick="irParaAbrirConta()" >Abra sua conta</a></li>    
-            <li> <a href="#"> Contato</a> </li>    
-            <li> <a href="#">Central de ajuda</a> </li>   
-            
-        </ul>
-     
+        <div class="logo">F4 Bank</div>
+        <div class="menu-toggle" onclick="toggleMenu()">Menu</div>
+        <nav class="menu">
+            <ul>
+                <li><a onclick= "irParaAbrirConta ()">Abra sua conta</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
     </header>
+    <script src="script.js"></script>
 
-    <main>
+       <main>
         
         <article>
             <h1>
@@ -67,9 +58,9 @@
             <img src="./Assets/projeto 2ª .jpg" alt="">
         </div>
         <div class="texto">
-            <h1> Conta corrente com o melhor rendimento do Brasil </h1>
-            <p> Com o F4 Bank você facilita a sua vida, investindo, recebendo e pagando o que quiser de um só lugar, de forma segura e gratuita.</p>
-            <a href="#"> Abra sua conta agora mesmo! </a>
+            <h1> Cartão sem anuidade.  </h1>
+            <p> O cartão de crédito premium para você viver todas as suas escolhas! </p>
+            <a onclick= "irParaAbrirConta ()"> Abra sua conta agora mesmo! </a>
         </div>                          
     </section>
 
@@ -78,11 +69,11 @@
         <div class="texto-02">
             <h1> Conta corrente com o melhor rendimento do Brasil </h1>
             <p> Com o F4 Bank você facilita a sua vida, investindo, recebendo e pagando o que quiser de um só lugar, de forma segura e gratuita.</p>
-            <a href="#"> Abra sua conta agora mesmo! </a>
+            <a onclick= "irParaAbrirConta ()"> Abra sua conta agora mesmo! </a>
         </div>
 
         <div class="imagem-02">
-            <img src="./Assets/mockup cartão .png" alt="">
+            <img src="./Assets/cartao-02 (1).png" alt="">
         </div>
     </section>
         
@@ -101,8 +92,8 @@
             <img src="./Assets/mockup app.png" alt="">
         </div>
         <div class="texto-app">
-            <h1> Conta corrente com o melhor rendimento do Brasil </h1>
-            <p> Com o F4 Bank você facilita a sua vida, investindo, recebendo e pagando o que quiser de um só lugar, de forma segura e gratuita.</p>
+            <h1> Mantenha em dia suas contas digitais </h1>
+            <p> Nunca foi tão simples ter acesso às suas contas</p>
             <a href="#"> Abra sua conta agora mesmo! </a>
         </div>                          
     </section>
@@ -153,10 +144,10 @@
                  0800 026 7777 <br>
                  Disponivel de segunda a sexta das 10h às 16h. 
             </p>
-            <i class="fa-brands fa-facebook"></i>   
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-linkedin"></i>
+            <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>  
+            <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
             </ul>
             </div> 
         
