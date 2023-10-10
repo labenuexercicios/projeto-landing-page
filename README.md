@@ -40,4 +40,4 @@ Nesse projeto, meu objetivo é criar uma **Landing Page**, um site cujo o objeti
 <p>HTML, CSS e JavaScript <p/>
 	
 ## Visualização:
-<p> https://lading-page-roberta.surge.sh </p>
+<p> https://landing-page-roberta.surge.sh </p>
