@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+   <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>f4Life Moradias Universitarias</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img id="logo" src="./fotinhas/f4life.png" alt="logo"></a>
+
+            <a href="#agende-uma-visita" id="botao-visita">AGENDE UMA VISITA</a>
+        </nav>
+
+    </header>
+    <main>
+        <section id="a-maior-moradia">
+            <h1 id="moradia"> A MAIS NOVA MORADIA ESTUDANTIL! </h1>
+        </section>
+
+        <article class="about">
+
+            <section id="quem-somos-nos">
+                <h1 id="h1-quem-somos"> QUEM SOMOS </h1>
+            </section>
+
+            <section id="sobre-nos">
+                <p>
+                    A F4Life redefine a experiência de moradia estudantil em São Paulo, Rio de Janeiro e
+                    Campinas. Oferecemos uma variedade de opções de moradia, desde apartamentos compartilhados até
+                    espaços privativos, e kitnets, com preços variados para atender a todas as necessidades e
+                    orçamentos.
+                    Priorizamos a segurança com sistemas de câmeras 24/7 e fornecemos suporte contínuo aos
+                    moradores.
+                </p>
+                <br>
+                <p>
+                    Além de estudar, os residentes desfrutam de uma vida social ativa com atividades, happy
+                    hours e eventos temáticos. Na F4Life, não apenas oferecemos moradias, mas construímos
+                    comunidades
+                    vibrantes onde a amizade e o crescimento pessoal prosperam. Sinta-se em casa na F4Life,
+                    onde sua jornada acadêmica se transforma em uma experiência memorável.
+                </p>
+            </section>
+        </article>
+        </section>
+
+        <section id="eventos">
+            <article>
+                <h1 id="h1-eventos"> EVENTOS PARA MORADORES</h1>
+                <p id="p-eventos"> Por aqui rolam festas, eventos culturais, happy hours,
+                    comemorações de aniversários e muito mais!</p>
+
+                <section id="galery">
+                    <figure>
+                        <img src="./fotinhas/festa-junina.jpg" alt="image" id="foto-da-galery">
+                        <p id="p-gallery"> Festa Junina</p>
+                    </figure>
+                    <figure>
+                        <img src="./fotinhas/festa-a-fantasia.jpg" alt="image" id="foto-da-galery">
+                        <p id="p-gallery"> Festa a Fantasia</p>
+                    </figure>
+                    <figure>
+                        <img src="./fotinhas/dia-da-pizza.jpg" alt="image" id="foto-da-galery">
+                        <p id="p-gallery"> Dia da pizza</p>
+                    </figure>
+                    <figure>
+                        <img src="./fotinhas/movie-night.jpg" alt="image" id="foto-da-galery">
+                        <p id="p-gallery"> Movie Night</p>
+                    </figure>
+
+                </section>
+            </article>
+        </section>
+
+        <section>
+            <article class="lazer">
+
+                <h1 id="h1-atividades"> ATIVIDADES E LAZER</h1>
+                <p id="p-lazer"> Na F4Life Moradias, temos aulas de esportes semanais. </p>
+
+                <section id="session-fotos-atividades">
+
+                    <figure>
+                        <img src="./fotinhas/yoga.jpg" alt="image" id="foto-das-atividades">
+                        <p id="img-description"> Yoga</p>
+                    </figure>
+
+                    <figure>
+                        <img src="./fotinhas/beach-tennis.jpg" alt="image" id="foto-das-atividades">
+                        <p id="img-description"> Beach-Tennis</p>
+                    </figure>
+
+                    <figure>
+                        <img src="./fotinhas/natacao.jpg" alt="image" id="foto-das-atividades">
+                        <p id="img-description"> Natação</p>
+                    </figure>
+
+                    <figure>
+                        <img src="./fotinhas/volley.jpg" alt="image" id="foto-das-atividades">
+                        <p id="img-description">Volley</p>
+                    </figure>
+
+                </section>
+            </article>
+        </section>
+
+        <section id="onde-morar">
+            <h1 id="h1-form">DÊ UMA ESPIADA</p>
+
+                <form action="#" id="form-escolha">
+
+                    <label for="select-cidade" id="label-cidade"> ESCOLHA SUA CIDADE</label>
+                    <select name="cidade" id="select-cidade">
+                        <option value="sao-paulo">São Paulo</option>
+                        <option value="campinas">Campinas</option>
+                        <option value="rio-de-janeiro">Rio de Janeiro</option>
+                    </select>
+                    <br>
+                    <label for="select-valor-aluguel" id="label-valor-aluguel"> VALOR TOTAL ATE</label>
+                    <select name="valor-aluguel" id="select-valor-aluguel">
+                        <option value="1200"> R$ 1.000</option>
+                        <option value="1500">R$ 1.500</option>
+                        <option value="2000">R$ 2.000</option>
+                        <option value="2500">R$ 2.500</option>
+                        <option value="3000">R$ 3.000</option>
+                        <option value="3500">R$ 3.500</option>
+                    </select>
+                    <br>
+                    <button type="button" id="botao-moradia" onclick="outraPagina()"> Buscar Moradia</button>
+                </form>
+        </section>
+
+        <section id="agende-uma-visita">
+            <article>
+
+                <h1 id="h1-visita"> AGENDE UMA VISITA </h1>
+                <p id="p-visita">Selecione a unidade de interesse e o melhor dia abaixo.<br>
+                    Antes de sua visita, entraremos em contato para confirmar uma data. <br>
+                    Lembre-se que a F4Life é moradia para estudantes, ok? <br>
+                    Boa visita! 😉
+                </p>
+                <form action="#" id="form-info">
+                    <label for="select-unidade" class="visita"> Qual unidade deseja agendar uma visita ?</label><br>
+                    <select name="opcoes" id="select-unidade" class="visita">
+                        <option value="sao-paulo">Säo Paulo</option>
+                        <option value="campinas">Campinas</option>
+                        <option value="rio-de-janeiro">Rio de Janeiro</option>
+
+                        <br>
+
+                        <label for="nome" class="visita"> Digite seu nome<br>
+                            <input type="text" name="nome" id="nome" onkeydown="exibirNome()" ><br>
+                        </label>
+
+                        <label for="email" class="visita">Digite seu email<br>
+                            <input type="text" name="email" id="email" onkeydown="exibirEmail()"><br>
+                        </label>
+
+                        <label for="sobre" class="visita">Nos conte mais sobre voçê</label><br>
+                        <textarea name="sobre" id="sobre"></textarea>
+                        <br>
+
+                        <button id="meuBotao" onclick="exibirInformacoes()">SOLICITAR VISITA</button>
+                </form>
+            </article>
+        </section>
+
+        <footer>
+            <a href="https://pt-br.facebook.com/" target="blank" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/raissanfg" target="blank" class="fa fa-instagram"></a>
+            <a href="https://www.youtube.com/"  target="blank" class="fa fa-youtube"></a>
+            <a href="https://www.linkedin.com/"  target="blank" class="fa fa-linkedin"></a>
+        </footer>
+    </main>
+</body>
+
+</html>
