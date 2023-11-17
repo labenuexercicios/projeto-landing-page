@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro para simulação de crédito</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="script.js" defer></script>
+</head>
+<body class="cadastro">
+
+    <object type="text/html" data="cabecalho.html"></object>
+
+    <div class="cartao-container">
+        <form id="meuFormulario" onsubmit="return validarUsuario(event)">
+            <div class="cartao">
+                <h2>Cadastro</h2>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+        
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="dataNascimento">Data de Nascimento:</label>
+                <input type="date" id="dataNascimento" name="dataNascimento" required>
+        
+                <label for="sonho">Qual sonho você quer realizar com a UpFour?</label>
+                <textarea id="sonho" name="sonho" required></textarea>
+        
+                <input type="submit" value="Cadastrar">
+            </div>
+        </form>
+
+        <div class="cartao">
+            <h2>Construindo seu futuro</h2>
+            <p>Antes de seguir em frente, queremos estar mais próximos de você. Na UpFour, acreditamos que 
+                cada sonho merece atenção especial. Por isso, gostaríamos de conhecer mais sobre suas 
+                aspirações e desejos. Entender o que faz seu coração pulsar mais forte nos ajuda a 
+                oferecer uma experiência personalizada para alcançar seus objetivos. Compartilhe conosco 
+                um pouco sobre os sonhos que você busca realizar, e juntos faremos acontecer.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
